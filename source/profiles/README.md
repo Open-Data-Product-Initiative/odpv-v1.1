@@ -1,6 +1,10 @@
 # ODPV interoperability profiles
 
-An ODPV interoperability profile is a versioned, machine-readable declaration of how stable ODPV terms can be used with one external standard. A profile is a companion artifact: it does not replace ODPV, the external standard, a catalog, a data contract, a lineage system, or a policy engine.
+An ODPV interoperability profile is a versioned, machine-readable declaration of how ODPV terms can be used with one external standard. A profile is a companion artifact: it does not replace ODPV, the external standard, a catalog, a data contract, a lineage system, or a policy engine.
+
+## Release status
+
+**ODPV 1.1 is DRAFT.** The vocabulary and every profile in this release remain under maintainer review and may change before a stable designation. These files are suitable for evaluation and implementation feedback, not as a claim of stable conformance.
 
 The files in this directory are the semantic authority. The [Open Data Product Agent SDK](https://github.com/Open-Data-Product-Initiative/odp-agent-sdk) is the implementation authority for loading, validating, transforming, and reporting against them.
 

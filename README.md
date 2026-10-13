@@ -6,7 +6,7 @@ The Open Data Products Vocabulary, ODPV, is a vendor-neutral, open-source, machi
 
 ## Release identity
 
-This repository is the standalone **ODPV 1.1.0** release. Its published vocabulary, schemas, profiles, and documentation use the `odpv-v1.1` namespace. ODPV 1.0 remains a separate, immutable release line.
+This repository is the standalone **ODPV 1.1.0 DRAFT** release. Its published vocabulary, schemas, profiles, and documentation use the `odpv-v1.1` namespace, but they are in progress and may change before ODPV 1.1 is designated stable. ODPV 1.0 remains a separate, immutable release line.
 
 # What ODPV Defines
 
