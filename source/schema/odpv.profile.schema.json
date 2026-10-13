@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://opendataproducts.org/odpv-v1.0/schema/odpv.profile.schema.json",
+  "$id": "https://opendataproducts.org/odpv-v1.1/schema/odpv.profile.schema.json",
   "title": "Open Data Product Vocabulary Interoperability Profile",
   "description": "JSON Schema for a versioned ODPV interoperability profile. Profiles define reviewed semantic mappings, field bindings, and transformation rules; they do not redefine ODPV terms or the external standard.",
   "type": "object",

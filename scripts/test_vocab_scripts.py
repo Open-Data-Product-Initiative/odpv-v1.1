@@ -37,14 +37,14 @@ class VocabScriptTests(unittest.TestCase):
 
         jsonld = json.loads(jsonld_path.read_text(encoding="utf-8"))
         self.assertEqual(jsonld["@context"]["skos"], "http://www.w3.org/2004/02/skos/core#")
-        self.assertEqual(jsonld["@graph"][0]["@id"], "https://opendataproducts.org/odpv-v1.0/terms/DataProduct")
+        self.assertEqual(jsonld["@graph"][0]["@id"], "https://opendataproducts.org/odpv-v1.1/terms/DataProduct")
         dataset = next(item for item in jsonld["@graph"] if item["id"] == "Dataset")
         self.assertIn("dcat:Dataset", dataset["mappings"]["exactMatch"])
         self.assertIn("schema:Dataset", dataset["mappings"]["exactMatch"])
 
         skos = skos_path.read_text(encoding="utf-8")
         self.assertIn("@prefix skos: <http://www.w3.org/2004/02/skos/core#> .", skos)
-        self.assertIn("<https://opendataproducts.org/odpv-v1.0/terms/Dataset> a skos:Concept", skos)
+        self.assertIn("<https://opendataproducts.org/odpv-v1.1/terms/Dataset> a skos:Concept", skos)
         self.assertIn("skos:exactMatch dcat:Dataset, schema:Dataset", skos)
 
     def test_validate_vocab_reports_expected_counts(self):

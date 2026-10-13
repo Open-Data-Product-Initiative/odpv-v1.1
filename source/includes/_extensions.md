@@ -47,4 +47,4 @@ Extensions are not part of the official ODPV vocabulary unless they are later ad
 
 Useful and widely adopted extensions may become candidates for future versions of ODPV. To propose useful extensions, raise an issue in GitHub:
 
-[Open Data Products Vocabulary GitHub issues](https://github.com/Open-Data-Product-Initiative/odpv-v1.0/issues)
+[Open Data Products Vocabulary GitHub issues](https://github.com/Open-Data-Product-Initiative/odpv-v1.1/issues)

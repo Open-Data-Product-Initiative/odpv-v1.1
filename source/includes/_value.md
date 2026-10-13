@@ -12,14 +12,14 @@ Each term has one canonical ODPV name. Also known as terms help users map famili
 
 ```yml
 id: BusinessObjective
-uri: https://opendataproducts.org/odpv-v1.0/terms/BusinessObjective
+uri: https://opendataproducts.org/odpv-v1.1/terms/BusinessObjective
 type: object
 status: stable
 introducedIn: 1.0.0
 preferredLabel:
   en: Business Objective
 definition:
-  en: A business goal or intended outcome that data products, 
+  en: A business goal or intended outcome that data products,
       use cases, or portfolio actions support.
 alsoKnownAs:
   en:
@@ -57,4 +57,4 @@ usedIn:
 | `ValueProposition`  | object         | A short explanation of why a data product, use case, or portfolio item matters and what value it is expected to create.                    | value statement, value case, product value, business value statement            | `Benefit`, `Impact`, `Outcome`, `UseCase`                 | ODPS, ODPC |
 | `PortfolioPriority` | classification | A portfolio-level priority assigned to a data product, use case, signal, gap, or objective.                                                | portfolio ranking, portfolio importance, investment priority, planning priority | `Priority`, `Gap`, `Signal`, `BusinessObjective`          | ODPC, ODPG |
 
-[Suggest addition to the vocabulary](https://github.com/Open-Data-Product-Initiative/odpv-v1.0/issues) 
+[Suggest addition to the vocabulary](https://github.com/Open-Data-Product-Initiative/odpv-v1.1/issues)

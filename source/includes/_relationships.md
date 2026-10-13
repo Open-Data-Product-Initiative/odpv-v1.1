@@ -21,15 +21,15 @@ Each relationship term has one canonical ODPV name. Also known as terms help use
 
 ```yml
 id: supports
-uri: https://opendataproducts.org/odpv-v1.0/terms/supports
+uri: https://opendataproducts.org/odpv-v1.1/terms/supports
 type: relationship
 status: stable
 introducedIn: 1.0.0
 preferredLabel:
   en: supports
 definition:
-  en: Indicates that one object helps enable, serve, or 
-      make another object possible, such as a data product 
+  en: Indicates that one object helps enable, serve, or
+      make another object possible, such as a data product
       supporting a use case.
 alsoKnownAs:
   en:
@@ -72,4 +72,4 @@ usedIn:
 | `replaces`      | relationship | Indicates that one object replaces another object, such as a newer data product replacing an older version.                                   | supersedes, succeeds, takes over from, replaces version          | `versionOf`, `derivedFrom`, `relatedTo`            | ODPG    |
 | `versionOf`     | relationship | Indicates that one object is a version of another object.                                                                                     | variant of, release of, revision of, versioned form of           | `replaces`, `derivedFrom`, `Identifier`            | ODPG    |
 
-[Suggest addition to the vocabulary](https://github.com/Open-Data-Product-Initiative/odpv-v1.0/issues) 
+[Suggest addition to the vocabulary](https://github.com/Open-Data-Product-Initiative/odpv-v1.1/issues)

@@ -12,14 +12,14 @@ The core terms are intentionally lightweight. They do not replace the full objec
 
 ```yml
 id: DataProduct
-uri: https://opendataproducts.org/odpv-v1.0/terms/DataProduct
+uri: https://opendataproducts.org/odpv-v1.1/terms/DataProduct
 type: object
 status: stable
 introducedIn: 1.0.0
 preferredLabel:
   en: Data Product
 definition:
-  en: A managed data offering designed for reuse, with defined 
+  en: A managed data offering designed for reuse, with defined
       ownership, access, quality, usage terms, and value context.
 alsoKnownAs:
   en:
@@ -57,4 +57,4 @@ usedIn:
 | `Identifier`         | reference      | A stable value used to uniquely identify a vocabulary term, specification object, product, catalog item, or graph node.                                   | id, unique id, persistent id, node id                                            | `Reference`, `URI`, `DataProduct`                 | ODPS, ODPC, ODPG |
 | `Reference`          | reference      | A link or pointer to another object, specification file, external vocabulary term, system record, or graph node.                                          | link, pointer, external reference, object reference, GraphReference, ProductReference, ProductModel, graph reference, product reference, product model reference | `Identifier`, `$ref`, `URI`, `DataProduct`, `DataProductGraph` | ODPS, ODPC, ODPG |
 
-[Suggest addition to the vocabulary](https://github.com/Open-Data-Product-Initiative/odpv-v1.0/issues) 
+[Suggest addition to the vocabulary](https://github.com/Open-Data-Product-Initiative/odpv-v1.1/issues)

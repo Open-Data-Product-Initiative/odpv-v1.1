@@ -1,5 +1,5 @@
-schema: https://opendataproducts.org/odpv-v1.0/schema/odpv.schema.json
-version: 1.0.0
+schema: https://opendataproducts.org/odpv-v1.1/schema/odpv.schema.json
+version: 1.1.0
 id: ODPV
 name:
   en: Open Data Product Vocabulary
@@ -20,7 +20,7 @@ sections:
     en: Foundational terms used across the Open Data Products specification family.
   terms:
   - id: DataProduct
-    uri: https://opendataproducts.org/odpv-v1.0/terms/DataProduct
+    uri: https://opendataproducts.org/odpv-v1.1/terms/DataProduct
     type: object
     status: stable
     introducedIn: 1.0.0
@@ -47,7 +47,7 @@ sections:
       - Customer Churn Risk Scores is a DataProduct used by retention teams.
       - Use DataProduct for a managed reusable data offering with ownership, access, quality, and usage context.
   - id: ProductDetails
-    uri: https://opendataproducts.org/odpv-v1.0/terms/ProductDetails
+    uri: https://opendataproducts.org/odpv-v1.1/terms/ProductDetails
     type: object
     status: stable
     introducedIn: 1.0.0
@@ -73,7 +73,7 @@ sections:
       - The Details section of an ODPS product contains its name, identifier, value proposition, visibility, status, and version.
       - Use ProductDetails for the descriptive metadata block of a data product.
   - id: DataProductCatalog
-    uri: https://opendataproducts.org/odpv-v1.0/terms/DataProductCatalog
+    uri: https://opendataproducts.org/odpv-v1.1/terms/DataProductCatalog
     type: object
     status: stable
     introducedIn: 1.0.0
@@ -106,7 +106,7 @@ sections:
       - In ODPC, the root Catalog object maps to the ODPV DataProductCatalog term.
       - Use DataProductCatalog when describing a managed collection of products, use cases, objectives, KPIs, and signals.
   - id: DataProductGraph
-    uri: https://opendataproducts.org/odpv-v1.0/terms/DataProductGraph
+    uri: https://opendataproducts.org/odpv-v1.1/terms/DataProductGraph
     type: object
     status: stable
     introducedIn: 1.0.0
@@ -131,7 +131,7 @@ sections:
       - A DataProductGraph connects customer analytics products to use cases, KPIs, owners, and policies.
       - Use DataProductGraph when data product portfolio objects need to be represented as connected nodes and relationships.
   - id: Dataset
-    uri: https://opendataproducts.org/odpv-v1.0/terms/Dataset
+    uri: https://opendataproducts.org/odpv-v1.1/terms/Dataset
     type: object
     status: stable
     introducedIn: 1.0.0
@@ -161,7 +161,7 @@ sections:
       - The monthly customer transactions table is a Dataset used by a Customer Analytics DataProduct.
       - Use Dataset for a structured collection of data, not for the managed product wrapper around it.
   - id: Distribution
-    uri: https://opendataproducts.org/odpv-v1.0/terms/Distribution
+    uri: https://opendataproducts.org/odpv-v1.1/terms/Distribution
     type: object
     status: stable
     introducedIn: 1.0.0
@@ -191,7 +191,7 @@ sections:
       - A downloadable CSV export is a Distribution of a Dataset.
       - Use Distribution for a specific accessible representation such as a file, API response, or export.
   - id: DataService
-    uri: https://opendataproducts.org/odpv-v1.0/terms/DataService
+    uri: https://opendataproducts.org/odpv-v1.1/terms/DataService
     type: object
     status: stable
     introducedIn: 1.0.0
@@ -223,7 +223,7 @@ sections:
       - In ODPG graphs, an API node maps to the ODPV DataService term.
       - Use DataService for an API, query endpoint, or delivery service that provides access to data.
   - id: Agent
-    uri: https://opendataproducts.org/odpv-v1.0/terms/Agent
+    uri: https://opendataproducts.org/odpv-v1.1/terms/Agent
     type: role
     status: stable
     introducedIn: 1.0.0
@@ -251,7 +251,7 @@ sections:
       - A maintenance recommendation agent uses an aviation risk score API to support operational decisions.
       - Use Agent for an AI or automation actor represented in a graph or workflow.
   - id: Workflow
-    uri: https://opendataproducts.org/odpv-v1.0/terms/Workflow
+    uri: https://opendataproducts.org/odpv-v1.1/terms/Workflow
     type: object
     status: stable
     introducedIn: 1.0.0
@@ -279,7 +279,7 @@ sections:
       - A fraud investigation workflow uses transaction event data and risk scoring services.
       - Use Workflow for a process or orchestration flow represented as a graph node.
   - id: Capability
-    uri: https://opendataproducts.org/odpv-v1.0/terms/Capability
+    uri: https://opendataproducts.org/odpv-v1.1/terms/Capability
     type: object
     status: stable
     introducedIn: 1.0.0
@@ -304,7 +304,7 @@ sections:
       - Predictive maintenance is a Capability supported by aircraft telemetry data products and monitoring workflows.
       - Use Capability for a reusable business or technical ability that can be connected to products, workflows, and objectives.
   - id: Provider
-    uri: https://opendataproducts.org/odpv-v1.0/terms/Provider
+    uri: https://opendataproducts.org/odpv-v1.1/terms/Provider
     type: role
     status: stable
     introducedIn: 1.0.0
@@ -331,7 +331,7 @@ sections:
       - The Payments Data Platform team is the Provider of the Transaction Events DataProduct.
       - Use Provider for the team, organization, system, or person that publishes or supplies a data asset.
   - id: DataHolder
-    uri: https://opendataproducts.org/odpv-v1.0/terms/DataHolder
+    uri: https://opendataproducts.org/odpv-v1.1/terms/DataHolder
     type: role
     status: stable
     introducedIn: 1.0.0
@@ -357,7 +357,7 @@ sections:
       - Acme Bank Ltd is the DataHolder for a regulated payments data product.
       - Use DataHolder for the legal entity or accountable organization that holds or controls the data.
   - id: Consumer
-    uri: https://opendataproducts.org/odpv-v1.0/terms/Consumer
+    uri: https://opendataproducts.org/odpv-v1.1/terms/Consumer
     type: role
     status: stable
     introducedIn: 1.0.0
@@ -385,7 +385,7 @@ sections:
       - The Retention Analytics team is a Consumer of the Customer Churn DataProduct.
       - Use Consumer for a person, team, system, or agent that uses or receives data.
   - id: Owner
-    uri: https://opendataproducts.org/odpv-v1.0/terms/Owner
+    uri: https://opendataproducts.org/odpv-v1.1/terms/Owner
     type: role
     status: stable
     introducedIn: 1.0.0
@@ -411,7 +411,7 @@ sections:
       - The Head of Customer Analytics is the Owner accountable for the Churn Scores DataProduct.
       - Use Owner for accountability, not day-to-day operational stewardship.
   - id: Steward
-    uri: https://opendataproducts.org/odpv-v1.0/terms/Steward
+    uri: https://opendataproducts.org/odpv-v1.1/terms/Steward
     type: role
     status: stable
     introducedIn: 1.0.0
@@ -437,7 +437,7 @@ sections:
       - A data steward maintains metadata and quality checks for the Customer Profile DataProduct.
       - Use Steward for operational responsibility over metadata, quality, lifecycle, or product health.
   - id: Domain
-    uri: https://opendataproducts.org/odpv-v1.0/terms/Domain
+    uri: https://opendataproducts.org/odpv-v1.1/terms/Domain
     type: classification
     status: stable
     introducedIn: 1.0.0
@@ -464,7 +464,7 @@ sections:
       - Mobility is a Domain used to group traffic, routing, and transit data products.
       - Use Domain for a business, organizational, subject, or functional grouping.
   - id: Identifier
-    uri: https://opendataproducts.org/odpv-v1.0/terms/Identifier
+    uri: https://opendataproducts.org/odpv-v1.1/terms/Identifier
     type: reference
     status: stable
     introducedIn: 1.0.0
@@ -491,7 +491,7 @@ sections:
       - customer-churn-risk-score is an Identifier for a catalog item.
       - Use Identifier for stable ids used by terms, products, catalog items, or graph nodes.
   - id: Reference
-    uri: https://opendataproducts.org/odpv-v1.0/terms/Reference
+    uri: https://opendataproducts.org/odpv-v1.1/terms/Reference
     type: reference
     status: stable
     introducedIn: 1.0.0

@@ -1,5 +1,5 @@
-schema: https://opendataproducts.org/odpv-v1.0/schema/odpv.schema.json
-version: 1.0.0
+schema: https://opendataproducts.org/odpv-v1.1/schema/odpv.schema.json
+version: 1.1.0
 id: ODPV
 name:
   en: Open Data Product Vocabulary
@@ -23,7 +23,7 @@ sections:
       en: Foundational terms used across the Open Data Products specification family.
     terms:
       - id: DataProduct
-        uri: https://opendataproducts.org/odpv-v1.0/terms/DataProduct
+        uri: https://opendataproducts.org/odpv-v1.1/terms/DataProduct
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -51,7 +51,7 @@ sections:
             - Use DataProduct for a managed reusable data offering with ownership, access, quality, and usage context.
 
       - id: ProductDetails
-        uri: https://opendataproducts.org/odpv-v1.0/terms/ProductDetails
+        uri: https://opendataproducts.org/odpv-v1.1/terms/ProductDetails
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -78,7 +78,7 @@ sections:
             - Use ProductDetails for the descriptive metadata block of a data product.
 
       - id: DataProductCatalog
-        uri: https://opendataproducts.org/odpv-v1.0/terms/DataProductCatalog
+        uri: https://opendataproducts.org/odpv-v1.1/terms/DataProductCatalog
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -112,7 +112,7 @@ sections:
             - Use DataProductCatalog when describing a managed collection of products, use cases, objectives, KPIs, and signals.
 
       - id: DataProductGraph
-        uri: https://opendataproducts.org/odpv-v1.0/terms/DataProductGraph
+        uri: https://opendataproducts.org/odpv-v1.1/terms/DataProductGraph
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -138,7 +138,7 @@ sections:
             - Use DataProductGraph when data product portfolio objects need to be represented as connected nodes and relationships.
 
       - id: Dataset
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Dataset
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Dataset
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -169,7 +169,7 @@ sections:
             - Use Dataset for a structured collection of data, not for the managed product wrapper around it.
 
       - id: Distribution
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Distribution
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Distribution
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -200,7 +200,7 @@ sections:
             - Use Distribution for a specific accessible representation such as a file, API response, or export.
 
       - id: DataService
-        uri: https://opendataproducts.org/odpv-v1.0/terms/DataService
+        uri: https://opendataproducts.org/odpv-v1.1/terms/DataService
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -233,7 +233,7 @@ sections:
             - Use DataService for an API, query endpoint, or delivery service that provides access to data.
 
       - id: Agent
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Agent
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Agent
         type: role
         status: stable
         introducedIn: 1.0.0
@@ -262,7 +262,7 @@ sections:
             - Use Agent for an AI or automation actor represented in a graph or workflow.
 
       - id: Workflow
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Workflow
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Workflow
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -291,7 +291,7 @@ sections:
             - Use Workflow for a process or orchestration flow represented as a graph node.
 
       - id: Capability
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Capability
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Capability
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -317,7 +317,7 @@ sections:
             - Use Capability for a reusable business or technical ability that can be connected to products, workflows, and objectives.
 
       - id: Provider
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Provider
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Provider
         type: role
         status: stable
         introducedIn: 1.0.0
@@ -345,7 +345,7 @@ sections:
             - Use Provider for the team, organization, system, or person that publishes or supplies a data asset.
 
       - id: DataHolder
-        uri: https://opendataproducts.org/odpv-v1.0/terms/DataHolder
+        uri: https://opendataproducts.org/odpv-v1.1/terms/DataHolder
         type: role
         status: stable
         introducedIn: 1.0.0
@@ -372,7 +372,7 @@ sections:
             - Use DataHolder for the legal entity or accountable organization that holds or controls the data.
 
       - id: Consumer
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Consumer
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Consumer
         type: role
         status: stable
         introducedIn: 1.0.0
@@ -401,7 +401,7 @@ sections:
             - Use Consumer for a person, team, system, or agent that uses or receives data.
 
       - id: Owner
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Owner
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Owner
         type: role
         status: stable
         introducedIn: 1.0.0
@@ -428,7 +428,7 @@ sections:
             - Use Owner for accountability, not day-to-day operational stewardship.
 
       - id: Steward
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Steward
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Steward
         type: role
         status: stable
         introducedIn: 1.0.0
@@ -455,7 +455,7 @@ sections:
             - Use Steward for operational responsibility over metadata, quality, lifecycle, or product health.
 
       - id: Domain
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Domain
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Domain
         type: classification
         status: stable
         introducedIn: 1.0.0
@@ -483,7 +483,7 @@ sections:
             - Use Domain for a business, organizational, subject, or functional grouping.
 
       - id: Identifier
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Identifier
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Identifier
         type: reference
         status: stable
         introducedIn: 1.0.0
@@ -511,7 +511,7 @@ sections:
             - Use Identifier for stable ids used by terms, products, catalog items, or graph nodes.
 
       - id: Reference
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Reference
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Reference
         type: reference
         status: stable
         introducedIn: 1.0.0
@@ -554,7 +554,7 @@ sections:
       en: Terms used to describe why data products matter, where they create value, and how that value connects to business outcomes.
     terms:
       - id: UseCase
-        uri: https://opendataproducts.org/odpv-v1.0/terms/UseCase
+        uri: https://opendataproducts.org/odpv-v1.1/terms/UseCase
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -582,7 +582,7 @@ sections:
             - Use UseCase for the practical scenario where data is used to create business, operational, analytical, or technical value.
 
       - id: BusinessObjective
-        uri: https://opendataproducts.org/odpv-v1.0/terms/BusinessObjective
+        uri: https://opendataproducts.org/odpv-v1.1/terms/BusinessObjective
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -610,7 +610,7 @@ sections:
             - Use BusinessObjective for the goal or target outcome that data products and use cases help advance.
 
       - id: KPI
-        uri: https://opendataproducts.org/odpv-v1.0/terms/KPI
+        uri: https://opendataproducts.org/odpv-v1.1/terms/KPI
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -637,7 +637,7 @@ sections:
             - Use KPI for a measurable indicator connected to an objective, outcome, or impact.
 
       - id: Impact
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Impact
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Impact
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -665,7 +665,7 @@ sections:
             - Use Impact for the expected or observed effect of a data product, signal, use case, or portfolio decision.
 
       - id: Signal
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Signal
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Signal
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -693,7 +693,7 @@ sections:
             - Use Signal for observed demand, trend, risk, usage pattern, market change, policy change, or event requiring attention.
 
       - id: Gap
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Gap
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Gap
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -721,7 +721,7 @@ sections:
             - Use Gap for missing data, capability, quality, access, relationship, or portfolio coverage.
 
       - id: Priority
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Priority
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Priority
         type: classification
         status: stable
         introducedIn: 1.0.0
@@ -749,7 +749,7 @@ sections:
             - Use Priority for ranking importance or urgency in planning, remediation, or investment decisions.
 
       - id: Outcome
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Outcome
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Outcome
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -777,7 +777,7 @@ sections:
             - Use Outcome for a desired or achieved result connected to objectives, use cases, KPIs, or impact.
 
       - id: DataNeed
-        uri: https://opendataproducts.org/odpv-v1.0/terms/DataNeed
+        uri: https://opendataproducts.org/odpv-v1.1/terms/DataNeed
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -805,7 +805,7 @@ sections:
             - Use DataNeed for required data inputs, products, attributes, capabilities, or access patterns.
 
       - id: Benefit
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Benefit
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Benefit
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -831,7 +831,7 @@ sections:
             - Use Benefit for a positive business, operational, financial, social, or technical value.
 
       - id: Demand
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Demand
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Demand
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -859,7 +859,7 @@ sections:
             - Use Demand for evidence of need or interest from consumers, stakeholders, systems, markets, or operations.
 
       - id: Opportunity
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Opportunity
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Opportunity
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -887,7 +887,7 @@ sections:
             - Use Opportunity for a possible area of reuse, innovation, service improvement, monetization, or better decisions.
 
       - id: StrategicOpportunity
-        uri: https://opendataproducts.org/odpv-v1.0/terms/StrategicOpportunity
+        uri: https://opendataproducts.org/odpv-v1.1/terms/StrategicOpportunity
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -914,7 +914,7 @@ sections:
             - Use StrategicOpportunity when an opportunity has portfolio, strategic, or business-objective relevance.
 
       - id: ProductStrategy
-        uri: https://opendataproducts.org/odpv-v1.0/terms/ProductStrategy
+        uri: https://opendataproducts.org/odpv-v1.1/terms/ProductStrategy
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -941,7 +941,7 @@ sections:
             - Use ProductStrategy for product-level objectives, alignment, timing, status, and strategic KPIs.
 
       - id: Risk
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Risk
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Risk
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -969,7 +969,7 @@ sections:
             - Use Risk for a possible negative event, exposure, weakness, or uncertainty affecting value, trust, access, compliance, or operation.
 
       - id: ValueProposition
-        uri: https://opendataproducts.org/odpv-v1.0/terms/ValueProposition
+        uri: https://opendataproducts.org/odpv-v1.1/terms/ValueProposition
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -997,7 +997,7 @@ sections:
             - Use ValueProposition for a short explanation of why a product, use case, or portfolio item matters.
 
       - id: PortfolioPriority
-        uri: https://opendataproducts.org/odpv-v1.0/terms/PortfolioPriority
+        uri: https://opendataproducts.org/odpv-v1.1/terms/PortfolioPriority
         type: classification
         status: stable
         introducedIn: 1.0.0
@@ -1031,7 +1031,7 @@ sections:
       en: Terms used to describe how data products are controlled, protected, accessed, licensed, and operated.
     terms:
       - id: DataQuality
-        uri: https://opendataproducts.org/odpv-v1.0/terms/DataQuality
+        uri: https://opendataproducts.org/odpv-v1.1/terms/DataQuality
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -1060,7 +1060,7 @@ sections:
             - Use DataQuality for expected, measured, or reported quality of a product, dataset, distribution, or service.
 
       - id: SLA
-        uri: https://opendataproducts.org/odpv-v1.0/terms/SLA
+        uri: https://opendataproducts.org/odpv-v1.1/terms/SLA
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -1088,7 +1088,7 @@ sections:
             - Use SLA for service-level expectations or operational commitments.
 
       - id: License
-        uri: https://opendataproducts.org/odpv-v1.0/terms/License
+        uri: https://opendataproducts.org/odpv-v1.1/terms/License
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -1121,7 +1121,7 @@ sections:
             - Use License for legal terms that define how data may be used, shared, or redistributed.
 
       - id: DataAccess
-        uri: https://opendataproducts.org/odpv-v1.0/terms/DataAccess
+        uri: https://opendataproducts.org/odpv-v1.1/terms/DataAccess
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -1150,7 +1150,7 @@ sections:
             - Use DataAccess for product-level access configuration or description.
 
       - id: AccessMethod
-        uri: https://opendataproducts.org/odpv-v1.0/terms/AccessMethod
+        uri: https://opendataproducts.org/odpv-v1.1/terms/AccessMethod
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -1179,7 +1179,7 @@ sections:
             - Use AccessMethod for the channel or interface used to access data, such as API, file download, query endpoint, or platform access.
 
       - id: PricingPlan
-        uri: https://opendataproducts.org/odpv-v1.0/terms/PricingPlan
+        uri: https://opendataproducts.org/odpv-v1.1/terms/PricingPlan
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -1206,7 +1206,7 @@ sections:
             - Use PricingPlan for pricing, cost, subscription, or monetization plans.
 
       - id: PaymentGateway
-        uri: https://opendataproducts.org/odpv-v1.0/terms/PaymentGateway
+        uri: https://opendataproducts.org/odpv-v1.1/terms/PaymentGateway
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -1233,7 +1233,7 @@ sections:
             - Use PaymentGateway for payment services or integrations used with commercial data product access.
 
       - id: Support
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Support
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Support
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -1260,7 +1260,7 @@ sections:
             - Use Support for help, issue handling, or operational assistance channels.
 
       - id: Agreement
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Agreement
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Agreement
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -1289,7 +1289,7 @@ sections:
             - Use Agreement for usage, commercial, legal, operational, or governance terms between parties.
 
       - id: Policy
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Policy
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Policy
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -1321,7 +1321,7 @@ sections:
             - Use Policy for a rule, guideline, or governance statement that applies to products, catalogs, graphs, use cases, or access.
 
       - id: ComplianceRule
-        uri: https://opendataproducts.org/odpv-v1.0/terms/ComplianceRule
+        uri: https://opendataproducts.org/odpv-v1.1/terms/ComplianceRule
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -1350,7 +1350,7 @@ sections:
             - Use ComplianceRule for a specific requirement used to assess, enforce, or document compliance.
 
       - id: Sensitivity
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Sensitivity
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Sensitivity
         type: classification
         status: stable
         introducedIn: 1.0.0
@@ -1378,7 +1378,7 @@ sections:
             - Use Sensitivity to indicate privacy, security, commercial, or operational sensitivity.
 
       - id: UsageRights
-        uri: https://opendataproducts.org/odpv-v1.0/terms/UsageRights
+        uri: https://opendataproducts.org/odpv-v1.1/terms/UsageRights
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -1409,7 +1409,7 @@ sections:
             - Use UsageRights for what consumers may do with data, including use, sharing, modification, derivation, or redistribution.
 
       - id: Retention
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Retention
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Retention
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -1437,7 +1437,7 @@ sections:
             - Use Retention for how long data, metadata, logs, agreements, or records should be kept.
 
       - id: AccessCondition
-        uri: https://opendataproducts.org/odpv-v1.0/terms/AccessCondition
+        uri: https://opendataproducts.org/odpv-v1.1/terms/AccessCondition
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -1466,7 +1466,7 @@ sections:
             - Use AccessCondition for a requirement that must be met before a consumer can access data.
 
       - id: GovernanceProfile
-        uri: https://opendataproducts.org/odpv-v1.0/terms/GovernanceProfile
+        uri: https://opendataproducts.org/odpv-v1.1/terms/GovernanceProfile
         type: classification
         status: stable
         introducedIn: 1.0.0
@@ -1494,7 +1494,7 @@ sections:
             - Use GovernanceProfile for a reusable classification of control, assurance, review, or maturity expectations.
 
       - id: DataAgreement
-        uri: https://opendataproducts.org/odpv-v1.0/terms/DataAgreement
+        uri: https://opendataproducts.org/odpv-v1.1/terms/DataAgreement
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -1522,7 +1522,7 @@ sections:
             - Use DataAgreement for structured allowed use, responsibilities, obligations, and constraints for data sharing.
 
       - id: DataContract
-        uri: https://opendataproducts.org/odpv-v1.0/terms/DataContract
+        uri: https://opendataproducts.org/odpv-v1.1/terms/DataContract
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -1549,7 +1549,7 @@ sections:
             - Use DataContract for technical or operational expectations around schema, quality, delivery, compatibility, and change management.
 
       - id: Stewardship
-        uri: https://opendataproducts.org/odpv-v1.0/terms/Stewardship
+        uri: https://opendataproducts.org/odpv-v1.1/terms/Stewardship
         type: object
         status: stable
         introducedIn: 1.0.0
@@ -1583,7 +1583,7 @@ sections:
       en: Terms used to connect data products, catalogs, use cases, objectives, KPIs, signals, governance objects, and related portfolio items.
     terms:
       - id: supports
-        uri: https://opendataproducts.org/odpv-v1.0/terms/supports
+        uri: https://opendataproducts.org/odpv-v1.1/terms/supports
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -1617,7 +1617,7 @@ sections:
             - Use supports when one object helps enable, serve, or make another object possible.
 
       - id: requires
-        uri: https://opendataproducts.org/odpv-v1.0/terms/requires
+        uri: https://opendataproducts.org/odpv-v1.1/terms/requires
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -1651,7 +1651,7 @@ sections:
             - Use requires when one object needs another object to be complete, useful, or executable.
 
       - id: uses
-        uri: https://opendataproducts.org/odpv-v1.0/terms/uses
+        uri: https://opendataproducts.org/odpv-v1.1/terms/uses
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -1690,7 +1690,7 @@ sections:
             - Use uses when one object actively uses another object during execution or operation.
 
       - id: contributesTo
-        uri: https://opendataproducts.org/odpv-v1.0/terms/contributesTo
+        uri: https://opendataproducts.org/odpv-v1.1/terms/contributesTo
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -1724,7 +1724,7 @@ sections:
             - Use contributesTo when one object helps advance an objective, outcome, or impact.
 
       - id: measures
-        uri: https://opendataproducts.org/odpv-v1.0/terms/measures
+        uri: https://opendataproducts.org/odpv-v1.1/terms/measures
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -1757,7 +1757,7 @@ sections:
             - Use measures when a KPI, signal, or metric tracks an objective, outcome, or impact.
 
       - id: belongsTo
-        uri: https://opendataproducts.org/odpv-v1.0/terms/belongsTo
+        uri: https://opendataproducts.org/odpv-v1.1/terms/belongsTo
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -1790,7 +1790,7 @@ sections:
             - Use belongsTo when one object is assigned to, grouped under, or included in another object.
 
       - id: dependsOn
-        uri: https://opendataproducts.org/odpv-v1.0/terms/dependsOn
+        uri: https://opendataproducts.org/odpv-v1.1/terms/dependsOn
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -1824,7 +1824,7 @@ sections:
             - Use dependsOn for operational, technical, or data dependencies between products, services, datasets, or use cases.
 
       - id: governedBy
-        uri: https://opendataproducts.org/odpv-v1.0/terms/governedBy
+        uri: https://opendataproducts.org/odpv-v1.1/terms/governedBy
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -1860,7 +1860,7 @@ sections:
             - Use governedBy when a product, dataset, service, or access method is subject to a policy, license, agreement, or compliance rule.
 
       - id: providedBy
-        uri: https://opendataproducts.org/odpv-v1.0/terms/providedBy
+        uri: https://opendataproducts.org/odpv-v1.1/terms/providedBy
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -1893,7 +1893,7 @@ sections:
             - Use providedBy when an object is published, supplied, or made available by a provider or owner.
 
       - id: consumedBy
-        uri: https://opendataproducts.org/odpv-v1.0/terms/consumedBy
+        uri: https://opendataproducts.org/odpv-v1.1/terms/consumedBy
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -1925,7 +1925,7 @@ sections:
             - Use consumedBy when an object is used, accessed, or received by a consumer.
 
       - id: produces
-        uri: https://opendataproducts.org/odpv-v1.0/terms/produces
+        uri: https://opendataproducts.org/odpv-v1.1/terms/produces
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -1961,7 +1961,7 @@ sections:
             - Use produces when one object creates, generates, outputs, or makes another object available.
 
       - id: consumes
-        uri: https://opendataproducts.org/odpv-v1.0/terms/consumes
+        uri: https://opendataproducts.org/odpv-v1.1/terms/consumes
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -1997,7 +1997,7 @@ sections:
             - Use consumes for active consumption of data, services, outputs, or interfaces.
 
       - id: indicates
-        uri: https://opendataproducts.org/odpv-v1.0/terms/indicates
+        uri: https://opendataproducts.org/odpv-v1.1/terms/indicates
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -2033,7 +2033,7 @@ sections:
             - Use indicates when a signal, KPI, or observation points to a gap, demand, risk, or opportunity.
 
       - id: identifies
-        uri: https://opendataproducts.org/odpv-v1.0/terms/identifies
+        uri: https://opendataproducts.org/odpv-v1.1/terms/identifies
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -2069,7 +2069,7 @@ sections:
             - Use identifies when one object discovers or names an opportunity, condition, gap, or risk.
 
       - id: relatedTo
-        uri: https://opendataproducts.org/odpv-v1.0/terms/relatedTo
+        uri: https://opendataproducts.org/odpv-v1.1/terms/relatedTo
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -2105,7 +2105,7 @@ sections:
             - Use relatedTo only when a more specific relationship type is not available.
 
       - id: ownedBy
-        uri: https://opendataproducts.org/odpv-v1.0/terms/ownedBy
+        uri: https://opendataproducts.org/odpv-v1.1/terms/ownedBy
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -2142,7 +2142,7 @@ sections:
             - Use ownedBy when a graph object has an accountable owner, domain, team, or capability.
 
       - id: alignsWith
-        uri: https://opendataproducts.org/odpv-v1.0/terms/alignsWith
+        uri: https://opendataproducts.org/odpv-v1.1/terms/alignsWith
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -2178,7 +2178,7 @@ sections:
             - Use alignsWith for strategic, semantic, organizational, or capability alignment.
 
       - id: partOf
-        uri: https://opendataproducts.org/odpv-v1.0/terms/partOf
+        uri: https://opendataproducts.org/odpv-v1.1/terms/partOf
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -2212,7 +2212,7 @@ sections:
             - Use partOf when one object is a component or member of a larger object.
 
       - id: hasPart
-        uri: https://opendataproducts.org/odpv-v1.0/terms/hasPart
+        uri: https://opendataproducts.org/odpv-v1.1/terms/hasPart
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -2246,7 +2246,7 @@ sections:
             - Use hasPart when one object contains or includes another object.
 
       - id: derivedFrom
-        uri: https://opendataproducts.org/odpv-v1.0/terms/derivedFrom
+        uri: https://opendataproducts.org/odpv-v1.1/terms/derivedFrom
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -2283,7 +2283,7 @@ sections:
             - Use derivedFrom when an object is based on, sourced from, generated from, or created from another object.
 
       - id: impacts
-        uri: https://opendataproducts.org/odpv-v1.0/terms/impacts
+        uri: https://opendataproducts.org/odpv-v1.1/terms/impacts
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -2319,7 +2319,7 @@ sections:
             - Use impacts when one object affects or influences a use case, metric, objective, or outcome.
 
       - id: exposes
-        uri: https://opendataproducts.org/odpv-v1.0/terms/exposes
+        uri: https://opendataproducts.org/odpv-v1.1/terms/exposes
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -2354,7 +2354,7 @@ sections:
             - Use exposes when one object makes an interface, endpoint, access method, or data service available.
 
       - id: replaces
-        uri: https://opendataproducts.org/odpv-v1.0/terms/replaces
+        uri: https://opendataproducts.org/odpv-v1.1/terms/replaces
         type: relationship
         status: stable
         introducedIn: 1.0.0
@@ -2388,7 +2388,7 @@ sections:
             - Use replaces when a newer product, dataset, service, or version supersedes an older one.
 
       - id: versionOf
-        uri: https://opendataproducts.org/odpv-v1.0/terms/versionOf
+        uri: https://opendataproducts.org/odpv-v1.1/terms/versionOf
         type: relationship
         status: stable
         introducedIn: 1.0.0

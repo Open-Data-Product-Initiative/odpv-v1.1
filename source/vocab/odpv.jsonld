@@ -3,12 +3,12 @@
     "id": "https://schema.org/identifier",
     "uri": "@id",
     "type": "@type",
-    "section": "https://opendataproducts.org/odpv-v1.0/schema/section",
+    "section": "https://opendataproducts.org/odpv-v1.1/schema/section",
     "preferredLabel": "skos:prefLabel",
     "definition": "skos:definition",
     "alsoKnownAs": "skos:altLabel",
     "relatedTerms": "skos:related",
-    "usedIn": "https://opendataproducts.org/odpv-v1.0/schema/usedIn",
+    "usedIn": "https://opendataproducts.org/odpv-v1.1/schema/usedIn",
     "examples": "skos:example",
     "mappings": "skos:mappingRelation",
     "exactMatch": "skos:exactMatch",
@@ -23,10 +23,10 @@
     "prov": "http://www.w3.org/ns/prov#",
     "schema": "https://schema.org/"
   },
-  "@id": "https://opendataproducts.org/odpv-v1.0/",
+  "@id": "https://opendataproducts.org/odpv-v1.1/",
   "@type": "skos:ConceptScheme",
   "id": "ODPV",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "preferredLabel": {
     "en": "Open Data Product Vocabulary"
   },
@@ -35,7 +35,7 @@
   },
   "@graph": [
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/DataProduct",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/DataProduct",
       "@type": "skos:Concept",
       "id": "DataProduct",
       "section": "core",
@@ -71,7 +71,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/ProductDetails",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/ProductDetails",
       "@type": "skos:Concept",
       "id": "ProductDetails",
       "section": "core",
@@ -106,7 +106,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/DataProductCatalog",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/DataProductCatalog",
       "@type": "skos:Concept",
       "id": "DataProductCatalog",
       "section": "core",
@@ -150,7 +150,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/DataProductGraph",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/DataProductGraph",
       "@type": "skos:Concept",
       "id": "DataProductGraph",
       "section": "core",
@@ -184,7 +184,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Dataset",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Dataset",
       "@type": "skos:Concept",
       "id": "Dataset",
       "section": "core",
@@ -225,7 +225,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Distribution",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Distribution",
       "@type": "skos:Concept",
       "id": "Distribution",
       "section": "core",
@@ -267,7 +267,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/DataService",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/DataService",
       "@type": "skos:Concept",
       "id": "DataService",
       "section": "core",
@@ -310,7 +310,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Agent",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Agent",
       "@type": "skos:Concept",
       "id": "Agent",
       "section": "core",
@@ -349,7 +349,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Workflow",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Workflow",
       "@type": "skos:Concept",
       "id": "Workflow",
       "section": "core",
@@ -388,7 +388,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Capability",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Capability",
       "@type": "skos:Concept",
       "id": "Capability",
       "section": "core",
@@ -422,7 +422,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Provider",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Provider",
       "@type": "skos:Concept",
       "id": "Provider",
       "section": "core",
@@ -458,7 +458,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/DataHolder",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/DataHolder",
       "@type": "skos:Concept",
       "id": "DataHolder",
       "section": "core",
@@ -493,7 +493,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Consumer",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Consumer",
       "@type": "skos:Concept",
       "id": "Consumer",
       "section": "core",
@@ -530,7 +530,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Owner",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Owner",
       "@type": "skos:Concept",
       "id": "Owner",
       "section": "core",
@@ -565,7 +565,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Steward",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Steward",
       "@type": "skos:Concept",
       "id": "Steward",
       "section": "core",
@@ -600,7 +600,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Domain",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Domain",
       "@type": "skos:Concept",
       "id": "Domain",
       "section": "core",
@@ -636,7 +636,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Identifier",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Identifier",
       "@type": "skos:Concept",
       "id": "Identifier",
       "section": "core",
@@ -672,7 +672,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Reference",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Reference",
       "@type": "skos:Concept",
       "id": "Reference",
       "section": "core",
@@ -717,7 +717,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/UseCase",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/UseCase",
       "@type": "skos:Concept",
       "id": "UseCase",
       "section": "value",
@@ -753,7 +753,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/BusinessObjective",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/BusinessObjective",
       "@type": "skos:Concept",
       "id": "BusinessObjective",
       "section": "value",
@@ -789,7 +789,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/KPI",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/KPI",
       "@type": "skos:Concept",
       "id": "KPI",
       "section": "value",
@@ -824,7 +824,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Impact",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Impact",
       "@type": "skos:Concept",
       "id": "Impact",
       "section": "value",
@@ -860,7 +860,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Signal",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Signal",
       "@type": "skos:Concept",
       "id": "Signal",
       "section": "value",
@@ -896,7 +896,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Gap",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Gap",
       "@type": "skos:Concept",
       "id": "Gap",
       "section": "value",
@@ -932,7 +932,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Priority",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Priority",
       "@type": "skos:Concept",
       "id": "Priority",
       "section": "value",
@@ -968,7 +968,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Outcome",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Outcome",
       "@type": "skos:Concept",
       "id": "Outcome",
       "section": "value",
@@ -1004,7 +1004,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/DataNeed",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/DataNeed",
       "@type": "skos:Concept",
       "id": "DataNeed",
       "section": "value",
@@ -1040,7 +1040,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Benefit",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Benefit",
       "@type": "skos:Concept",
       "id": "Benefit",
       "section": "value",
@@ -1074,7 +1074,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Demand",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Demand",
       "@type": "skos:Concept",
       "id": "Demand",
       "section": "value",
@@ -1110,7 +1110,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Opportunity",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Opportunity",
       "@type": "skos:Concept",
       "id": "Opportunity",
       "section": "value",
@@ -1146,7 +1146,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/StrategicOpportunity",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/StrategicOpportunity",
       "@type": "skos:Concept",
       "id": "StrategicOpportunity",
       "section": "value",
@@ -1181,7 +1181,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/ProductStrategy",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/ProductStrategy",
       "@type": "skos:Concept",
       "id": "ProductStrategy",
       "section": "value",
@@ -1216,7 +1216,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Risk",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Risk",
       "@type": "skos:Concept",
       "id": "Risk",
       "section": "value",
@@ -1252,7 +1252,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/ValueProposition",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/ValueProposition",
       "@type": "skos:Concept",
       "id": "ValueProposition",
       "section": "value",
@@ -1288,7 +1288,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/PortfolioPriority",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/PortfolioPriority",
       "@type": "skos:Concept",
       "id": "PortfolioPriority",
       "section": "value",
@@ -1324,7 +1324,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/DataQuality",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/DataQuality",
       "@type": "skos:Concept",
       "id": "DataQuality",
       "section": "governance",
@@ -1361,7 +1361,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/SLA",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/SLA",
       "@type": "skos:Concept",
       "id": "SLA",
       "section": "governance",
@@ -1397,7 +1397,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/License",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/License",
       "@type": "skos:Concept",
       "id": "License",
       "section": "governance",
@@ -1440,7 +1440,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/DataAccess",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/DataAccess",
       "@type": "skos:Concept",
       "id": "DataAccess",
       "section": "governance",
@@ -1477,7 +1477,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/AccessMethod",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/AccessMethod",
       "@type": "skos:Concept",
       "id": "AccessMethod",
       "section": "governance",
@@ -1514,7 +1514,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/PricingPlan",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/PricingPlan",
       "@type": "skos:Concept",
       "id": "PricingPlan",
       "section": "governance",
@@ -1549,7 +1549,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/PaymentGateway",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/PaymentGateway",
       "@type": "skos:Concept",
       "id": "PaymentGateway",
       "section": "governance",
@@ -1584,7 +1584,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Support",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Support",
       "@type": "skos:Concept",
       "id": "Support",
       "section": "governance",
@@ -1619,7 +1619,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Agreement",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Agreement",
       "@type": "skos:Concept",
       "id": "Agreement",
       "section": "governance",
@@ -1656,7 +1656,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Policy",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Policy",
       "@type": "skos:Concept",
       "id": "Policy",
       "section": "governance",
@@ -1698,7 +1698,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/ComplianceRule",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/ComplianceRule",
       "@type": "skos:Concept",
       "id": "ComplianceRule",
       "section": "governance",
@@ -1735,7 +1735,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Sensitivity",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Sensitivity",
       "@type": "skos:Concept",
       "id": "Sensitivity",
       "section": "governance",
@@ -1771,7 +1771,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/UsageRights",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/UsageRights",
       "@type": "skos:Concept",
       "id": "UsageRights",
       "section": "governance",
@@ -1812,7 +1812,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Retention",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Retention",
       "@type": "skos:Concept",
       "id": "Retention",
       "section": "governance",
@@ -1848,7 +1848,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/AccessCondition",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/AccessCondition",
       "@type": "skos:Concept",
       "id": "AccessCondition",
       "section": "governance",
@@ -1885,7 +1885,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/GovernanceProfile",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/GovernanceProfile",
       "@type": "skos:Concept",
       "id": "GovernanceProfile",
       "section": "governance",
@@ -1921,7 +1921,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/DataAgreement",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/DataAgreement",
       "@type": "skos:Concept",
       "id": "DataAgreement",
       "section": "governance",
@@ -1957,7 +1957,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/DataContract",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/DataContract",
       "@type": "skos:Concept",
       "id": "DataContract",
       "section": "governance",
@@ -1992,7 +1992,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/Stewardship",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/Stewardship",
       "@type": "skos:Concept",
       "id": "Stewardship",
       "section": "governance",
@@ -2028,7 +2028,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/supports",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/supports",
       "@type": "skos:Concept",
       "id": "supports",
       "section": "relationships",
@@ -2062,7 +2062,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/requires",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/requires",
       "@type": "skos:Concept",
       "id": "requires",
       "section": "relationships",
@@ -2096,7 +2096,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/uses",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/uses",
       "@type": "skos:Concept",
       "id": "uses",
       "section": "relationships",
@@ -2135,7 +2135,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/contributesTo",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/contributesTo",
       "@type": "skos:Concept",
       "id": "contributesTo",
       "section": "relationships",
@@ -2169,7 +2169,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/measures",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/measures",
       "@type": "skos:Concept",
       "id": "measures",
       "section": "relationships",
@@ -2203,7 +2203,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/belongsTo",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/belongsTo",
       "@type": "skos:Concept",
       "id": "belongsTo",
       "section": "relationships",
@@ -2237,7 +2237,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/dependsOn",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/dependsOn",
       "@type": "skos:Concept",
       "id": "dependsOn",
       "section": "relationships",
@@ -2271,7 +2271,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/governedBy",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/governedBy",
       "@type": "skos:Concept",
       "id": "governedBy",
       "section": "relationships",
@@ -2306,7 +2306,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/providedBy",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/providedBy",
       "@type": "skos:Concept",
       "id": "providedBy",
       "section": "relationships",
@@ -2340,7 +2340,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/consumedBy",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/consumedBy",
       "@type": "skos:Concept",
       "id": "consumedBy",
       "section": "relationships",
@@ -2374,7 +2374,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/produces",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/produces",
       "@type": "skos:Concept",
       "id": "produces",
       "section": "relationships",
@@ -2408,7 +2408,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/consumes",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/consumes",
       "@type": "skos:Concept",
       "id": "consumes",
       "section": "relationships",
@@ -2442,7 +2442,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/indicates",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/indicates",
       "@type": "skos:Concept",
       "id": "indicates",
       "section": "relationships",
@@ -2478,7 +2478,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/identifies",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/identifies",
       "@type": "skos:Concept",
       "id": "identifies",
       "section": "relationships",
@@ -2512,7 +2512,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/relatedTo",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/relatedTo",
       "@type": "skos:Concept",
       "id": "relatedTo",
       "section": "relationships",
@@ -2546,7 +2546,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/ownedBy",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/ownedBy",
       "@type": "skos:Concept",
       "id": "ownedBy",
       "section": "relationships",
@@ -2580,7 +2580,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/alignsWith",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/alignsWith",
       "@type": "skos:Concept",
       "id": "alignsWith",
       "section": "relationships",
@@ -2614,7 +2614,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/partOf",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/partOf",
       "@type": "skos:Concept",
       "id": "partOf",
       "section": "relationships",
@@ -2648,7 +2648,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/hasPart",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/hasPart",
       "@type": "skos:Concept",
       "id": "hasPart",
       "section": "relationships",
@@ -2682,7 +2682,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/derivedFrom",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/derivedFrom",
       "@type": "skos:Concept",
       "id": "derivedFrom",
       "section": "relationships",
@@ -2721,7 +2721,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/impacts",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/impacts",
       "@type": "skos:Concept",
       "id": "impacts",
       "section": "relationships",
@@ -2755,7 +2755,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/exposes",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/exposes",
       "@type": "skos:Concept",
       "id": "exposes",
       "section": "relationships",
@@ -2789,7 +2789,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/replaces",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/replaces",
       "@type": "skos:Concept",
       "id": "replaces",
       "section": "relationships",
@@ -2823,7 +2823,7 @@
       }
     },
     {
-      "@id": "https://opendataproducts.org/odpv-v1.0/terms/versionOf",
+      "@id": "https://opendataproducts.org/odpv-v1.1/terms/versionOf",
       "@type": "skos:Concept",
       "id": "versionOf",
       "section": "relationships",

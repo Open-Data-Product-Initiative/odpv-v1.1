@@ -1,5 +1,5 @@
-schema: https://opendataproducts.org/odpv-v1.0/schema/odpv.schema.json
-version: 1.0.0
+schema: https://opendataproducts.org/odpv-v1.1/schema/odpv.schema.json
+version: 1.1.0
 id: ODPV
 name:
   en: Open Data Product Vocabulary
@@ -20,7 +20,7 @@ sections:
     en: Terms used to connect data products, catalogs, use cases, objectives, KPIs, signals, governance objects, and related portfolio items.
   terms:
   - id: supports
-    uri: https://opendataproducts.org/odpv-v1.0/terms/supports
+    uri: https://opendataproducts.org/odpv-v1.1/terms/supports
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -53,7 +53,7 @@ sections:
       - Customer Churn Risk Scores supports the Retention Campaign Optimization use case.
       - Use supports when one object helps enable, serve, or make another object possible.
   - id: requires
-    uri: https://opendataproducts.org/odpv-v1.0/terms/requires
+    uri: https://opendataproducts.org/odpv-v1.1/terms/requires
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -86,7 +86,7 @@ sections:
       - The Fraud Detection use case requires the Transaction Events DataProduct.
       - Use requires when one object needs another object to be complete, useful, or executable.
   - id: uses
-    uri: https://opendataproducts.org/odpv-v1.0/terms/uses
+    uri: https://opendataproducts.org/odpv-v1.1/terms/uses
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -124,7 +124,7 @@ sections:
       - A maintenance recommendation agent uses an aviation risk score data service.
       - Use uses when one object actively uses another object during execution or operation.
   - id: contributesTo
-    uri: https://opendataproducts.org/odpv-v1.0/terms/contributesTo
+    uri: https://opendataproducts.org/odpv-v1.1/terms/contributesTo
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -157,7 +157,7 @@ sections:
       - The Retention Campaign Optimization use case contributesTo the Reduce Churn business objective.
       - Use contributesTo when one object helps advance an objective, outcome, or impact.
   - id: measures
-    uri: https://opendataproducts.org/odpv-v1.0/terms/measures
+    uri: https://opendataproducts.org/odpv-v1.1/terms/measures
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -189,7 +189,7 @@ sections:
       - Monthly churn rate measures the Reduce Churn business objective.
       - Use measures when a KPI, signal, or metric tracks an objective, outcome, or impact.
   - id: belongsTo
-    uri: https://opendataproducts.org/odpv-v1.0/terms/belongsTo
+    uri: https://opendataproducts.org/odpv-v1.1/terms/belongsTo
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -221,7 +221,7 @@ sections:
       - The Customer Churn Risk Scores DataProduct belongsTo the Customer Analytics catalog.
       - Use belongsTo when one object is assigned to, grouped under, or included in another object.
   - id: dependsOn
-    uri: https://opendataproducts.org/odpv-v1.0/terms/dependsOn
+    uri: https://opendataproducts.org/odpv-v1.1/terms/dependsOn
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -254,7 +254,7 @@ sections:
       - The Churn Scores DataProduct dependsOn the Customer Profile Dataset.
       - Use dependsOn for operational, technical, or data dependencies between products, services, datasets, or use cases.
   - id: governedBy
-    uri: https://opendataproducts.org/odpv-v1.0/terms/governedBy
+    uri: https://opendataproducts.org/odpv-v1.1/terms/governedBy
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -289,7 +289,7 @@ sections:
       - The Customer Profile DataProduct is governedBy the Customer Data Access Policy.
       - Use governedBy when a product, dataset, service, or access method is subject to a policy, license, agreement, or compliance rule.
   - id: providedBy
-    uri: https://opendataproducts.org/odpv-v1.0/terms/providedBy
+    uri: https://opendataproducts.org/odpv-v1.1/terms/providedBy
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -321,7 +321,7 @@ sections:
       - The Transaction Events DataProduct is providedBy the Payments Data Platform team.
       - Use providedBy when an object is published, supplied, or made available by a provider or owner.
   - id: consumedBy
-    uri: https://opendataproducts.org/odpv-v1.0/terms/consumedBy
+    uri: https://opendataproducts.org/odpv-v1.1/terms/consumedBy
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -352,7 +352,7 @@ sections:
       - The Customer Features DataProduct is consumedBy the Personalization Model Training system.
       - Use consumedBy when an object is used, accessed, or received by a consumer.
   - id: produces
-    uri: https://opendataproducts.org/odpv-v1.0/terms/produces
+    uri: https://opendataproducts.org/odpv-v1.1/terms/produces
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -387,7 +387,7 @@ sections:
       - A scoring workflow produces a daily maintenance risk dataset.
       - Use produces when one object creates, generates, outputs, or makes another object available.
   - id: consumes
-    uri: https://opendataproducts.org/odpv-v1.0/terms/consumes
+    uri: https://opendataproducts.org/odpv-v1.1/terms/consumes
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -422,7 +422,7 @@ sections:
       - A recommendation agent consumes telemetry datasets and a risk score data service.
       - Use consumes for active consumption of data, services, outputs, or interfaces.
   - id: indicates
-    uri: https://opendataproducts.org/odpv-v1.0/terms/indicates
+    uri: https://opendataproducts.org/odpv-v1.1/terms/indicates
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -457,7 +457,7 @@ sections:
       - A rising support ticket trend indicates a Gap in product usage data.
       - Use indicates when a signal, KPI, or observation points to a gap, demand, risk, or opportunity.
   - id: identifies
-    uri: https://opendataproducts.org/odpv-v1.0/terms/identifies
+    uri: https://opendataproducts.org/odpv-v1.1/terms/identifies
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -492,7 +492,7 @@ sections:
       - A maintenance analytics agent identifies a StrategicOpportunity to reduce unscheduled maintenance.
       - Use identifies when one object discovers or names an opportunity, condition, gap, or risk.
   - id: relatedTo
-    uri: https://opendataproducts.org/odpv-v1.0/terms/relatedTo
+    uri: https://opendataproducts.org/odpv-v1.1/terms/relatedTo
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -527,7 +527,7 @@ sections:
       - The Customer Profile DataProduct is relatedTo the Customer Segmentation UseCase.
       - Use relatedTo only when a more specific relationship type is not available.
   - id: ownedBy
-    uri: https://opendataproducts.org/odpv-v1.0/terms/ownedBy
+    uri: https://opendataproducts.org/odpv-v1.1/terms/ownedBy
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -563,7 +563,7 @@ sections:
       - The maintenance risk score data service is ownedBy the aviation analytics domain.
       - Use ownedBy when a graph object has an accountable owner, domain, team, or capability.
   - id: alignsWith
-    uri: https://opendataproducts.org/odpv-v1.0/terms/alignsWith
+    uri: https://opendataproducts.org/odpv-v1.1/terms/alignsWith
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -598,7 +598,7 @@ sections:
       - A predictive maintenance capability alignsWith the reduce unscheduled maintenance business objective.
       - Use alignsWith for strategic, semantic, organizational, or capability alignment.
   - id: partOf
-    uri: https://opendataproducts.org/odpv-v1.0/terms/partOf
+    uri: https://opendataproducts.org/odpv-v1.1/terms/partOf
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -631,7 +631,7 @@ sections:
       - A customer address Dataset is partOf the Customer Profile DataProduct.
       - Use partOf when one object is a component or member of a larger object.
   - id: hasPart
-    uri: https://opendataproducts.org/odpv-v1.0/terms/hasPart
+    uri: https://opendataproducts.org/odpv-v1.1/terms/hasPart
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -664,7 +664,7 @@ sections:
       - The Customer Profile DataProduct hasPart the Customer Address Dataset.
       - Use hasPart when one object contains or includes another object.
   - id: derivedFrom
-    uri: https://opendataproducts.org/odpv-v1.0/terms/derivedFrom
+    uri: https://opendataproducts.org/odpv-v1.1/terms/derivedFrom
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -700,7 +700,7 @@ sections:
       - The Churn Score Dataset is derivedFrom customer events and subscription history datasets.
       - Use derivedFrom when an object is based on, sourced from, generated from, or created from another object.
   - id: impacts
-    uri: https://opendataproducts.org/odpv-v1.0/terms/impacts
+    uri: https://opendataproducts.org/odpv-v1.1/terms/impacts
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -735,7 +735,7 @@ sections:
       - A delayed data refresh policy impacts a fraud detection use case.
       - Use impacts when one object affects or influences a use case, metric, objective, or outcome.
   - id: exposes
-    uri: https://opendataproducts.org/odpv-v1.0/terms/exposes
+    uri: https://opendataproducts.org/odpv-v1.1/terms/exposes
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -769,7 +769,7 @@ sections:
       - The maintenance risk data product exposes a REST API represented as a DataService.
       - Use exposes when one object makes an interface, endpoint, access method, or data service available.
   - id: replaces
-    uri: https://opendataproducts.org/odpv-v1.0/terms/replaces
+    uri: https://opendataproducts.org/odpv-v1.1/terms/replaces
     type: relationship
     status: stable
     introducedIn: 1.0.0
@@ -802,7 +802,7 @@ sections:
       - Customer Churn Scores v2 replaces the legacy churn scoring product.
       - Use replaces when a newer product, dataset, service, or version supersedes an older one.
   - id: versionOf
-    uri: https://opendataproducts.org/odpv-v1.0/terms/versionOf
+    uri: https://opendataproducts.org/odpv-v1.1/terms/versionOf
     type: relationship
     status: stable
     introducedIn: 1.0.0

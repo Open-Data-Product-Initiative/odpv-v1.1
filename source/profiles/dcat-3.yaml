@@ -5,8 +5,8 @@ version: 0.1.0
 status: draft
 vocabulary:
   id: ODPV
-  version: 1.0.0
-  baseUri: https://opendataproducts.org/odpv-v1.0/
+  version: 1.1.0
+  baseUri: https://opendataproducts.org/odpv-v1.1/
 externalStandard:
   name: Data Catalog Vocabulary
   version: '3'

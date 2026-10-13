@@ -19,12 +19,12 @@ JSONLD_CONTEXT = {
     "id": "https://schema.org/identifier",
     "uri": "@id",
     "type": "@type",
-    "section": "https://opendataproducts.org/odpv-v1.0/schema/section",
+    "section": "https://opendataproducts.org/odpv-v1.1/schema/section",
     "preferredLabel": "skos:prefLabel",
     "definition": "skos:definition",
     "alsoKnownAs": "skos:altLabel",
     "relatedTerms": "skos:related",
-    "usedIn": "https://opendataproducts.org/odpv-v1.0/schema/usedIn",
+    "usedIn": "https://opendataproducts.org/odpv-v1.1/schema/usedIn",
     "examples": "skos:example",
     "mappings": "skos:mappingRelation",
     "exactMatch": "skos:exactMatch",
@@ -145,7 +145,7 @@ def build_jsonld(data: dict[str, Any]) -> str:
     return dump_json(
         {
             "@context": JSONLD_CONTEXT,
-            "@id": "https://opendataproducts.org/odpv-v1.0/",
+            "@id": "https://opendataproducts.org/odpv-v1.1/",
             "@type": "skos:ConceptScheme",
             "id": data["id"],
             "version": data["version"],
@@ -184,7 +184,7 @@ def build_skos_ttl(data: dict[str, Any]) -> str:
     lines.extend(
         [
             "",
-            "<https://opendataproducts.org/odpv-v1.0/> a skos:ConceptScheme ;",
+            "<https://opendataproducts.org/odpv-v1.1/> a skos:ConceptScheme ;",
             f"  skos:prefLabel {turtle_lang_literal(data['name']['en'], 'en')} ;",
             f"  skos:definition {turtle_lang_literal(data['description']['en'], 'en')} .",
             "",
@@ -194,7 +194,7 @@ def build_skos_ttl(data: dict[str, Any]) -> str:
     for section, term in iter_terms(data):
         statements = [
             f"<{term['uri']}> a skos:Concept",
-            "  skos:inScheme <https://opendataproducts.org/odpv-v1.0/>",
+            "  skos:inScheme <https://opendataproducts.org/odpv-v1.1/>",
             f"  skos:prefLabel {turtle_lang_literal(term['preferredLabel']['en'], 'en')}",
             f"  skos:definition {turtle_lang_literal(term['definition']['en'], 'en')}",
             f"  skos:notation {turtle_literal(term['id'])}",

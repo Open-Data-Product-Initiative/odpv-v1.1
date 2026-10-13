@@ -12,14 +12,14 @@ Each term has one canonical ODPV name. Also known as terms help users map famili
 
 ```yml
 id: DataQuality
-uri: https://opendataproducts.org/odpv-v1.0/terms/DataQuality
+uri: https://opendataproducts.org/odpv-v1.1/terms/DataQuality
 type: object
 status: stable
 introducedIn: 1.0.0
 preferredLabel:
   en: Data Quality
 definition:
-  en: The expected, measured, or reported quality of a data product, 
+  en: The expected, measured, or reported quality of a data product,
       dataset, distribution, or data service.
 alsoKnownAs:
   en:
@@ -60,4 +60,4 @@ usedIn:
 | `DataContract`      | object         | A technical or operational contract that defines expectations for schema, quality, delivery, compatibility, and change management.                                              | schema contract, delivery contract, operational contract, technical contract             | `DataQuality`, `SLA`, `AccessMethod`, `Stewardship`                     | ODPS             |
 | `Stewardship`       | object         | The assigned responsibility model for managing data product metadata, quality, lifecycle, and operational health.                                                               | data stewardship, product stewardship, metadata stewardship, lifecycle responsibility    | `Steward`, `Owner`, `DataQuality`, `GovernanceProfile`                  | ODPS, ODPC       |
 
-[Suggest addition to the vocabulary](https://github.com/Open-Data-Product-Initiative/odpv-v1.0/issues) 
+[Suggest addition to the vocabulary](https://github.com/Open-Data-Product-Initiative/odpv-v1.1/issues)

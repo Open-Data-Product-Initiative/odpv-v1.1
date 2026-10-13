@@ -1,5 +1,5 @@
 ---
-title: Open Data Product Vocab (ODPV) version 1.0 | Linux Foundation 
+title: Open Data Product Vocab (ODPV) version 1.1 | Linux Foundation
 
 language_tabs: # must be one of https://git.io/vQNgJ
 - yaml
@@ -28,7 +28,7 @@ code_clipboard: true
 
 meta:
   - name: description
-    content: Open Data Product Vocabulary (ODPV) version 1.0 is a vendor-neutral, open-source, machine-readable controlled vocabulary for data product management.
+    content: Open Data Product Vocabulary (ODPV) version 1.1 is a vendor-neutral, open-source, machine-readable controlled vocabulary for data product management.
   - name: llms
     content: /llms.txt
   - name: ai-agent-guidance
@@ -37,17 +37,17 @@ meta:
 
 # OPEN DATA PRODUCT VOCABULARY - The Linux Foundation
 
-## Version 1.0
+## Version 1.1
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “NOT RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in BCP 14 ([RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) and [RFC 8174](https://datatracker.ietf.org/doc/html/rfc8174)) when, and only when, they appear in all capitals, as shown here.
 
-The vocabulary is shared under <a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a> license. 
-Development of the vocabulary is under the umbrella of the Linux Foundation. 
+The vocabulary is shared under <a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a> license.
+Development of the vocabulary is under the umbrella of the Linux Foundation.
 
 | Topic | Link | Description |
 |---|---|---|
-| Version source | <a href="https://github.com/Open-Data-Product-Initiative/odpv-v1.0">Open Data Products Vocab on GitHub</a> | Official source repository for the ODPV vocabulary |
+| Version source | <a href="https://github.com/Open-Data-Product-Initiative/odpv-v1.1">Open Data Products Vocab on GitHub</a> | Official source repository for the ODPV vocabulary |
 | Knowledge Base | [Open Data Product Spec Family Knowledge Base](https://opendataproducts.org/howto/) | Practical examples, FAQs, and implementation guidance |
-| Contribute | [Raise an issue in GitHub](https://github.com/Open-Data-Product-Initiative/odpv-v1.0/issues) | Submit issues or suggestions to the vocabulary maintainers |
+| Contribute | [Raise an issue in GitHub](https://github.com/Open-Data-Product-Initiative/odpv-v1.1/issues) | Submit issues or suggestions to the vocabulary maintainers |
 
 # Introduction
 The Open Data Product Vocabulary, ODPV, is a vendor-neutral, open-source, machine-readable controlled vocabulary for data product management. ODPV defines shared terms used across the OpenDataProducts.org standards family, including data products, catalogs, graphs, value concepts, governance concepts, and relationship terms. It is designed to help organizations use consistent language across specifications, catalogs, graph implementations, AI assistants, and GraphRAG-ready data product portfolios.
@@ -77,7 +77,7 @@ These groups create a common language for describing, connecting, validating, an
 | ODPV Relationships | Relationship terms for graphs, portfolio analysis, and cross-spec linking | 24 |
 | Total | Shared vocabulary terms | 78 |
 
-[Suggest addition to the vocabulary](https://github.com/Open-Data-Product-Initiative/odpv-v1.0/issues) 
+[Suggest addition to the vocabulary](https://github.com/Open-Data-Product-Initiative/odpv-v1.1/issues)
 
 ## Machine-Readable Vocabulary Resources
 
@@ -144,7 +144,7 @@ ODPV helps prevent terminology drift across the standards family. Without a shar
 
 ODPV includes automated cross-spec drift detection for the Open Data Product standards family. A weekly GitHub Action fetches the published ODPS, ODPC, and ODPG schemas, compares their schema terms against the canonical ODPV vocabulary, and writes a dated report.
 
-Reports are kept in [`cross-spec-drift/`](https://github.com/Open-Data-Product-Initiative/odpv-v1.0/tree/main/cross-spec-drift) so the project can track how alignment changes over time and use the historical reports as input for later analysis.
+Reports are kept in [`cross-spec-drift/`](https://github.com/Open-Data-Product-Initiative/odpv-v1.1/tree/main/cross-spec-drift) so the project can track how alignment changes over time and use the historical reports as input for later analysis.
 
 ## Example Use
 

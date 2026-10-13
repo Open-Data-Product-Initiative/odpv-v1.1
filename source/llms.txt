@@ -3,13 +3,13 @@
 ODPV is a controlled vocabulary for the OpenDataProducts.org standards family. It defines stable terms, labels, definitions, concept groups, relationship names, and related-term links used across ODPS, ODPC, and ODPG.
 
 Current release:
-- ODPV version 1.0.0
+- ODPV version 1.1.0
 
 Base URL:
-- https://opendataproducts.org/odpv-v1.0
+- https://opendataproducts.org/odpv-v1.1
 
 Human-readable specification:
-- / (https://opendataproducts.org/odpv-v1.0/)
+- / (https://opendataproducts.org/odpv-v1.1/)
 - The "Vocabulary Toolkit for Tools and AI Agents" section lists the Open Data Product Agent SDK, published resource files, validation schema, and source helper scripts.
 
 Main standards-family SDK:
@@ -23,31 +23,31 @@ Standards-family context:
 - ODPV does not replace ODPS, ODPC, or ODPG. It provides stable ids, labels, definitions, and relationship names that those specifications can reference.
 
 Canonical vocabulary files:
-- /vocab/odpv.yaml (https://opendataproducts.org/odpv-v1.0/vocab/odpv.yaml)
-- /vocab/odpv.json (https://opendataproducts.org/odpv-v1.0/vocab/odpv.json)
-- /vocab/odpv.jsonld (https://opendataproducts.org/odpv-v1.0/vocab/odpv.jsonld)
-- /vocab/odpv.skos.ttl (https://opendataproducts.org/odpv-v1.0/vocab/odpv.skos.ttl)
+- /vocab/odpv.yaml (https://opendataproducts.org/odpv-v1.1/vocab/odpv.yaml)
+- /vocab/odpv.json (https://opendataproducts.org/odpv-v1.1/vocab/odpv.json)
+- /vocab/odpv.jsonld (https://opendataproducts.org/odpv-v1.1/vocab/odpv.jsonld)
+- /vocab/odpv.skos.ttl (https://opendataproducts.org/odpv-v1.1/vocab/odpv.skos.ttl)
 
 Section vocabulary files:
-- /vocab/core.yaml (https://opendataproducts.org/odpv-v1.0/vocab/core.yaml)
-- /vocab/value.yaml (https://opendataproducts.org/odpv-v1.0/vocab/value.yaml)
-- /vocab/governance.yaml (https://opendataproducts.org/odpv-v1.0/vocab/governance.yaml)
-- /vocab/relationships.yaml (https://opendataproducts.org/odpv-v1.0/vocab/relationships.yaml)
+- /vocab/core.yaml (https://opendataproducts.org/odpv-v1.1/vocab/core.yaml)
+- /vocab/value.yaml (https://opendataproducts.org/odpv-v1.1/vocab/value.yaml)
+- /vocab/governance.yaml (https://opendataproducts.org/odpv-v1.1/vocab/governance.yaml)
+- /vocab/relationships.yaml (https://opendataproducts.org/odpv-v1.1/vocab/relationships.yaml)
 
 Agent-friendly vocabulary file:
-- /vocab/terms.jsonl (https://opendataproducts.org/odpv-v1.0/vocab/terms.jsonl)
+- /vocab/terms.jsonl (https://opendataproducts.org/odpv-v1.1/vocab/terms.jsonl)
 
 Validation schema:
-- /schema/odpv.schema.json (https://opendataproducts.org/odpv-v1.0/schema/odpv.schema.json)
+- /schema/odpv.schema.json (https://opendataproducts.org/odpv-v1.1/schema/odpv.schema.json)
 
 Interoperability profiles:
-- Profile format and governance: /profiles/README.md (https://opendataproducts.org/odpv-v1.0/profiles/README.md)
-- Profile validation schema: /schema/odpv.profile.schema.json (https://opendataproducts.org/odpv-v1.0/schema/odpv.profile.schema.json)
-- ODPV to DCAT 3: /profiles/dcat-3.yaml (https://opendataproducts.org/odpv-v1.0/profiles/dcat-3.yaml)
-- ODPV to ODCS 3: /profiles/odcs-3.yaml (https://opendataproducts.org/odpv-v1.0/profiles/odcs-3.yaml)
-- ODPV to OpenLineage: /profiles/openlineage-1.yaml (https://opendataproducts.org/odpv-v1.0/profiles/openlineage-1.yaml)
-- ODPV to PROV-O: /profiles/prov-o.yaml (https://opendataproducts.org/odpv-v1.0/profiles/prov-o.yaml)
-- ODPV to ODRL 2: /profiles/odrl-2.yaml (https://opendataproducts.org/odpv-v1.0/profiles/odrl-2.yaml)
+- Profile format and governance: /profiles/README.md (https://opendataproducts.org/odpv-v1.1/profiles/README.md)
+- Profile validation schema: /schema/odpv.profile.schema.json (https://opendataproducts.org/odpv-v1.1/schema/odpv.profile.schema.json)
+- ODPV to DCAT 3: /profiles/dcat-3.yaml (https://opendataproducts.org/odpv-v1.1/profiles/dcat-3.yaml)
+- ODPV to ODCS 3: /profiles/odcs-3.yaml (https://opendataproducts.org/odpv-v1.1/profiles/odcs-3.yaml)
+- ODPV to OpenLineage: /profiles/openlineage-1.yaml (https://opendataproducts.org/odpv-v1.1/profiles/openlineage-1.yaml)
+- ODPV to PROV-O: /profiles/prov-o.yaml (https://opendataproducts.org/odpv-v1.1/profiles/prov-o.yaml)
+- ODPV to ODRL 2: /profiles/odrl-2.yaml (https://opendataproducts.org/odpv-v1.1/profiles/odrl-2.yaml)
 
 Agent-oriented source scripts:
 - scripts/generate_vocab_artifacts.py regenerates derived vocabulary artifacts from canonical source/vocab/odpv.yaml, including JSON, JSON-LD, SKOS Turtle, JSONL, and section YAML. Use `python3 scripts/generate_vocab_artifacts.py --check` to detect drift.
@@ -115,7 +115,7 @@ Graph relationship guidance:
 - ODPV defines relationship names and meanings. ODPG defines graph structures and how relationships are used in graph files.
 
 Suggesting new terms:
-- If a useful shared term appears to be missing from ODPV, suggest it through GitHub issues: https://github.com/Open-Data-Product-Initiative/odpv-v1.0/issues
+- If a useful shared term appears to be missing from ODPV, suggest it through GitHub issues: https://github.com/Open-Data-Product-Initiative/odpv-v1.1/issues
 - Include the proposed term id, preferred label, definition, concept group, related terms, and example usage when possible.
 
 When selecting terms:

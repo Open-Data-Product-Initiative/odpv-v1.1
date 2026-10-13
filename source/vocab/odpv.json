@@ -1,6 +1,6 @@
 {
-  "schema": "https://opendataproducts.org/odpv-v1.0/schema/odpv.schema.json",
-  "version": "1.0.0",
+  "schema": "https://opendataproducts.org/odpv-v1.1/schema/odpv.schema.json",
+  "version": "1.1.0",
   "id": "ODPV",
   "name": {
     "en": "Open Data Product Vocabulary"
@@ -29,7 +29,7 @@
       "terms": [
         {
           "id": "DataProduct",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/DataProduct",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/DataProduct",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -66,7 +66,7 @@
         },
         {
           "id": "ProductDetails",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/ProductDetails",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/ProductDetails",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -102,7 +102,7 @@
         },
         {
           "id": "DataProductCatalog",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/DataProductCatalog",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/DataProductCatalog",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -147,7 +147,7 @@
         },
         {
           "id": "DataProductGraph",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/DataProductGraph",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/DataProductGraph",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -182,7 +182,7 @@
         },
         {
           "id": "Dataset",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Dataset",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Dataset",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -224,7 +224,7 @@
         },
         {
           "id": "Distribution",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Distribution",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Distribution",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -267,7 +267,7 @@
         },
         {
           "id": "DataService",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/DataService",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/DataService",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -311,7 +311,7 @@
         },
         {
           "id": "Agent",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Agent",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Agent",
           "type": "role",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -351,7 +351,7 @@
         },
         {
           "id": "Workflow",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Workflow",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Workflow",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -391,7 +391,7 @@
         },
         {
           "id": "Capability",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Capability",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Capability",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -426,7 +426,7 @@
         },
         {
           "id": "Provider",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Provider",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Provider",
           "type": "role",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -463,7 +463,7 @@
         },
         {
           "id": "DataHolder",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/DataHolder",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/DataHolder",
           "type": "role",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -499,7 +499,7 @@
         },
         {
           "id": "Consumer",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Consumer",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Consumer",
           "type": "role",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -537,7 +537,7 @@
         },
         {
           "id": "Owner",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Owner",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Owner",
           "type": "role",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -573,7 +573,7 @@
         },
         {
           "id": "Steward",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Steward",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Steward",
           "type": "role",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -609,7 +609,7 @@
         },
         {
           "id": "Domain",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Domain",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Domain",
           "type": "classification",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -646,7 +646,7 @@
         },
         {
           "id": "Identifier",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Identifier",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Identifier",
           "type": "reference",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -683,7 +683,7 @@
         },
         {
           "id": "Reference",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Reference",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Reference",
           "type": "reference",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -740,7 +740,7 @@
       "terms": [
         {
           "id": "UseCase",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/UseCase",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/UseCase",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -777,7 +777,7 @@
         },
         {
           "id": "BusinessObjective",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/BusinessObjective",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/BusinessObjective",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -814,7 +814,7 @@
         },
         {
           "id": "KPI",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/KPI",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/KPI",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -850,7 +850,7 @@
         },
         {
           "id": "Impact",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Impact",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Impact",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -887,7 +887,7 @@
         },
         {
           "id": "Signal",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Signal",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Signal",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -924,7 +924,7 @@
         },
         {
           "id": "Gap",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Gap",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Gap",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -961,7 +961,7 @@
         },
         {
           "id": "Priority",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Priority",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Priority",
           "type": "classification",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -998,7 +998,7 @@
         },
         {
           "id": "Outcome",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Outcome",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Outcome",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1035,7 +1035,7 @@
         },
         {
           "id": "DataNeed",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/DataNeed",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/DataNeed",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1072,7 +1072,7 @@
         },
         {
           "id": "Benefit",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Benefit",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Benefit",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1107,7 +1107,7 @@
         },
         {
           "id": "Demand",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Demand",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Demand",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1144,7 +1144,7 @@
         },
         {
           "id": "Opportunity",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Opportunity",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Opportunity",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1181,7 +1181,7 @@
         },
         {
           "id": "StrategicOpportunity",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/StrategicOpportunity",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/StrategicOpportunity",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1217,7 +1217,7 @@
         },
         {
           "id": "ProductStrategy",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/ProductStrategy",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/ProductStrategy",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1253,7 +1253,7 @@
         },
         {
           "id": "Risk",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Risk",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Risk",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1290,7 +1290,7 @@
         },
         {
           "id": "ValueProposition",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/ValueProposition",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/ValueProposition",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1327,7 +1327,7 @@
         },
         {
           "id": "PortfolioPriority",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/PortfolioPriority",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/PortfolioPriority",
           "type": "classification",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1375,7 +1375,7 @@
       "terms": [
         {
           "id": "DataQuality",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/DataQuality",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/DataQuality",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1413,7 +1413,7 @@
         },
         {
           "id": "SLA",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/SLA",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/SLA",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1450,7 +1450,7 @@
         },
         {
           "id": "License",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/License",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/License",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1494,7 +1494,7 @@
         },
         {
           "id": "DataAccess",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/DataAccess",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/DataAccess",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1532,7 +1532,7 @@
         },
         {
           "id": "AccessMethod",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/AccessMethod",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/AccessMethod",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1570,7 +1570,7 @@
         },
         {
           "id": "PricingPlan",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/PricingPlan",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/PricingPlan",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1606,7 +1606,7 @@
         },
         {
           "id": "PaymentGateway",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/PaymentGateway",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/PaymentGateway",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1642,7 +1642,7 @@
         },
         {
           "id": "Support",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Support",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Support",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1678,7 +1678,7 @@
         },
         {
           "id": "Agreement",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Agreement",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Agreement",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1716,7 +1716,7 @@
         },
         {
           "id": "Policy",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Policy",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Policy",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1759,7 +1759,7 @@
         },
         {
           "id": "ComplianceRule",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/ComplianceRule",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/ComplianceRule",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1797,7 +1797,7 @@
         },
         {
           "id": "Sensitivity",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Sensitivity",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Sensitivity",
           "type": "classification",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1834,7 +1834,7 @@
         },
         {
           "id": "UsageRights",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/UsageRights",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/UsageRights",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1876,7 +1876,7 @@
         },
         {
           "id": "Retention",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Retention",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Retention",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1913,7 +1913,7 @@
         },
         {
           "id": "AccessCondition",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/AccessCondition",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/AccessCondition",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1951,7 +1951,7 @@
         },
         {
           "id": "GovernanceProfile",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/GovernanceProfile",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/GovernanceProfile",
           "type": "classification",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -1988,7 +1988,7 @@
         },
         {
           "id": "DataAgreement",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/DataAgreement",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/DataAgreement",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2025,7 +2025,7 @@
         },
         {
           "id": "DataContract",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/DataContract",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/DataContract",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2061,7 +2061,7 @@
         },
         {
           "id": "Stewardship",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/Stewardship",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/Stewardship",
           "type": "object",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2109,7 +2109,7 @@
       "terms": [
         {
           "id": "supports",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/supports",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/supports",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2154,7 +2154,7 @@
         },
         {
           "id": "requires",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/requires",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/requires",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2199,7 +2199,7 @@
         },
         {
           "id": "uses",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/uses",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/uses",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2251,7 +2251,7 @@
         },
         {
           "id": "contributesTo",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/contributesTo",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/contributesTo",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2296,7 +2296,7 @@
         },
         {
           "id": "measures",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/measures",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/measures",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2340,7 +2340,7 @@
         },
         {
           "id": "belongsTo",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/belongsTo",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/belongsTo",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2384,7 +2384,7 @@
         },
         {
           "id": "dependsOn",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/dependsOn",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/dependsOn",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2429,7 +2429,7 @@
         },
         {
           "id": "governedBy",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/governedBy",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/governedBy",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2476,7 +2476,7 @@
         },
         {
           "id": "providedBy",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/providedBy",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/providedBy",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2520,7 +2520,7 @@
         },
         {
           "id": "consumedBy",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/consumedBy",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/consumedBy",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2563,7 +2563,7 @@
         },
         {
           "id": "produces",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/produces",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/produces",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2610,7 +2610,7 @@
         },
         {
           "id": "consumes",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/consumes",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/consumes",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2657,7 +2657,7 @@
         },
         {
           "id": "indicates",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/indicates",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/indicates",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2704,7 +2704,7 @@
         },
         {
           "id": "identifies",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/identifies",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/identifies",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2751,7 +2751,7 @@
         },
         {
           "id": "relatedTo",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/relatedTo",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/relatedTo",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2798,7 +2798,7 @@
         },
         {
           "id": "ownedBy",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/ownedBy",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/ownedBy",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2846,7 +2846,7 @@
         },
         {
           "id": "alignsWith",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/alignsWith",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/alignsWith",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2893,7 +2893,7 @@
         },
         {
           "id": "partOf",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/partOf",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/partOf",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2938,7 +2938,7 @@
         },
         {
           "id": "hasPart",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/hasPart",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/hasPart",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -2983,7 +2983,7 @@
         },
         {
           "id": "derivedFrom",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/derivedFrom",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/derivedFrom",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -3033,7 +3033,7 @@
         },
         {
           "id": "impacts",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/impacts",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/impacts",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -3080,7 +3080,7 @@
         },
         {
           "id": "exposes",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/exposes",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/exposes",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -3126,7 +3126,7 @@
         },
         {
           "id": "replaces",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/replaces",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/replaces",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",
@@ -3171,7 +3171,7 @@
         },
         {
           "id": "versionOf",
-          "uri": "https://opendataproducts.org/odpv-v1.0/terms/versionOf",
+          "uri": "https://opendataproducts.org/odpv-v1.1/terms/versionOf",
           "type": "relationship",
           "status": "stable",
           "introducedIn": "1.0.0",

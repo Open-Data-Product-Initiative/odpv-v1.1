@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://opendataproducts.org/odpv-v1.0/schema/odpv.schema.json",
+  "$id": "https://opendataproducts.org/odpv-v1.1/schema/odpv.schema.json",
   "title": "Open Data Product Vocabulary Schema",
   "description": "JSON Schema for validating the Open Data Product Vocabulary, ODPV.",
   "type": "object",
