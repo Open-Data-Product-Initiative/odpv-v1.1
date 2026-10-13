@@ -924,12 +924,24 @@ Use ODPV term ids and uris for stable shared concepts, labels, definitions, alia
 <li>Do not edit generated vocabulary artifacts directly when changing official vocabulary content; update <code>source/vocab/odpv.yaml</code> first and regenerate derived files.</li>
 </ul>
 <h2 id='example-prompts-odpv-enables'>Example prompts ODPV enables</h2><div class="highlight"><pre class="highlight plaintext"><code>Find the best ODPV term for "data API" and return the stable id and uri.
-</code></pre></div><div class="highlight"><pre class="highlight plaintext"><code>Map these internal catalog labels to ODPV preferred terms and explain uncertain matches.
-</code></pre></div><div class="highlight"><pre class="highlight plaintext"><code>Choose ODPV relationship terms for these graph edges and avoid generic relationships where possible.
-</code></pre></div><div class="highlight"><pre class="highlight plaintext"><code>Validate this ODPV vocabulary file and suggest schema-compliant repairs.
-</code></pre></div><div class="highlight"><pre class="highlight plaintext"><code>Identify terminology drift between this ODPC catalog and the official ODPV terms.
-</code></pre></div><div class="highlight"><pre class="highlight plaintext"><code>Propose an ODPV extension term for a missing domain-specific concept.
-</code></pre></div><h1 id='term-governance-rules'>Term Governance Rules</h1>
+</code></pre></div>
+<p>Use this to resolve source language to one canonical ODPV term before creating or editing metadata.</p>
+<div class="highlight"><pre class="highlight plaintext"><code>Map these internal catalog labels to ODPV preferred terms and explain uncertain matches.
+</code></pre></div>
+<p>Use this to align local catalog language while preserving uncertainty that needs human review.</p>
+<div class="highlight"><pre class="highlight plaintext"><code>Choose ODPV relationship terms for these graph edges and avoid generic relationships where possible.
+</code></pre></div>
+<p>Use this to create graph edges that carry a specific business or operational meaning instead of defaulting to <code>relatedTo</code>.</p>
+<div class="highlight"><pre class="highlight plaintext"><code>Validate this ODPV vocabulary file and suggest schema-compliant repairs.
+</code></pre></div>
+<p>Use this to catch malformed vocabulary content before it becomes a published or generated artifact.</p>
+<div class="highlight"><pre class="highlight plaintext"><code>Identify terminology drift between this ODPC catalog and the official ODPV terms.
+</code></pre></div>
+<p>Use this to find catalog concepts that need alignment, clarification, or an extension decision.</p>
+<div class="highlight"><pre class="highlight plaintext"><code>Propose an ODPV extension term for a missing domain-specific concept.
+</code></pre></div>
+<p>Use this to prepare a governed extension proposal without inventing a new official ODPV term.</p>
+<h1 id='term-governance-rules'>Term Governance Rules</h1>
 <p>ODPV is a shared vocabulary, not a catch-all list of every field used by every specification. New terms should be added when they improve shared understanding across the Open Data Products standards family or when they provide a stable bridge between specifications, tools, catalogs, graphs, and AI agents.</p>
 
 <p>Use these rules when reviewing drift reports, GitHub issues, pull requests, or proposed vocabulary additions.</p>
