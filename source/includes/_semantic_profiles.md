@@ -18,15 +18,15 @@ The common [profile schema](/schema/odpv.profile.schema.json) and [profile gover
 
 Mappings matter only when a data product crosses a system boundary. Inside a purely ODPV-based portfolio, they add little value.
 
-| Use case | Profile | What the mapping enables |
-| --- | --- | --- |
-| Federated discovery | DCAT | Publish a product’s datasets, distributions, services, themes, licenses, access, and provider metadata into catalog portals without renaming ODPV concepts. |
-| Contract implementation | ODCS | Connect ODPV concepts such as Data Quality, SLA, retention, pricing, support, and access to executable contract sections. |
-| Lineage and impact analysis | OpenLineage | Connect declared product dependencies to observed jobs, inputs, outputs, versions, and quality-test evidence. |
-| Audit and traceability | PROV-O | Explain which activities, agents, source entities, and revisions produced an output. |
-| Controlled sharing | ODRL | Express who may access a product or dataset, under which permission, prohibition, duty, or condition. |
-| Tool interoperability | All profiles | Let an SDK transform, validate, or query an ODPV model without every catalog, contract, and lineage adapter inventing its own terminology. |
-| AI retrieval and explanation | All profiles | Give an agent grounded answers such as “this data product is cataloged here, governed by this policy, contracted here, and produced by these observed jobs.” |
+| Use case | Profile | Mappings | What the mapping enables |
+| --- | --- | ---: | --- |
+| Federated discovery | DCAT | 17 | Publish a product’s datasets, distributions, services, themes, licenses, access, and provider metadata into catalog portals without renaming ODPV concepts. |
+| Contract implementation | ODCS | 15 | Connect ODPV concepts such as Data Quality, SLA, retention, pricing, support, and access to executable contract sections. |
+| Lineage and impact analysis | OpenLineage | 10 | Connect declared product dependencies to observed jobs, inputs, outputs, versions, and quality-test evidence. |
+| Audit and traceability | PROV-O | 10 | Explain which activities, agents, source entities, and revisions produced an output. |
+| Controlled sharing | ODRL | 11 | Express who may access a product or dataset, under which permission, prohibition, duty, or condition. |
+| Tool interoperability | All profiles | 63 total | Let an SDK transform, validate, or query an ODPV model without every catalog, contract, and lineage adapter inventing its own terminology. |
+| AI retrieval and explanation | All profiles | 63 total | Give an agent grounded answers such as “this data product is cataloged here, governed by this policy, contracted here, and produced by these observed jobs.” |
 
 ## Mapping Types
 
