@@ -4,13 +4,13 @@ ODPV interoperability profiles connect the shared vocabulary to established exte
 
 The initial profiles are **draft** semantic artifacts. They are ready for implementation feedback, but a mapping becomes stable only after maintainers review its meaning, examples, and SDK conformance support together.
 
-| Profile | External standard | Intended role |
+| Profile | External standard | Intended role and example |
 | --- | --- | --- |
-| [`ODPV-DCAT-3`](/profiles/dcat-3.yaml) | [DCAT 3](https://www.w3.org/TR/vocab-dcat-3/) | Catalog discovery and federation |
-| [`ODPV-ODCS-3`](/profiles/odcs-3.yaml) | [Open Data Contract Standard](https://bitol-io.github.io/open-data-contract-standard/) | Contract-semantic bindings |
-| [`ODPV-OPENLINEAGE-1`](/profiles/openlineage-1.yaml) | [OpenLineage](https://openlineage.io/docs/spec/object-model/) | Declared and observed lineage alignment |
-| [`ODPV-PROV-O`](/profiles/prov-o.yaml) | [PROV-O](https://www.w3.org/TR/prov-o/) | Provenance representation |
-| [`ODPV-ODRL-2`](/profiles/odrl-2.yaml) | [ODRL 2.2](https://www.w3.org/TR/odrl-model/) | Rights-policy expression |
+| [`ODPV-DCAT-3`](/profiles/dcat-3.yaml) | [DCAT 3](https://www.w3.org/TR/vocab-dcat-3/) | Catalog discovery and federation. *Example:* publish a product’s API, license, and provider into a catalog portal. |
+| [`ODPV-ODCS-3`](/profiles/odcs-3.yaml) | [Open Data Contract Standard](https://bitol-io.github.io/open-data-contract-standard/) | Contract-semantic bindings. *Example:* bind an ODPV SLA or Data Quality statement to an executable contract section. |
+| [`ODPV-OPENLINEAGE-1`](/profiles/openlineage-1.yaml) | [OpenLineage](https://openlineage.io/docs/spec/object-model/) | Declared and observed lineage alignment. *Example:* connect a declared dependency to observed job inputs and outputs. |
+| [`ODPV-PROV-O`](/profiles/prov-o.yaml) | [PROV-O](https://www.w3.org/TR/prov-o/) | Provenance representation. *Example:* show the activity, responsible agent, and source entities that produced an output. |
+| [`ODPV-ODRL-2`](/profiles/odrl-2.yaml) | [ODRL 2.2](https://www.w3.org/TR/odrl-model/) | Rights-policy expression. *Example:* express permitted partner access, duties, and constraints for a shared data product. |
 
 The common [profile schema](/schema/odpv.profile.schema.json) and [profile governance guide](/profiles/README.md) define the profile format and the meaning of its mapping types.
 
