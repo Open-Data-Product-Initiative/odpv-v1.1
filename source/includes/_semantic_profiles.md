@@ -25,7 +25,7 @@ Mappings matter only when a data product crosses a system boundary. Inside a pur
 | Lineage and impact analysis | OpenLineage | 10 | Connect declared product dependencies to observed jobs, inputs, outputs, versions, and quality-test evidence. |
 | Audit and traceability | PROV-O | 10 | Explain which activities, agents, source entities, and revisions produced an output. |
 | Controlled sharing | ODRL | 11 | Express who may access a product or dataset, under which permission, prohibition, duty, or condition. |
-| Tool interoperability | All profiles | 63 total | Let an SDK transform, validate, or query an ODPV model without every catalog, contract, and lineage adapter inventing its own terminology. |
+| Tool interoperability | All profiles | 63 total | Let an [SDK](https://opendataproducts.org/sdk) transform, validate, or query an ODPV model without every catalog, contract, and lineage adapter inventing its own terminology. |
 | AI retrieval and explanation | All profiles | 63 total | Give an agent grounded answers such as “this data product is cataloged here, governed by this policy, contracted here, and produced by these observed jobs.” |
 
 ## Mapping Types
