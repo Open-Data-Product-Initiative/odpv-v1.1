@@ -59,22 +59,34 @@ Agents using ODPV should keep vocabulary boundaries clear:
 Find the best ODPV term for "data API" and return the stable id and uri.
 ```
 
+Use this to resolve source language to one canonical ODPV term before creating or editing metadata.
+
 ```text
 Map these internal catalog labels to ODPV preferred terms and explain uncertain matches.
 ```
+
+Use this to align local catalog language while preserving uncertainty that needs human review.
 
 ```text
 Choose ODPV relationship terms for these graph edges and avoid generic relationships where possible.
 ```
 
+Use this to create graph edges that carry a specific business or operational meaning instead of defaulting to `relatedTo`.
+
 ```text
 Validate this ODPV vocabulary file and suggest schema-compliant repairs.
 ```
+
+Use this to catch malformed vocabulary content before it becomes a published or generated artifact.
 
 ```text
 Identify terminology drift between this ODPC catalog and the official ODPV terms.
 ```
 
+Use this to find catalog concepts that need alignment, clarification, or an extension decision.
+
 ```text
 Propose an ODPV extension term for a missing domain-specific concept.
 ```
+
+Use this to prepare a governed extension proposal without inventing a new official ODPV term.
