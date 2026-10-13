@@ -33,6 +33,8 @@ The canonical vocabulary source is [`source/vocab/odpv.yaml`](source/vocab/odpv.
 | [`source/vocab/governance.yaml`](source/vocab/governance.yaml) | Governance terms only |
 | [`source/vocab/relationships.yaml`](source/vocab/relationships.yaml) | Relationship terms only |
 | [`source/llms.txt`](source/llms.txt) | AI agent guidance for using ODPV resources |
+| [`source/profiles/`](source/profiles/README.md) | Draft interoperability profiles for DCAT, ODCS, OpenLineage, PROV-O, and ODRL |
+| [`source/schema/odpv.profile.schema.json`](source/schema/odpv.profile.schema.json) | JSON Schema for interoperability profiles |
 
 # Toolkit and AI Agents
 
@@ -47,6 +49,13 @@ This repository also includes helper scripts for maintaining and using the vocab
 | [`scripts/generate_vocab_artifacts.py`](scripts/generate_vocab_artifacts.py) | Regenerate JSON, JSON-LD, SKOS Turtle, JSONL, and section YAML files from `odpv.yaml` |
 | [`scripts/agent_vocab_helper.py`](scripts/agent_vocab_helper.py) | Resolve source phrases, explain terms, check relationships, and produce agent-ready context packets |
 | [`scripts/check_cross_spec_drift.py`](scripts/check_cross_spec_drift.py) | Compare published ODPS, ODPC, and ODPG schema terms against ODPV |
+| [`scripts/validate_profiles.py`](scripts/validate_profiles.py) | Validate profile structure, mapping kinds, lifecycle values, and references to official ODPV terms |
+
+# Interoperability Profiles
+
+ODPV interoperability profiles are versioned semantic bridges to external standards. They keep ODPV as the shared vocabulary authority while the [Open Data Product Agent SDK](https://github.com/Open-Data-Product-Initiative/odp-agent-sdk) provides validation, transformations, conformance reports, and integration templates.
+
+The initial draft profiles cover [DCAT 3](source/profiles/dcat-3.yaml), [ODCS 3](source/profiles/odcs-3.yaml), [OpenLineage](source/profiles/openlineage-1.yaml), [PROV-O](source/profiles/prov-o.yaml), and [ODRL 2](source/profiles/odrl-2.yaml). A profile entry is deliberately one of a semantic mapping, field binding, or directional transformation; it does not imply that every concept is equivalent. See the [profile governance guide](source/profiles/README.md).
 
 # Term Governance
 

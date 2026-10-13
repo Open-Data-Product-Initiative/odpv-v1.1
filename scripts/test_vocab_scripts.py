@@ -55,6 +55,40 @@ class VocabScriptTests(unittest.TestCase):
         self.assertIn("terms=78", result.stdout)
         self.assertIn("relationships=24", result.stdout)
 
+    def test_validate_profiles_reports_reviewable_profile_set(self):
+        result = self.run_script("scripts/validate_profiles.py")
+
+        self.assertEqual(result.returncode, 0, result.stderr + result.stdout)
+        self.assertIn("Profiles OK profiles=5", result.stdout)
+        self.assertIn("mappings=", result.stdout)
+
+    def test_profiles_keep_mapping_types_and_external_boundaries_explicit(self):
+        import yaml
+
+        profile_dir = ROOT / "source" / "profiles"
+        profiles = [
+            yaml.safe_load(path.read_text(encoding="utf-8"))
+            for path in sorted(profile_dir.glob("*.yaml"))
+        ]
+        profiles_by_id = {profile["id"]: profile for profile in profiles}
+
+        self.assertEqual(
+            set(profiles_by_id),
+            {"ODPV-DCAT-3", "ODPV-ODCS-3", "ODPV-OPENLINEAGE-1", "ODPV-PROV-O", "ODPV-ODRL-2"},
+        )
+        self.assertEqual(
+            next(mapping for mapping in profiles_by_id["ODPV-DCAT-3"]["mappings"] if mapping["id"] == "data-product-resource")["relation"],
+            "relatedMatch",
+        )
+        self.assertEqual(
+            next(mapping for mapping in profiles_by_id["ODPV-PROV-O"]["mappings"] if mapping["id"] == "produces")["kind"],
+            "transformation",
+        )
+        self.assertEqual(
+            next(mapping for mapping in profiles_by_id["ODPV-OPENLINEAGE-1"]["mappings"] if mapping["id"] == "quality-assertions")["kind"],
+            "fieldBinding",
+        )
+
     def test_search_vocab_returns_json_matches_for_aliases_and_examples(self):
         result = self.run_script(
             "scripts/search_vocab.py",

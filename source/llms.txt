@@ -40,6 +40,15 @@ Agent-friendly vocabulary file:
 Validation schema:
 - /schema/odpv.schema.json (https://opendataproducts.org/odpv-v1.0/schema/odpv.schema.json)
 
+Interoperability profiles:
+- Profile format and governance: /profiles/README.md (https://opendataproducts.org/odpv-v1.0/profiles/README.md)
+- Profile validation schema: /schema/odpv.profile.schema.json (https://opendataproducts.org/odpv-v1.0/schema/odpv.profile.schema.json)
+- ODPV to DCAT 3: /profiles/dcat-3.yaml (https://opendataproducts.org/odpv-v1.0/profiles/dcat-3.yaml)
+- ODPV to ODCS 3: /profiles/odcs-3.yaml (https://opendataproducts.org/odpv-v1.0/profiles/odcs-3.yaml)
+- ODPV to OpenLineage: /profiles/openlineage-1.yaml (https://opendataproducts.org/odpv-v1.0/profiles/openlineage-1.yaml)
+- ODPV to PROV-O: /profiles/prov-o.yaml (https://opendataproducts.org/odpv-v1.0/profiles/prov-o.yaml)
+- ODPV to ODRL 2: /profiles/odrl-2.yaml (https://opendataproducts.org/odpv-v1.0/profiles/odrl-2.yaml)
+
 Agent-oriented source scripts:
 - scripts/generate_vocab_artifacts.py regenerates derived vocabulary artifacts from canonical source/vocab/odpv.yaml, including JSON, JSON-LD, SKOS Turtle, JSONL, and section YAML. Use `python3 scripts/generate_vocab_artifacts.py --check` to detect drift.
 - scripts/validate_vocab.py validates vocabulary structure, required fields, generated artifacts, JSONL, section files, and relationship guidance.
@@ -47,6 +56,7 @@ Agent-oriented source scripts:
 - scripts/agent_vocab_helper.py provides JSON-first agent helpers: `resolve <text>`, `explain <term-id>`, `relationship <source> <verb> <target>`, and `context <term-id>`.
 - scripts/check_cross_spec_drift.py fetches the published ODPS, ODPC, and ODPG schemas, compares their schema terms against ODPV, and writes a dated report under cross-spec-drift/. Use `python3 scripts/check_cross_spec_drift.py --check` to detect report drift.
 - scripts/test_vocab_scripts.py verifies the helper scripts.
+- scripts/validate_profiles.py validates ODPV interoperability profiles, their mapping kinds, directions, lifecycle values, and references to official ODPV terms.
 
 File selection guidance:
 - Use /vocab/terms.jsonl for retrieval, embeddings, search, and lightweight agent tools. It contains one term per line with ids, uris, labels, definitions, aliases, related terms, examples, usedIn values, and relationship domain/range hints where available.
@@ -56,6 +66,7 @@ File selection guidance:
 - Use /vocab/odpv.skos.ttl when SKOS-aware semantic tools or RDF graph stores are used.
 - Use section YAML files when only one vocabulary area is needed.
 - Use /schema/odpv.schema.json to validate ODPV vocabulary files.
+- Use /schema/odpv.profile.schema.json to validate ODPV interoperability profile files.
 
 Recommended agent workflow:
 1. Fetch /llms.txt first to understand the standards-family context and available vocabulary resources.
@@ -70,6 +81,8 @@ Recommended agent workflow:
 10. If editing vocabulary files in the source repository, update source/vocab/odpv.yaml first, then run scripts/generate_vocab_artifacts.py and scripts/validate_vocab.py.
 11. If checking cross-spec drift with ODPS, ODPC, or ODPG, run scripts/check_cross_spec_drift.py to refresh the root cross-spec-drift report, or use `--check` to verify the committed report is current.
 12. If no existing term fits, suggest an extension term or propose a new shared term through GitHub issues instead of inventing a new meaning for an official term.
+13. For external-standard interoperability, load the relevant profile before selecting a mapping. Preserve whether the profile entry is a semantic mapping, field binding, or transformation; never treat a field binding as an equivalence claim.
+14. Use the Open Data Product Agent SDK for profile parsing, validation, transformation, and conformance reporting. ODPV owns profile meaning; the SDK owns execution.
 
 Use ODPV terms by their stable `id` and `uri`. Do not redefine official ODPV terms or invent new meanings for existing terms. If a needed concept is not present, treat it as an extension candidate and use a separate namespace or prefix.
 

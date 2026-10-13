@@ -13,6 +13,7 @@ includes:
 - toolkit
 - agent_usage
 - term_governance
+- semantic_profiles
 - core
 - value
 - governance

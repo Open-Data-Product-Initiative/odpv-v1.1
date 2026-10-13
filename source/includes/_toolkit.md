@@ -56,6 +56,8 @@ If a needed term is missing, treat it as an extension candidate and use a separa
 | [`governance.yaml`](/vocab/governance.yaml) | YAML | ODPV Governance terms as a standalone machine-readable section file |
 | [`relationships.yaml`](/vocab/relationships.yaml) | YAML | ODPV Relationships terms as a standalone machine-readable section file |
 | [`odpv.schema.json`](/schema/odpv.schema.json) | JSON Schema | Validation schema for ODPV vocabulary files |
+| [`profiles/`](/profiles/README.md) | YAML | Versioned ODPV interoperability profiles and mapping governance |
+| [`odpv.profile.schema.json`](/schema/odpv.profile.schema.json) | JSON Schema | Validation schema for ODPV interoperability profiles |
 
 Agent-oriented helper scripts are available in the source repository for maintaining and using the vocabulary files.
 
@@ -67,6 +69,7 @@ Use scripts/validate_vocab.py to validate vocabulary structure, generated artifa
 Use scripts/agent_vocab_helper.py for agent-oriented resolve, explain, relationship, and context packet workflows.
 Use scripts/test_vocab_scripts.py to verify the helper scripts themselves.
 Use scripts/check_cross_spec_drift.py to compare published ODPS, ODPC, and ODPG schema terms against ODPV and refresh the dated cross-spec-drift report.
+Use scripts/validate_profiles.py to validate ODPV interoperability profile structure, mapping kinds, and ODPV-term references.
 Do not edit generated vocabulary artifacts directly unless intentionally repairing generated output; update source/vocab/odpv.yaml first.
 -->
 
@@ -77,5 +80,6 @@ Do not edit generated vocabulary artifacts directly unless intentionally repairi
 | [`search_vocab.py`](https://github.com/Open-Data-Product-Initiative/odpv-v1.0/blob/main/scripts/search_vocab.py) | Searches ODPV terms using labels, aliases, definitions, examples, and related terms |
 | [`agent_vocab_helper.py`](https://github.com/Open-Data-Product-Initiative/odpv-v1.0/blob/main/scripts/agent_vocab_helper.py) | Provides JSON-first agent helpers for resolving phrases, explaining terms, checking relationship domain/range, and producing context packets |
 | [`check_cross_spec_drift.py`](https://github.com/Open-Data-Product-Initiative/odpv-v1.0/blob/main/scripts/check_cross_spec_drift.py) | Compares published ODPS, ODPC, and ODPG schema terms against ODPV and writes a dated report under `cross-spec-drift/` |
+| [`validate_profiles.py`](https://github.com/Open-Data-Product-Initiative/odpv-v1.0/blob/main/scripts/validate_profiles.py) | Validates interoperability profiles, mapping kinds, lifecycle values, directions, and references to official ODPV terms |
 
 The Markdown tables in this specification are intended for human readers. The YAML files are intended for programmable use, automation, validation, AI retrieval, and graph-based tooling.
