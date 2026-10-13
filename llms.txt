@@ -3,7 +3,8 @@
 ODPV is a controlled vocabulary for the OpenDataProducts.org standards family. It defines stable terms, labels, definitions, concept groups, relationship names, and related-term links used across ODPS, ODPC, and ODPG.
 
 Current release:
-- ODPV version 1.1.0
+- ODPV version 1.1.0 — DRAFT
+- This is an in-progress release under maintainer review. Its vocabulary, schemas, and interoperability profiles may change before stable designation. Use ODPV 1.0 when a stable release is required.
 
 Base URL:
 - https://opendataproducts.org/odpv-v1.1
