@@ -426,6 +426,9 @@
             <a href="#interoperability-profiles" class="toc-h1 toc-link" data-title="Interoperability Profiles">Interoperability Profiles</a>
               <ul class="toc-list-h2">
                   <li>
+                    <a href="#when-mappings-add-value" class="toc-h2 toc-link" data-title="When Mappings Add Value">When Mappings Add Value</a>
+                  </li>
+                  <li>
                     <a href="#mapping-types" class="toc-h2 toc-link" data-title="Mapping Types">Mapping Types</a>
                   </li>
                   <li>
@@ -1090,6 +1093,52 @@ Use ODPV term ids and uris for stable shared concepts, labels, definitions, alia
 </tbody></table>
 
 <p>The common <a href="schema/odpv.profile.schema.json">profile schema</a> and <a href="/profiles/README.md">profile governance guide</a> define the profile format and the meaning of its mapping types.</p>
+<h2 id='when-mappings-add-value'>When Mappings Add Value</h2>
+<p>Mappings matter only when a data product crosses a system boundary. Inside a purely ODPV-based portfolio, they add little value.</p>
+
+<table><thead>
+<tr>
+<th>Use case</th>
+<th>Profile</th>
+<th>What the mapping enables</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Federated discovery</td>
+<td>DCAT</td>
+<td>Publish a product’s datasets, distributions, services, themes, licenses, access, and provider metadata into catalog portals without renaming ODPV concepts.</td>
+</tr>
+<tr>
+<td>Contract implementation</td>
+<td>ODCS</td>
+<td>Connect ODPV concepts such as Data Quality, SLA, retention, pricing, support, and access to executable contract sections.</td>
+</tr>
+<tr>
+<td>Lineage and impact analysis</td>
+<td>OpenLineage</td>
+<td>Connect declared product dependencies to observed jobs, inputs, outputs, versions, and quality-test evidence.</td>
+</tr>
+<tr>
+<td>Audit and traceability</td>
+<td>PROV-O</td>
+<td>Explain which activities, agents, source entities, and revisions produced an output.</td>
+</tr>
+<tr>
+<td>Controlled sharing</td>
+<td>ODRL</td>
+<td>Express who may access a product or dataset, under which permission, prohibition, duty, or condition.</td>
+</tr>
+<tr>
+<td>Tool interoperability</td>
+<td>All profiles</td>
+<td>Let an SDK transform, validate, or query an ODPV model without every catalog, contract, and lineage adapter inventing its own terminology.</td>
+</tr>
+<tr>
+<td>AI retrieval and explanation</td>
+<td>All profiles</td>
+<td>Give an agent grounded answers such as “this data product is cataloged here, governed by this policy, contracted here, and produced by these observed jobs.”</td>
+</tr>
+</tbody></table>
 <h2 id='mapping-types'>Mapping Types</h2>
 <p>Profiles use three different mapping types. They must not be conflated.</p>
 
