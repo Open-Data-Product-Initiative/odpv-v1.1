@@ -1,0 +1,132 @@
+# Open Data Product Vocabulary (ODPV)
+
+ODPV is a controlled vocabulary for the OpenDataProducts.org standards family. It defines stable terms, labels, definitions, concept groups, relationship names, and related-term links used across ODPS, ODPC, and ODPG.
+
+Current release:
+- ODPV version 1.1.0
+
+Base URL:
+- https://opendataproducts.org/odpv-v1.1
+
+Human-readable specification:
+- / (https://opendataproducts.org/odpv-v1.1/)
+- The "Vocabulary Toolkit for Tools and AI Agents" section lists the Open Data Product Agent SDK, published resource files, validation schema, and source helper scripts.
+
+Main standards-family SDK:
+- Open Data Product Agent SDK: https://github.com/Open-Data-Product-Initiative/odp-agent-sdk
+- Use this SDK as the primary toolkit for building tools, validators, agent workflows, catalog integrations, graph workflows, and automation across ODPS, ODPC, ODPG, and ODPV.
+
+Standards-family context:
+- ODPS is the Open Data Product Specification. Use ODPS when describing one data product and its product metadata. Homepage: https://opendataproducts.org/
+- ODPC is the Open Data Product Catalog specification. Use ODPC when describing catalogs, portfolios, use cases, objectives, KPIs, signals, and related portfolio objects.
+- ODPG is the Open Data Product Graph specification. Use ODPG when describing graph structures and relationships between data products, use cases, objectives, KPIs, signals, governance objects, providers, and consumers. Documentation: https://opendataproducts.org/odpg-v1.0/
+- ODPV does not replace ODPS, ODPC, or ODPG. It provides stable ids, labels, definitions, and relationship names that those specifications can reference.
+
+Canonical vocabulary files:
+- /vocab/odpv.yaml (https://opendataproducts.org/odpv-v1.1/vocab/odpv.yaml)
+- /vocab/odpv.json (https://opendataproducts.org/odpv-v1.1/vocab/odpv.json)
+- /vocab/odpv.jsonld (https://opendataproducts.org/odpv-v1.1/vocab/odpv.jsonld)
+- /vocab/odpv.skos.ttl (https://opendataproducts.org/odpv-v1.1/vocab/odpv.skos.ttl)
+
+Section vocabulary files:
+- /vocab/core.yaml (https://opendataproducts.org/odpv-v1.1/vocab/core.yaml)
+- /vocab/value.yaml (https://opendataproducts.org/odpv-v1.1/vocab/value.yaml)
+- /vocab/governance.yaml (https://opendataproducts.org/odpv-v1.1/vocab/governance.yaml)
+- /vocab/relationships.yaml (https://opendataproducts.org/odpv-v1.1/vocab/relationships.yaml)
+
+Agent-friendly vocabulary file:
+- /vocab/terms.jsonl (https://opendataproducts.org/odpv-v1.1/vocab/terms.jsonl)
+
+Validation schema:
+- /schema/odpv.schema.json (https://opendataproducts.org/odpv-v1.1/schema/odpv.schema.json)
+
+Interoperability profiles:
+- Profile format and governance: /profiles/README.md (https://opendataproducts.org/odpv-v1.1/profiles/README.md)
+- Profile validation schema: /schema/odpv.profile.schema.json (https://opendataproducts.org/odpv-v1.1/schema/odpv.profile.schema.json)
+- ODPV to DCAT 3: /profiles/dcat-3.yaml (https://opendataproducts.org/odpv-v1.1/profiles/dcat-3.yaml)
+- ODPV to ODCS 3: /profiles/odcs-3.yaml (https://opendataproducts.org/odpv-v1.1/profiles/odcs-3.yaml)
+- ODPV to OpenLineage: /profiles/openlineage-1.yaml (https://opendataproducts.org/odpv-v1.1/profiles/openlineage-1.yaml)
+- ODPV to PROV-O: /profiles/prov-o.yaml (https://opendataproducts.org/odpv-v1.1/profiles/prov-o.yaml)
+- ODPV to ODRL 2: /profiles/odrl-2.yaml (https://opendataproducts.org/odpv-v1.1/profiles/odrl-2.yaml)
+
+Agent-oriented source scripts:
+- scripts/generate_vocab_artifacts.py regenerates derived vocabulary artifacts from canonical source/vocab/odpv.yaml, including JSON, JSON-LD, SKOS Turtle, JSONL, and section YAML. Use `python3 scripts/generate_vocab_artifacts.py --check` to detect drift.
+- scripts/validate_vocab.py validates vocabulary structure, required fields, generated artifacts, JSONL, section files, and relationship guidance.
+- scripts/search_vocab.py searches ODPV terms using preferredLabel, alsoKnownAs, definition, examples, and relatedTerms. Use `--json` for machine-readable results.
+- scripts/agent_vocab_helper.py provides JSON-first agent helpers: `resolve <text>`, `explain <term-id>`, `relationship <source> <verb> <target>`, and `context <term-id>`.
+- scripts/check_cross_spec_drift.py fetches the published ODPS, ODPC, and ODPG schemas, compares their schema terms against ODPV, and writes a dated report under cross-spec-drift/. Use `python3 scripts/check_cross_spec_drift.py --check` to detect report drift.
+- scripts/test_vocab_scripts.py verifies the helper scripts.
+- scripts/validate_profiles.py validates ODPV interoperability profiles, their mapping kinds, directions, lifecycle values, and references to official ODPV terms.
+
+File selection guidance:
+- Use /vocab/terms.jsonl for retrieval, embeddings, search, and lightweight agent tools. It contains one term per line with ids, uris, labels, definitions, aliases, related terms, examples, usedIn values, and relationship domain/range hints where available.
+- Use /vocab/odpv.yaml as the canonical source when complete vocabulary structure, section context, schema-compatible metadata, or validation context is required.
+- Use /vocab/odpv.json when JSON is easier to consume than YAML.
+- Use /vocab/odpv.jsonld when linked-data JSON is needed.
+- Use /vocab/odpv.skos.ttl when SKOS-aware semantic tools or RDF graph stores are used.
+- Use section YAML files when only one vocabulary area is needed.
+- Use /schema/odpv.schema.json to validate ODPV vocabulary files.
+- Use /schema/odpv.profile.schema.json to validate ODPV interoperability profile files.
+
+Recommended agent workflow:
+1. Fetch /llms.txt first to understand the standards-family context and available vocabulary resources.
+2. Use the Open Data Product Agent SDK when the task spans multiple standards or needs reusable tooling across ODPS, ODPC, ODPG, and ODPV.
+3. Load /vocab/terms.jsonl for term search, retrieval, embeddings, and lightweight lookup.
+4. If working from the source repository, use scripts/agent_vocab_helper.py for repeatable local term resolution, explanations, relationship checks, and context packets. Use scripts/search_vocab.py for broader search; use `--json` when another tool or agent will consume the result.
+5. Use /vocab/odpv.yaml when full vocabulary structure, section context, schema-compatible metadata, or validation context is needed.
+6. Match user language against preferredLabel, alsoKnownAs, definition, examples, and relatedTerms.
+7. Check the vocabulary version and include it when generating structured outputs.
+8. For graph work, use relationship domain and range fields from relationship terms.
+9. Return stable term id and uri, not only human-readable labels.
+10. If editing vocabulary files in the source repository, update source/vocab/odpv.yaml first, then run scripts/generate_vocab_artifacts.py and scripts/validate_vocab.py.
+11. If checking cross-spec drift with ODPS, ODPC, or ODPG, run scripts/check_cross_spec_drift.py to refresh the root cross-spec-drift report, or use `--check` to verify the committed report is current.
+12. If no existing term fits, suggest an extension term or propose a new shared term through GitHub issues instead of inventing a new meaning for an official term.
+13. For external-standard interoperability, load the relevant profile before selecting a mapping. Preserve whether the profile entry is a semantic mapping, field binding, or transformation; never treat a field binding as an equivalence claim.
+14. Use the Open Data Product Agent SDK for profile parsing, validation, transformation, and conformance reporting. ODPV owns profile meaning; the SDK owns execution.
+
+Use ODPV terms by their stable `id` and `uri`. Do not redefine official ODPV terms or invent new meanings for existing terms. If a needed concept is not present, treat it as an extension candidate and use a separate namespace or prefix.
+
+Term governance rules:
+- Add an official ODPV term when a concept is shared by more than one standard, tool, catalog, graph, or agent workflow.
+- Add an alias in `alsoKnownAs` when a source term is only a different spelling, casing, plural form, or common synonym of an existing ODPV term.
+- Add an external mapping when an established vocabulary such as DCAT, SKOS, PROV-O, ODRL, Dublin Core, schema.org, or SPDX already defines a related concept.
+- Use `exactMatch` only when the external concept has the same practical meaning. Prefer `closeMatch` when the concepts are similar but not identical.
+- Do not add source-spec schema plumbing, implementation-only fields, or one-off internal fields as shared ODPV terms.
+- Use an extension namespace or prefix for domain-specific, organization-specific, or implementation-profile terms.
+- Open an issue against the source specification when drift comes from unclear or inconsistent source terminology.
+- When reviewing drift, choose one of these actions: add ODPV term, add alias, add external mapping, use extension namespace, keep source-specific, or open source-spec issue.
+
+When returning a matched ODPV term, include:
+- vocabularyVersion
+- section
+- id
+- uri
+- preferredLabel
+- definition
+- why this term fits
+- relatedTerms when useful
+
+If multiple terms may fit, return candidate terms and explain the distinction. Prefer the most specific official ODPV term. Use `relatedTo` only when a more specific relationship term is not available.
+
+Graph relationship guidance:
+- Use only official ODPV relationship ids unless using an explicit extension namespace or prefix.
+- For graph edges, use relationship terms from /vocab/relationships.yaml or relationship records in /vocab/terms.jsonl.
+- Check `domain` for recommended source node types and `range` for recommended target node types.
+- ODPV defines relationship names and meanings. ODPG defines graph structures and how relationships are used in graph files.
+
+Suggesting new terms:
+- If a useful shared term appears to be missing from ODPV, suggest it through GitHub issues: https://github.com/Open-Data-Product-Initiative/odpv-v1.1/issues
+- Include the proposed term id, preferred label, definition, concept group, related terms, and example usage when possible.
+
+When selecting terms:
+- Use `DataProduct` for a managed reusable data offering.
+- Use `ProductDetails` for the ODPS `details` product metadata block, and `DataHolder` for the legal entity or accountable organization that holds or controls the data.
+- Use `Dataset` for a structured collection of data that may be part of or exposed through a data product.
+- Use `DataService` for an API, query endpoint, or delivery service that provides access to data. If an ODPG graph uses node type `API`, map it to ODPV `DataService`.
+- Use Core terms such as `Agent`, `Workflow`, and `Capability` when graph or automation contexts need actors, orchestration flows, or reusable abilities.
+- Use Value terms such as `UseCase`, `BusinessObjective`, `KPI`, `Signal`, `Gap`, `Priority`, `StrategicOpportunity`, and `ProductStrategy` to connect data products to demand, strategy, and measurable outcomes.
+- Use Governance terms such as `DataQuality`, `SLA`, `License`, `DataAccess`, `AccessMethod`, `PricingPlan`, `PaymentGateway`, `Support`, `Policy`, `ComplianceRule`, and `AccessCondition` to describe trust, access, obligations, support, and control.
+- Use Relationship terms such as `uses`, `supports`, `requires`, `contributesTo`, `measures`, `dependsOn`, `produces`, `consumes`, `governedBy`, `providedBy`, `consumedBy`, `ownedBy`, `alignsWith`, `impacts`, `exposes`, and `identifies` when building graph structures.
+- Treat `monitors` as an alias of `measures`, not a standalone official ODPV relationship id.
+
+Prefer the JSONL file for retrieval, embeddings, search, and lightweight agent tools. Prefer the YAML or JSON files when complete vocabulary structure, sections, and schema-compatible metadata are required.

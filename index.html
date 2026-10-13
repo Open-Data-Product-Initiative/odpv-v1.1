@@ -1,0 +1,2032 @@
+
+<!doctype html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" sizes="512x512" href="https://raw.githubusercontent.com/Open-Data-Product-Initiative/odpv-v1.1/refs/heads/main/source/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="https://raw.githubusercontent.com/Open-Data-Product-Initiative/odpv-v1.1/refs/heads/main/source/images/favicon.png">
+    <meta charset="utf-8">
+    <meta property="og:title" content="Open Data Products Vocabulary - Version 1.1" />
+    <meta property="og:url" content="https://opendataproducts.org/odpv-v1.1" />
+    <meta property=”og:type” content=”website” />
+    <meta property="og:image" content="https://opendataproducts.org/images/social.png" />
+    <meta property="og:description" 
+    content="The Open Data Product Vocabulary, ODPV, is a vendor-neutral, open-source, machine-readable controlled vocabulary for data product management." />
+    <link rel="alternate" type="text/plain" title="LLMs and AI agent guidance" href="/llms.txt">
+    <link rel="alternate" type="application/x-ndjson" title="ODPV terms JSONL" href="/vocab/terms.jsonl">
+    <link rel="alternate" type="application/ld+json" title="ODPV JSON-LD" href="/vocab/odpv.jsonld">
+    <link rel="alternate" type="text/turtle" title="ODPV SKOS Turtle" href="/vocab/odpv.skos.ttl">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta
+            name="description"
+            content="Open Data Product Vocabulary (ODPV) version 1.1 is a vendor-neutral, open-source, machine-readable controlled vocabulary for data product management."
+        >
+        <meta
+            name="llms"
+            content="/llms.txt"
+        >
+        <meta
+            name="ai-agent-guidance"
+            content="Use /llms.txt for agent guidance, /vocab/terms.jsonl for retrieval-friendly vocabulary terms, /vocab/odpv.jsonld or /vocab/odpv.skos.ttl for linked-data tooling, and source helper scripts for local agent workflows."
+        >
+
+    <title>Open Data Product Vocab (ODPV) version 1.1 | Linux Foundation</title>
+
+
+    <style media="screen">
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <style media="print">
+      * {
+        -webkit-transition:none!important;
+        transition:none!important;
+      }
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #586e75;
+}
+.highlight .err {
+  color: #002b36;
+  background-color: #dc322f;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  color: #657b83;
+}
+.highlight .cp {
+  color: #b58900;
+}
+.highlight .nt {
+  color: #b58900;
+}
+.highlight .o, .highlight .ow {
+  color: #93a1a1;
+}
+.highlight .p, .highlight .pi {
+  color: #93a1a1;
+}
+.highlight .gi {
+  color: #859900;
+}
+.highlight .gd {
+  color: #dc322f;
+}
+.highlight .gh {
+  color: #268bd2;
+  background-color: #002b36;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #6c71c4;
+}
+.highlight .kc {
+  color: #cb4b16;
+}
+.highlight .kt {
+  color: #cb4b16;
+}
+.highlight .kd {
+  color: #cb4b16;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #859900;
+}
+.highlight .sa {
+  color: #6c71c4;
+}
+.highlight .sr {
+  color: #2aa198;
+}
+.highlight .si {
+  color: #d33682;
+}
+.highlight .se {
+  color: #d33682;
+}
+.highlight .nn {
+  color: #b58900;
+}
+.highlight .nc {
+  color: #b58900;
+}
+.highlight .no {
+  color: #b58900;
+}
+.highlight .na {
+  color: #268bd2;
+}
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  color: #859900;
+}
+.highlight .ss {
+  color: #859900;
+}
+    </style>
+    <link href="stylesheets/screen-663a9590.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-953e3353.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-b12a2749.js"></script>
+
+    <script>
+      $(function() { setupCodeCopy(); });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BRS2DSVKQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2BRS2DSVKQ');
+    </script>
+
+  </head>
+
+  <body class="index" data-languages="[&quot;yaml&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar-cad8cdcb.png" alt="" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo-dps-2024-38c634ee.png" class="logo" alt="" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="yaml">yaml</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#open-data-product-vocabulary-the-linux-foundation" class="toc-h1 toc-link" data-title="OPEN DATA PRODUCT VOCABULARY - The Linux Foundation">OPEN DATA PRODUCT VOCABULARY - The Linux Foundation</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#version-1-1" class="toc-h2 toc-link" data-title="Version 1.1">Version 1.1</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#what-odpv-defines" class="toc-h2 toc-link" data-title="What ODPV Defines">What ODPV Defines</a>
+                  </li>
+                  <li>
+                    <a href="#machine-readable-vocabulary-resources" class="toc-h2 toc-link" data-title="Machine-Readable Vocabulary Resources">Machine-Readable Vocabulary Resources</a>
+                  </li>
+                  <li>
+                    <a href="#agent-helper-commands" class="toc-h2 toc-link" data-title="Agent Helper Commands">Agent Helper Commands</a>
+                  </li>
+                  <li>
+                    <a href="#companion-vocabulary-not-a-heavy-ontology" class="toc-h2 toc-link" data-title="Companion Vocabulary, Not a Heavy Ontology">Companion Vocabulary, Not a Heavy Ontology</a>
+                  </li>
+                  <li>
+                    <a href="#relationship-to-odps-odpc-and-odpg" class="toc-h2 toc-link" data-title="Relationship to ODPS, ODPC, and ODPG">Relationship to ODPS, ODPC, and ODPG</a>
+                  </li>
+                  <li>
+                    <a href="#why-odpv-matters" class="toc-h2 toc-link" data-title="Why ODPV Matters">Why ODPV Matters</a>
+                  </li>
+                  <li>
+                    <a href="#automated-drift-detection" class="toc-h2 toc-link" data-title="Automated Drift Detection">Automated Drift Detection</a>
+                  </li>
+                  <li>
+                    <a href="#example-use" class="toc-h2 toc-link" data-title="Example Use">Example Use</a>
+                  </li>
+                  <li>
+                    <a href="#specification-aims" class="toc-h2 toc-link" data-title="Specification Aims">Specification Aims</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#vocabulary-toolkit" class="toc-h1 toc-link" data-title="Vocabulary Toolkit">Vocabulary Toolkit</a>
+          </li>
+          <li>
+            <a href="#ai-agent-usage-patterns" class="toc-h1 toc-link" data-title="AI Agent Usage Patterns">AI Agent Usage Patterns</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#agent-capabilities-enabled-by-odpv" class="toc-h2 toc-link" data-title="Agent capabilities enabled by ODPV">Agent capabilities enabled by ODPV</a>
+                  </li>
+                  <li>
+                    <a href="#common-agent-workflows" class="toc-h2 toc-link" data-title="Common agent workflows">Common agent workflows</a>
+                  </li>
+                  <li>
+                    <a href="#agent-behavior-constraints" class="toc-h2 toc-link" data-title="Agent behavior constraints">Agent behavior constraints</a>
+                  </li>
+                  <li>
+                    <a href="#example-prompts-odpv-enables" class="toc-h2 toc-link" data-title="Example prompts ODPV enables">Example prompts ODPV enables</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#term-governance-rules" class="toc-h1 toc-link" data-title="Term Governance Rules">Term Governance Rules</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#adding-a-new-official-term" class="toc-h2 toc-link" data-title="Adding A New Official Term">Adding A New Official Term</a>
+                  </li>
+                  <li>
+                    <a href="#adding-an-alias" class="toc-h2 toc-link" data-title="Adding An Alias">Adding An Alias</a>
+                  </li>
+                  <li>
+                    <a href="#adding-external-mappings" class="toc-h2 toc-link" data-title="Adding External Mappings">Adding External Mappings</a>
+                  </li>
+                  <li>
+                    <a href="#drift-review-workflow" class="toc-h2 toc-link" data-title="Drift Review Workflow">Drift Review Workflow</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#interoperability-profiles" class="toc-h1 toc-link" data-title="Interoperability Profiles">Interoperability Profiles</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#mapping-types" class="toc-h2 toc-link" data-title="Mapping Types">Mapping Types</a>
+                  </li>
+                  <li>
+                    <a href="#ownership-boundary" class="toc-h2 toc-link" data-title="Ownership Boundary">Ownership Boundary</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#odpv-core" class="toc-h1 toc-link" data-title="ODPV Core">ODPV Core</a>
+          </li>
+          <li>
+            <a href="#odpv-value" class="toc-h1 toc-link" data-title="ODPV Value">ODPV Value</a>
+          </li>
+          <li>
+            <a href="#odpv-governance" class="toc-h1 toc-link" data-title="ODPV Governance">ODPV Governance</a>
+          </li>
+          <li>
+            <a href="#odpv-relationships" class="toc-h1 toc-link" data-title="ODPV Relationships">ODPV Relationships</a>
+          </li>
+          <li>
+            <a href="#extensions" class="toc-h1 toc-link" data-title="Extensions">Extensions</a>
+          </li>
+          <li>
+            <a href="#editors-and-contributors" class="toc-h1 toc-link" data-title="Editors and contributors">Editors and contributors</a>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li>License <a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a></li>
+            <li><br/><a href='https://opendataproducts.org'>Specification home</a></li>
+            <li><br/>Linux Foundation</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='open-data-product-vocabulary-the-linux-foundation'>OPEN DATA PRODUCT VOCABULARY - The Linux Foundation</h1><h2 id='version-1-1'>Version 1.1</h2>
+<p>The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “NOT RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in BCP 14 (<a href="https://datatracker.ietf.org/doc/html/rfc2119">RFC 2119</a> and <a href="https://datatracker.ietf.org/doc/html/rfc8174">RFC 8174</a>) when, and only when, they appear in all capitals, as shown here.</p>
+
+<p>The vocabulary is shared under <a href='https://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0</a> license.
+Development of the vocabulary is under the umbrella of the Linux Foundation.</p>
+
+<table><thead>
+<tr>
+<th>Topic</th>
+<th>Link</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Version source</td>
+<td><a href="https://github.com/Open-Data-Product-Initiative/odpv-v1.1">Open Data Products Vocab on GitHub</a></td>
+<td>Official source repository for the ODPV vocabulary</td>
+</tr>
+<tr>
+<td>Knowledge Base</td>
+<td><a href="https://opendataproducts.org/howto/">Open Data Product Spec Family Knowledge Base</a></td>
+<td>Practical examples, FAQs, and implementation guidance</td>
+</tr>
+<tr>
+<td>Contribute</td>
+<td><a href="https://github.com/Open-Data-Product-Initiative/odpv-v1.1/issues">Raise an issue in GitHub</a></td>
+<td>Submit issues or suggestions to the vocabulary maintainers</td>
+</tr>
+</tbody></table>
+<h1 id='introduction'>Introduction</h1>
+<p>The Open Data Product Vocabulary, ODPV, is a vendor-neutral, open-source, machine-readable controlled vocabulary for data product management. ODPV defines shared terms used across the OpenDataProducts.org standards family, including data products, catalogs, graphs, value concepts, governance concepts, and relationship terms. It is designed to help organizations use consistent language across specifications, catalogs, graph implementations, AI assistants, and GraphRAG-ready data product portfolios.</p>
+
+<p><img src="images/odpv-e8f71eb8.png" width="750px"></p>
+<h2 id='what-odpv-defines'>What ODPV Defines</h2>
+<p>ODPV defines the shared vocabulary layer for the OpenDataProducts.org standards family. The current vocabulary contains 78 terms across four concept groups:</p>
+
+<p><strong>ODPV Core</strong>: <a href="#odpv-core">ODPV Core</a> defines foundational terms used across the standards family. These terms describe the basic objects, roles, classifications, and references needed to manage data products, catalogs, graphs, and agent workflows.</p>
+
+<p><strong>ODPV Value</strong>: <a href="#odpv-value">ODPV Value</a> defines terms that connect data products to business demand, objectives, strategy, outcomes, and prioritization. These terms help connect data products to measurable value and portfolio-level decision-making.</p>
+
+<p><strong>ODPV Governance</strong>: <a href="#odpv-governance">ODPV Governance</a> defines terms for quality, access, licensing, pricing, support, legal, operational, and compliance context. These terms help describe how data products are governed, accessed, controlled, and trusted.</p>
+
+<p><strong>ODPV Relationships</strong>: <a href="#odpv-relationships">ODPV Relationships</a> defines reusable relationship terms for graph implementation, portfolio analysis, and cross-spec linking. These relationship terms help connect data products, use cases, objectives, KPIs, signals, providers, consumers, policies, catalogs, workflows, agents, and services in a consistent way.</p>
+
+<p>These groups create a common language for describing, connecting, validating, and reasoning over data product portfolios.</p>
+
+<table><thead>
+<tr>
+<th>Section</th>
+<th>Purpose</th>
+<th style="text-align: right">Term count</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ODPV Core</td>
+<td>Foundational objects, roles, classifications, and references</td>
+<td style="text-align: right">18</td>
+</tr>
+<tr>
+<td>ODPV Value</td>
+<td>Business value, strategy, demand, outcomes, gaps, and priorities</td>
+<td style="text-align: right">17</td>
+</tr>
+<tr>
+<td>ODPV Governance</td>
+<td>Quality, access, licensing, pricing, support, agreements, policy, and compliance</td>
+<td style="text-align: right">19</td>
+</tr>
+<tr>
+<td>ODPV Relationships</td>
+<td>Relationship terms for graphs, portfolio analysis, and cross-spec linking</td>
+<td style="text-align: right">24</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>Shared vocabulary terms</td>
+<td style="text-align: right">78</td>
+</tr>
+</tbody></table>
+
+<p><a href="https://github.com/Open-Data-Product-Initiative/odpv-v1.1/issues">Suggest addition to the vocabulary</a></p>
+<h2 id='machine-readable-vocabulary-resources'>Machine-Readable Vocabulary Resources</h2>
+<p>ODPV is published in multiple machine-readable forms for tools, AI agents, catalogs, graph workflows, and semantic tooling.</p>
+
+<table><thead>
+<tr>
+<th>Resource</th>
+<th>Format</th>
+<th>Purpose</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="vocab/odpv.yaml"><code>odpv.yaml</code></a></td>
+<td>YAML</td>
+<td>Canonical machine-readable vocabulary source</td>
+</tr>
+<tr>
+<td><a href="vocab/odpv.json"><code>odpv.json</code></a></td>
+<td>JSON</td>
+<td>JSON representation for tools, APIs, search indexes, and graph applications</td>
+</tr>
+<tr>
+<td><a href="vocab/odpv.jsonld"><code>odpv.jsonld</code></a></td>
+<td>JSON-LD</td>
+<td>Linked-data representation for semantic tooling and graph workflows</td>
+</tr>
+<tr>
+<td><a href="vocab/odpv.skos.ttl"><code>odpv.skos.ttl</code></a></td>
+<td>Turtle</td>
+<td>SKOS representation with labels, definitions, related terms, and external mappings</td>
+</tr>
+<tr>
+<td><a href="vocab/terms.jsonl"><code>terms.jsonl</code></a></td>
+<td>JSONL</td>
+<td>Agent-friendly one-term-per-line file for retrieval, embeddings, and lightweight tools</td>
+</tr>
+<tr>
+<td><a href="llms.txt"><code>llms.txt</code></a></td>
+<td>Text</td>
+<td>AI agent guidance for discovering and using ODPV resources</td>
+</tr>
+</tbody></table>
+<h2 id='agent-helper-commands'>Agent Helper Commands</h2>
+<p>ODPV includes source helper scripts for repeatable local vocabulary lookup, relationship checking, and context engineering workflows.</p>
+
+<table><thead>
+<tr>
+<th>Command</th>
+<th>Purpose</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>python3 scripts/agent_vocab_helper.py resolve &lt;text&gt;</code></td>
+<td>Resolve source language, aliases, or user phrases to a canonical ODPV term</td>
+</tr>
+<tr>
+<td><code>python3 scripts/agent_vocab_helper.py explain &lt;term-id&gt;</code></td>
+<td>Return a compact JSON explanation of a term with definition, aliases, related terms, mappings, and examples</td>
+</tr>
+<tr>
+<td><code>python3 scripts/agent_vocab_helper.py relationship &lt;source&gt; &lt;verb&gt; &lt;target&gt;</code></td>
+<td>Check whether a relationship exists and whether source and target fit the relationship domain and range hints</td>
+</tr>
+<tr>
+<td><code>python3 scripts/agent_vocab_helper.py context &lt;term-id&gt;</code></td>
+<td>Produce an agent-ready context packet for retrieval, grounding, and prompt assembly</td>
+</tr>
+<tr>
+<td><code>python3 scripts/search_vocab.py &quot;&lt;query&gt;&quot; --json</code></td>
+<td>Search more broadly across labels, aliases, definitions, examples, and related terms</td>
+</tr>
+</tbody></table>
+<h2 id='companion-vocabulary-not-a-heavy-ontology'>Companion Vocabulary, Not a Heavy Ontology</h2>
+<p>ODPV is not intended to be a heavy ontology. It is a practical controlled vocabulary that gives stable reference terms to the OpenDataProducts.org standards family. Each specification can reference ODPV terms instead of redefining shared concepts locally. Shared terms belong in ODPV. Spec-specific terms stay in the relevant specification. Extensions can define additional domain-specific or organization-specific terms.</p>
+<h2 id='relationship-to-odps-odpc-and-odpg'>Relationship to ODPS, ODPC, and ODPG</h2>
+<!-- AI_STANDARDS_FAMILY_GUIDANCE:
+ODPV is the shared vocabulary layer for the OpenDataProducts.org standards family.
+ODPS is the Open Data Product Specification. Use ODPS when describing one data product and its product metadata.
+ODPC is the Open Data Product Catalog specification. Use ODPC when describing catalogs, portfolios, use cases, objectives, KPIs, signals, and related portfolio objects.
+ODPG is the Open Data Product Graph specification. Use ODPG when describing graph structures and relationships between data products, use cases, objectives, KPIs, signals, governance objects, providers, and consumers.
+ODPV does not replace ODPS, ODPC, or ODPG. It provides stable ids, labels, definitions, and relationship names that those specifications can reference.
+ODPG documentation: https://opendataproducts.org/odpg-v1.0/
+ODPS homepage: https://opendataproducts.org/
+-->
+
+<ul>
+<li>ODPS defines one data product.</li>
+<li>ODPC defines reusable catalog and portfolio objects.</li>
+<li>ODPG defines relationships between data products, use cases, objectives, KPIs, signals, and other portfolio objects.</li>
+<li>ODPV defines the shared language used by all of them.</li>
+</ul>
+
+<p>Used together, ODPS, ODPC, ODPG, and ODPV create a machine-readable operating model for data product management.</p>
+<h2 id='why-odpv-matters'>Why ODPV Matters</h2>
+<p>ODPV helps prevent terminology drift across the standards family. Without a shared vocabulary, each specification may define terms such as Data Product, Use Case, Objective, KPI, Signal, Owner, SLA, License, or Relationship slightly differently. ODPV gives these terms one stable reference point. This improves:</p>
+
+<ul>
+<li>Specification alignment</li>
+<li>Graph implementation</li>
+<li>Metadata validation</li>
+<li>Catalog interoperability</li>
+<li>AI-assisted discovery</li>
+<li>GraphRAG context</li>
+<li>Portfolio analysis</li>
+<li>Tool development</li>
+</ul>
+<h2 id='automated-drift-detection'>Automated Drift Detection</h2>
+<p>ODPV includes automated cross-spec drift detection for the Open Data Product standards family. A weekly GitHub Action fetches the published ODPS, ODPC, and ODPG schemas, compares their schema terms against the canonical ODPV vocabulary, and writes a dated report.</p>
+
+<p>Reports are kept in <a href="https://github.com/Open-Data-Product-Initiative/odpv-v1.1/tree/main/cross-spec-drift"><code>cross-spec-drift/</code></a> so the project can track how alignment changes over time and use the historical reports as input for later analysis.</p>
+<h2 id='example-use'>Example Use</h2>
+<ul>
+<li>A data product in ODPS can reference ODPV terms for concepts such as DataProduct, ProductDetails, ProductStrategy, DataHolder, SLA, DataQuality, License, DataAccess, PricingPlan, PaymentGateway, and Support.</li>
+<li>A catalog in ODPC can reference ODPV terms for concepts such as DataProductCatalog, UseCase, BusinessObjective, KPI, Signal, Gap, Priority, Reference, and Owner.</li>
+<li>A graph in ODPG can reference ODPV terms for node types and relationship types such as Agent, Workflow, Capability, uses, supports, contributesTo, measures, dependsOn, produces, consumes, ownedBy, alignsWith, impacts, exposes, and identifies.</li>
+</ul>
+<h2 id='specification-aims'>Specification Aims</h2>
+<ul>
+<li>Define shared terms for data product management.</li>
+<li>Reduce duplicate term definitions across ODPS, ODPC, and ODPG.</li>
+<li>Prevent terminology drift across the standards family.</li>
+<li>Support consistent graph node and relationship naming.</li>
+<li>Support AI-assisted discovery, metadata generation, and GraphRAG.</li>
+<li>Improve interoperability between catalogs, platforms, marketplaces, and tools.</li>
+<li>Provide a lightweight path toward semantic knowledge graph implementation.</li>
+<li>Keep formal ontology work optional.</li>
+</ul>
+<h1 id='vocabulary-toolkit'>Vocabulary Toolkit</h1>
+<blockquote>
+<p>Snippet of YAML version:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight yaml"><code><span class="na">id</span><span class="pi">:</span> <span class="s">DataProduct</span>
+<span class="na">uri</span><span class="pi">:</span> <span class="s">https://opendataproducts.org/odpv-v1.1/terms/DataProduct</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
+<span class="na">status</span><span class="pi">:</span> <span class="s">stable</span>
+<span class="na">preferredLabel</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span> <span class="s">Data Product</span>
+<span class="na">definition</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span> <span class="s">A managed data offering designed for reuse, with</span> 
+      <span class="s">defined ownership, access, quality, usage terms,</span> 
+      <span class="s">and value context.</span>
+<span class="na">alsoKnownAs</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">data product</span>
+    <span class="pi">-</span> <span class="s">data offering</span>
+    <span class="pi">-</span> <span class="s">reusable data asset</span>
+<span class="na">relatedTerms</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">Dataset</span>
+  <span class="pi">-</span> <span class="s">DataService</span>
+  <span class="pi">-</span> <span class="s">Distribution</span>
+<span class="na">usedIn</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">ODPS</span>
+  <span class="pi">-</span> <span class="s">ODPC</span>
+  <span class="pi">-</span> <span class="s">ODPG</span>
+</code></pre></div>
+<p>ODPV is published in several forms for different users and tools. This specification provides the human-readable documentation, while the vocabulary files provide machine-readable representations for validation, catalog integration, graph construction, AI retrieval, linked-data tooling, and automation. Use <code>odpv.yaml</code> as the canonical source, <code>odpv.json</code> when JSON is easier to consume, <code>odpv.jsonld</code> or <code>odpv.skos.ttl</code> for semantic web and linked-data tooling, the section YAML files when only one vocabulary area is needed, and <code>terms.jsonl</code> for search, embeddings, and lightweight AI agent workflows.</p>
+
+<p>The primary implementation toolkit for the whole Open Data Product standards family is the <a href="https://github.com/Open-Data-Product-Initiative/odp-agent-sdk">Open Data Product Agent SDK</a>. Use it when building tools, validators, agent workflows, catalog integrations, graph workflows, or automation that needs to work across ODPS, ODPC, ODPG, and ODPV together.</p>
+
+<!-- AI_AGENT_GUIDANCE:
+Use /vocab/odpv.yaml as the canonical ODPV vocabulary source.
+Use /vocab/terms.jsonl for retrieval, embeddings, search, and lightweight tool calls.
+Use /vocab/odpv.jsonld and /vocab/odpv.skos.ttl for linked-data, semantic web, and SKOS-aware tooling.
+Use /vocab/core.yaml, /vocab/value.yaml, /vocab/governance.yaml, and /vocab/relationships.yaml when only one vocabulary section is needed.
+Use https://github.com/Open-Data-Product-Initiative/odp-agent-sdk as the main SDK for cross-standard Open Data Product tooling.
+Use stable term ids and uris exactly as published. Do not redefine official ODPV terms.
+If a needed term is missing, treat it as an extension candidate and use a separate namespace or prefix.
+-->
+
+<table><thead>
+<tr>
+<th>Resource</th>
+<th>Format</th>
+<th>Purpose</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/Open-Data-Product-Initiative/odp-agent-sdk">Open Data Product Agent SDK</a></td>
+<td>SDK</td>
+<td>Main toolkit for building tools, validators, agent workflows, catalog integrations, and graph workflows across the Open Data Product standards family</td>
+</tr>
+<tr>
+<td><a href="llms.txt"><code>llms.txt</code></a></td>
+<td>Text</td>
+<td>AI agent guidance for discovering and using the ODPV vocabulary files</td>
+</tr>
+<tr>
+<td><a href="vocab/odpv.yaml"><code>odpv.yaml</code></a></td>
+<td>YAML</td>
+<td>Canonical machine-readable vocabulary file</td>
+</tr>
+<tr>
+<td><a href="vocab/odpv.json"><code>odpv.json</code></a></td>
+<td>JSON</td>
+<td>JSON representation for tools, APIs, search indexes, and graph applications</td>
+</tr>
+<tr>
+<td><a href="vocab/odpv.jsonld"><code>odpv.jsonld</code></a></td>
+<td>JSON-LD</td>
+<td>Linked-data representation for semantic tooling and graph workflows</td>
+</tr>
+<tr>
+<td><a href="vocab/odpv.skos.ttl"><code>odpv.skos.ttl</code></a></td>
+<td>Turtle</td>
+<td>SKOS representation with labels, definitions, related terms, and external mappings</td>
+</tr>
+<tr>
+<td><a href="vocab/terms.jsonl"><code>terms.jsonl</code></a></td>
+<td>JSONL</td>
+<td>Agent-friendly one-term-per-line file for retrieval, embeddings, and lightweight tools</td>
+</tr>
+<tr>
+<td><a href="vocab/core.yaml"><code>core.yaml</code></a></td>
+<td>YAML</td>
+<td>ODPV Core terms as a standalone machine-readable section file</td>
+</tr>
+<tr>
+<td><a href="vocab/value.yaml"><code>value.yaml</code></a></td>
+<td>YAML</td>
+<td>ODPV Value terms as a standalone machine-readable section file</td>
+</tr>
+<tr>
+<td><a href="vocab/governance.yaml"><code>governance.yaml</code></a></td>
+<td>YAML</td>
+<td>ODPV Governance terms as a standalone machine-readable section file</td>
+</tr>
+<tr>
+<td><a href="vocab/relationships.yaml"><code>relationships.yaml</code></a></td>
+<td>YAML</td>
+<td>ODPV Relationships terms as a standalone machine-readable section file</td>
+</tr>
+<tr>
+<td><a href="schema/odpv.schema.json"><code>odpv.schema.json</code></a></td>
+<td>JSON Schema</td>
+<td>Validation schema for ODPV vocabulary files</td>
+</tr>
+<tr>
+<td><a href="/profiles/README.md"><code>profiles/</code></a></td>
+<td>YAML</td>
+<td>Versioned ODPV interoperability profiles and mapping governance</td>
+</tr>
+<tr>
+<td><a href="schema/odpv.profile.schema.json"><code>odpv.profile.schema.json</code></a></td>
+<td>JSON Schema</td>
+<td>Validation schema for ODPV interoperability profiles</td>
+</tr>
+</tbody></table>
+
+<p>Agent-oriented helper scripts are available in the source repository for maintaining and using the vocabulary files.</p>
+
+<!-- AI_AGENT_SCRIPT_GUIDANCE:
+When working from the source repository, use scripts/search_vocab.py for repeatable local term lookup.
+Use scripts/generate_vocab_artifacts.py after editing source/vocab/odpv.yaml to regenerate derived JSON, JSON-LD, SKOS Turtle, JSONL, and section YAML files.
+Use scripts/generate_vocab_artifacts.py --check in CI or review workflows to detect drift between canonical and derived vocabulary artifacts.
+Use scripts/validate_vocab.py to validate vocabulary structure, generated artifacts, JSONL output, section files, examples, and relationship guidance.
+Use scripts/agent_vocab_helper.py for agent-oriented resolve, explain, relationship, and context packet workflows.
+Use scripts/test_vocab_scripts.py to verify the helper scripts themselves.
+Use scripts/check_cross_spec_drift.py to compare published ODPS, ODPC, and ODPG schema terms against ODPV and refresh the dated cross-spec-drift report.
+Use scripts/validate_profiles.py to validate ODPV interoperability profile structure, mapping kinds, and ODPV-term references.
+Do not edit generated vocabulary artifacts directly unless intentionally repairing generated output; update source/vocab/odpv.yaml first.
+-->
+
+<table><thead>
+<tr>
+<th>Script</th>
+<th>Purpose</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/Open-Data-Product-Initiative/odpv-v1.1/blob/main/scripts/generate_vocab_artifacts.py"><code>generate_vocab_artifacts.py</code></a></td>
+<td>Regenerates derived vocabulary artifacts from canonical <code>odpv.yaml</code>, including JSON, JSON-LD, SKOS Turtle, JSONL, and section YAML; use <code>--check</code> in CI to detect drift</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Open-Data-Product-Initiative/odpv-v1.1/blob/main/scripts/validate_vocab.py"><code>validate_vocab.py</code></a></td>
+<td>Validates vocabulary structure, required fields, generated artifacts, JSONL, section files, and relationship guidance</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Open-Data-Product-Initiative/odpv-v1.1/blob/main/scripts/search_vocab.py"><code>search_vocab.py</code></a></td>
+<td>Searches ODPV terms using labels, aliases, definitions, examples, and related terms</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Open-Data-Product-Initiative/odpv-v1.1/blob/main/scripts/agent_vocab_helper.py"><code>agent_vocab_helper.py</code></a></td>
+<td>Provides JSON-first agent helpers for resolving phrases, explaining terms, checking relationship domain/range, and producing context packets</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Open-Data-Product-Initiative/odpv-v1.1/blob/main/scripts/check_cross_spec_drift.py"><code>check_cross_spec_drift.py</code></a></td>
+<td>Compares published ODPS, ODPC, and ODPG schema terms against ODPV and writes a dated report under <code>cross-spec-drift/</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Open-Data-Product-Initiative/odpv-v1.1/blob/main/scripts/validate_profiles.py"><code>validate_profiles.py</code></a></td>
+<td>Validates interoperability profiles, mapping kinds, lifecycle values, directions, and references to official ODPV terms</td>
+</tr>
+</tbody></table>
+
+<p>The Markdown tables in this specification are intended for human readers. The YAML files are intended for programmable use, automation, validation, AI retrieval, and graph-based tooling.</p>
+<h1 id='ai-agent-usage-patterns'>AI Agent Usage Patterns</h1>
+<p>ODPV is designed to be usable by AI agents, catalog tools, retrieval systems, graph systems, and automation workflows. From an agent perspective, ODPV provides the shared terminology layer for data product management: it names stable concepts, labels, definitions, aliases, related terms, and relationship names that other specifications and tools can reference consistently.</p>
+
+<p>ODPS defines one data product. ODPC defines reusable catalog and portfolio objects around data products. <a href="https://opendataproducts.org/odpg-v1.0/">ODPG</a> defines relationships between those objects. ODPV provides the shared vocabulary terms used across the standards family. This separation helps agents choose the right source before acting.</p>
+
+<!-- AI_AGENT_USAGE_PATTERNS:
+Use ODPV as the shared vocabulary and terminology layer, not as the full data product, catalog, or graph definition layer.
+Use ODPS or another referenced product model for detailed data product metadata.
+Use ODPC for catalog and portfolio objects such as ProductReference, UseCase, BusinessObjective, KPI, Signal, and Catalog.
+Use ODPG for graph structures, graph relationships, traversal, and connected portfolio analysis.
+Use ODPV term ids and uris for stable shared concepts, labels, definitions, aliases, and relationship names.
+-->
+<h2 id='agent-capabilities-enabled-by-odpv'>Agent capabilities enabled by ODPV</h2>
+<p>Agents can use ODPV to:</p>
+
+<ul>
+<li>select stable term ids and uris for data product management concepts</li>
+<li>map user language, synonyms, and internal terminology to preferred ODPV terms</li>
+<li>retrieve definitions, labels, aliases, related terms, and examples from <code>terms.jsonl</code></li>
+<li>validate vocabulary files against <code>odpv.schema.json</code></li>
+<li>explain distinctions between nearby terms such as <code>DataProduct</code>, <code>Dataset</code>, <code>DataService</code>, and <code>Distribution</code></li>
+<li>choose relationship terms such as <code>uses</code>, <code>supports</code>, <code>requires</code>, <code>contributesTo</code>, <code>measures</code>, <code>dependsOn</code>, <code>produces</code>, <code>consumes</code>, <code>governedBy</code>, <code>providedBy</code>, <code>consumedBy</code>, <code>ownedBy</code>, <code>alignsWith</code>, <code>impacts</code>, <code>exposes</code>, and <code>identifies</code></li>
+<li>prepare graph-ready relationship names for ODPG or another graph implementation</li>
+<li>support catalog alignment by using the same terms in ODPC catalogs and ODPS product descriptions</li>
+<li>detect terminology drift, duplicate concepts, unclear aliases, or missing shared terms</li>
+<li>suggest extension terms when an organization-specific or domain-specific concept is not part of the official vocabulary</li>
+</ul>
+<h2 id='common-agent-workflows'>Common agent workflows</h2>
+<table><thead>
+<tr>
+<th>Workflow</th>
+<th>Agent behavior</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Term lookup</td>
+<td>Match a user phrase or internal label to the best ODPV term using preferred labels, aliases, definitions, examples, and related terms.</td>
+</tr>
+<tr>
+<td>Vocabulary validation</td>
+<td>Validate ODPV vocabulary files, check required fields, detect malformed terms, and suggest schema-compliant repairs.</td>
+</tr>
+<tr>
+<td>Terminology alignment</td>
+<td>Compare ODPS, ODPC, ODPG, vendor catalog, or internal model wording against ODPV and recommend stable term ids and uris.</td>
+</tr>
+<tr>
+<td>Relationship selection</td>
+<td>Choose the most specific ODPV relationship term for a graph edge and avoid falling back to <code>relatedTo</code> when a better term exists.</td>
+</tr>
+<tr>
+<td>Retrieval and RAG</td>
+<td>Use <code>llms.txt</code>, <code>terms.jsonl</code>, schema files, section YAML files, and include pages to retrieve the correct term before generating or editing content.</td>
+</tr>
+<tr>
+<td>Vocabulary extension</td>
+<td>Identify missing shared terms and propose extension candidates with an id, label, definition, concept group, related terms, and example usage.</td>
+</tr>
+<tr>
+<td>Artifact maintenance</td>
+<td>Update canonical <code>odpv.yaml</code>, regenerate derived JSON, JSONL, and section YAML files, then validate that generated artifacts are in sync.</td>
+</tr>
+<tr>
+<td>Standards-family guidance</td>
+<td>Decide whether a task belongs in ODPS, ODPC, ODPG, or ODPV before generating content or changing files.</td>
+</tr>
+</tbody></table>
+<h2 id='agent-behavior-constraints'>Agent behavior constraints</h2>
+<p>Agents using ODPV should keep vocabulary boundaries clear:</p>
+
+<ul>
+<li>Do not treat ODPV as a replacement for ODPS, ODPC, or ODPG.</li>
+<li>Do not put full product metadata, catalog objects, or graph structures into ODPV terms.</li>
+<li>Do not redefine official ODPV term ids, uris, labels, or meanings locally.</li>
+<li>Do not invent new official terms when an existing ODPV term fits.</li>
+<li>Do not use <code>relatedTo</code> when a more specific relationship term such as <code>supports</code>, <code>requires</code>, <code>dependsOn</code>, or <code>governedBy</code> applies.</li>
+<li>Do not assume aliases are preferred labels; use them for search, mapping, and onboarding.</li>
+<li>Do not promote ODPG-local aliases such as <code>API</code> or <code>monitors</code> into standalone ODPV ids when <code>DataService</code> and <code>measures</code> are the canonical vocabulary terms.</li>
+<li>Do not edit generated vocabulary artifacts directly when changing official vocabulary content; update <code>source/vocab/odpv.yaml</code> first and regenerate derived files.</li>
+</ul>
+<h2 id='example-prompts-odpv-enables'>Example prompts ODPV enables</h2><div class="highlight"><pre class="highlight plaintext"><code>Find the best ODPV term for "data API" and return the stable id and uri.
+</code></pre></div><div class="highlight"><pre class="highlight plaintext"><code>Map these internal catalog labels to ODPV preferred terms and explain uncertain matches.
+</code></pre></div><div class="highlight"><pre class="highlight plaintext"><code>Choose ODPV relationship terms for these graph edges and avoid generic relationships where possible.
+</code></pre></div><div class="highlight"><pre class="highlight plaintext"><code>Validate this ODPV vocabulary file and suggest schema-compliant repairs.
+</code></pre></div><div class="highlight"><pre class="highlight plaintext"><code>Identify terminology drift between this ODPC catalog and the official ODPV terms.
+</code></pre></div><div class="highlight"><pre class="highlight plaintext"><code>Propose an ODPV extension term for a missing domain-specific concept.
+</code></pre></div><h1 id='term-governance-rules'>Term Governance Rules</h1>
+<p>ODPV is a shared vocabulary, not a catch-all list of every field used by every specification. New terms should be added when they improve shared understanding across the Open Data Products standards family or when they provide a stable bridge between specifications, tools, catalogs, graphs, and AI agents.</p>
+
+<p>Use these rules when reviewing drift reports, GitHub issues, pull requests, or proposed vocabulary additions.</p>
+
+<table><thead>
+<tr>
+<th>Situation</th>
+<th>Preferred action</th>
+<th>Reason</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>A concept is shared by more than one standard, tool, catalog, graph, or agent workflow</td>
+<td>Add an official ODPV term</td>
+<td>Shared concepts need stable ids, labels, definitions, aliases, examples, and mappings.</td>
+</tr>
+<tr>
+<td>A source term is only a different spelling, casing, plural form, or common synonym of an existing ODPV term</td>
+<td>Add an alias in <code>alsoKnownAs</code></td>
+<td>The canonical term stays stable while search, drift checks, and agent matching improve.</td>
+</tr>
+<tr>
+<td>A source term is narrower than an existing ODPV term but still useful to map</td>
+<td>Add an alias only if the meaning is safely equivalent; otherwise add an external or close mapping</td>
+<td>Avoid overloading broad terms with narrower meanings that could mislead tools.</td>
+</tr>
+<tr>
+<td>A concept belongs only to one specification&#39;s internal structure</td>
+<td>Keep it in that source specification</td>
+<td>ODPV should not duplicate schema plumbing or implementation-only fields.</td>
+</tr>
+<tr>
+<td>A concept belongs to a domain, organization, or implementation profile</td>
+<td>Use an extension namespace or prefix</td>
+<td>Domain-specific vocabulary should be extensible without changing the shared core.</td>
+</tr>
+<tr>
+<td>A concept already has a strong external standard term</td>
+<td>Add a mapping such as <code>exactMatch</code>, <code>closeMatch</code>, <code>broadMatch</code>, <code>narrowMatch</code>, or <code>relatedMatch</code></td>
+<td>External mappings make ODPV interoperable without forcing it to become a heavy ontology.</td>
+</tr>
+<tr>
+<td>A source specification uses an unclear or inconsistent term</td>
+<td>Open an issue against the source specification</td>
+<td>Some drift is better fixed at the source rather than normalized into ODPV.</td>
+</tr>
+</tbody></table>
+<h2 id='adding-a-new-official-term'>Adding A New Official Term</h2>
+<p>A new ODPV term should include:</p>
+
+<ul>
+<li>stable <code>id</code> and <code>uri</code></li>
+<li><code>type</code></li>
+<li><code>status</code></li>
+<li><code>introducedIn</code></li>
+<li><code>preferredLabel</code></li>
+<li>clear definition</li>
+<li>useful <code>alsoKnownAs</code> aliases</li>
+<li><code>relatedTerms</code></li>
+<li><code>usedIn</code></li>
+<li>examples</li>
+<li>external <code>mappings</code> when an established vocabulary applies</li>
+</ul>
+
+<p>Definitions should describe what the concept means, not where it appears in a schema. Examples should show practical use in ODPS, ODPC, ODPG, tools, catalogs, graphs, or AI workflows.</p>
+<h2 id='adding-an-alias'>Adding An Alias</h2>
+<p>Add an alias when the proposed term is safely equivalent to an existing ODPV term. Alias examples include:</p>
+
+<ul>
+<li>casing differences such as <code>license</code> for <code>License</code></li>
+<li>plural schema names such as <code>pricingPlans</code> for <code>PricingPlan</code></li>
+<li>source-spec naming differences such as <code>API</code> for <code>DataService</code></li>
+<li>relationship wording differences such as <code>monitors</code> for <code>measures</code></li>
+</ul>
+
+<p>Do not add an alias when the source term would change the meaning of the canonical term. In that case, add a new term, add a mapping, use an extension, or open a source-spec issue.</p>
+<h2 id='adding-external-mappings'>Adding External Mappings</h2>
+<p>Use external mappings to connect ODPV terms to established vocabularies such as DCAT, SKOS, PROV-O, ODRL, Dublin Core, schema.org, or SPDX.</p>
+
+<p>Mapping strength matters:</p>
+
+<table><thead>
+<tr>
+<th>Mapping</th>
+<th>Use when</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>exactMatch</code></td>
+<td>The external concept has the same practical meaning.</td>
+</tr>
+<tr>
+<td><code>closeMatch</code></td>
+<td>The external concept is similar enough for interoperability, but not identical.</td>
+</tr>
+<tr>
+<td><code>broadMatch</code></td>
+<td>The external concept is broader than the ODPV term.</td>
+</tr>
+<tr>
+<td><code>narrowMatch</code></td>
+<td>The external concept is narrower than the ODPV term.</td>
+</tr>
+<tr>
+<td><code>relatedMatch</code></td>
+<td>The external concept is related but should not be treated as equivalent.</td>
+</tr>
+</tbody></table>
+
+<p>When in doubt, prefer <code>closeMatch</code> over <code>exactMatch</code>.</p>
+<h2 id='drift-review-workflow'>Drift Review Workflow</h2>
+<p>When a drift report shows <code>Possible drift</code>:</p>
+
+<ol>
+<li>Check whether the source term already maps to an ODPV term through <code>alsoKnownAs</code>.</li>
+<li>Decide whether the source term is a shared concept, alias, source-spec detail, extension candidate, or source-spec issue.</li>
+<li>If adding or changing ODPV, update <code>source/vocab/odpv.yaml</code> first.</li>
+<li>Regenerate artifacts with <code>scripts/generate_vocab_artifacts.py</code>.</li>
+<li>Validate with <code>scripts/validate_vocab.py</code>.</li>
+<li>Refresh the drift report with <code>scripts/check_cross_spec_drift.py</code>.</li>
+</ol>
+
+<p>The goal is not to force every source term into ODPV. The goal is to keep shared vocabulary stable, useful, and interoperable.</p>
+<h1 id='interoperability-profiles'>Interoperability Profiles</h1>
+<p>ODPV interoperability profiles connect the shared vocabulary to established external standards without redefining either side. A profile is a versioned mapping contract: it identifies the ODPV and external-standard versions, its scope, reviewed mapping assertions, and the direction required for any transformation.</p>
+
+<p>The initial profiles are <strong>draft</strong> semantic artifacts. They are ready for implementation feedback, but a mapping becomes stable only after maintainers review its meaning, examples, and SDK conformance support together.</p>
+
+<table><thead>
+<tr>
+<th>Profile</th>
+<th>External standard</th>
+<th>Intended role</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="profiles/dcat-3.yaml"><code>ODPV-DCAT-3</code></a></td>
+<td><a href="https://www.w3.org/TR/vocab-dcat-3/">DCAT 3</a></td>
+<td>Catalog discovery and federation</td>
+</tr>
+<tr>
+<td><a href="profiles/odcs-3.yaml"><code>ODPV-ODCS-3</code></a></td>
+<td><a href="https://bitol-io.github.io/open-data-contract-standard/">Open Data Contract Standard</a></td>
+<td>Contract-semantic bindings</td>
+</tr>
+<tr>
+<td><a href="profiles/openlineage-1.yaml"><code>ODPV-OPENLINEAGE-1</code></a></td>
+<td><a href="https://openlineage.io/docs/spec/object-model/">OpenLineage</a></td>
+<td>Declared and observed lineage alignment</td>
+</tr>
+<tr>
+<td><a href="profiles/prov-o.yaml"><code>ODPV-PROV-O</code></a></td>
+<td><a href="https://www.w3.org/TR/prov-o/">PROV-O</a></td>
+<td>Provenance representation</td>
+</tr>
+<tr>
+<td><a href="profiles/odrl-2.yaml"><code>ODPV-ODRL-2</code></a></td>
+<td><a href="https://www.w3.org/TR/odrl-model/">ODRL 2.2</a></td>
+<td>Rights-policy expression</td>
+</tr>
+</tbody></table>
+
+<p>The common <a href="schema/odpv.profile.schema.json">profile schema</a> and <a href="/profiles/README.md">profile governance guide</a> define the profile format and the meaning of its mapping types.</p>
+<h2 id='mapping-types'>Mapping Types</h2>
+<p>Profiles use three different mapping types. They must not be conflated.</p>
+
+<table><thead>
+<tr>
+<th>Mapping type</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>semanticMapping</code></td>
+<td>A reviewed SKOS relationship between two concepts.</td>
+<td><code>Dataset</code> <code>exactMatch</code> <code>dcat:Dataset</code></td>
+</tr>
+<tr>
+<td><code>fieldBinding</code></td>
+<td>An ODPV concept is represented by a field or section in another format.</td>
+<td><code>SLA</code> in ODCS <code>slaProperties</code></td>
+</tr>
+<tr>
+<td><code>transformation</code></td>
+<td>Converting the representation needs direction or an intermediary object.</td>
+<td><code>produces</code> to PROV generation through an Activity</td>
+</tr>
+</tbody></table>
+
+<p><code>exactMatch</code> is reserved for concepts that are interchangeable in the profile&#39;s scope. When that cannot be demonstrated, use <code>closeMatch</code>, another narrower SKOS relationship, or a field binding instead.</p>
+<h2 id='ownership-boundary'>Ownership Boundary</h2>
+<p>ODPV owns the semantic profile files, mapping rationale, evidence, and lifecycle. The <a href="https://github.com/Open-Data-Product-Initiative/odp-agent-sdk">Open Data Product Agent SDK</a> owns profile resolution, validation, transformation, conformance reports, and integration templates.</p>
+
+<p>An SDK implementation MUST retain the profile id, version, mapping type, and direction in its result. In particular, observed OpenLineage events MUST NOT be reported as proof of an ODPV business outcome or data-contract compliance.</p>
+<h1 id='odpv-core'>ODPV Core</h1>
+<p>ODPV Core defines the foundational terms used across the Open Data Products specification family. These terms describe the main objects, roles, classifications, and references that appear in ODPS, ODPC, and <a href="https://opendataproducts.org/odpg-v1.0/">ODPG</a>.</p>
+
+<p>The purpose of the core vocabulary is to create a shared language for describing data products and their surrounding ecosystem. It helps different specifications, catalogs, graphs, tools, and platforms use the same concepts consistently.</p>
+
+<p>Each term has one canonical ODPV name. Alternative terms are included to support search, mapping, onboarding, and AI-assisted interpretation. Related terms show nearby concepts that are connected to the term but have a different meaning.</p>
+
+<p>The core terms are intentionally lightweight. They do not replace the full object models of ODPS, ODPC, or <a href="https://opendataproducts.org/odpg-v1.0/">ODPG</a>. Instead, they provide a common vocabulary layer that supports interoperability across the Open Data Products ecosystem.</p>
+
+<blockquote>
+<p>Snippet of YAML version:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight yaml"><code><span class="na">id</span><span class="pi">:</span> <span class="s">DataProduct</span>
+<span class="na">uri</span><span class="pi">:</span> <span class="s">https://opendataproducts.org/odpv-v1.1/terms/DataProduct</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
+<span class="na">status</span><span class="pi">:</span> <span class="s">stable</span>
+<span class="na">introducedIn</span><span class="pi">:</span> <span class="s">1.0.0</span>
+<span class="na">preferredLabel</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span> <span class="s">Data Product</span>
+<span class="na">definition</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span> <span class="s">A managed data offering designed for reuse, with defined</span>
+      <span class="s">ownership, access, quality, usage terms, and value context.</span>
+<span class="na">alsoKnownAs</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">data product</span>
+    <span class="pi">-</span> <span class="s">data offering</span>
+    <span class="pi">-</span> <span class="s">reusable data asset</span>
+<span class="na">relatedTerms</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">Dataset</span>
+  <span class="pi">-</span> <span class="s">DataService</span>
+  <span class="pi">-</span> <span class="s">Distribution</span>
+<span class="na">usedIn</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">ODPS</span>
+  <span class="pi">-</span> <span class="s">ODPC</span>
+  <span class="pi">-</span> <span class="s">ODPG</span>
+</code></pre></div>
+<table><thead>
+<tr>
+<th>Term</th>
+<th>Type</th>
+<th>Description</th>
+<th>Also known as terms</th>
+<th>Related terms</th>
+<th>Used in</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>DataProduct</code></td>
+<td>object</td>
+<td>A managed data offering designed for reuse, with defined ownership, access, quality, usage terms, and value context.</td>
+<td>data product, data offering, reusable data asset, data product asset</td>
+<td><code>Dataset</code>, <code>DataService</code>, <code>Distribution</code></td>
+<td>ODPS, ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>ProductDetails</code></td>
+<td>object</td>
+<td>The descriptive metadata block for a data product, including name, product identifier, description, value proposition, visibility, status, and version.</td>
+<td>details, product details, product metadata, descriptive metadata</td>
+<td><code>DataProduct</code>, <code>ValueProposition</code>, <code>GovernanceProfile</code>, <code>PortfolioPriority</code></td>
+<td>ODPS</td>
+</tr>
+<tr>
+<td><code>DataProductCatalog</code></td>
+<td>object</td>
+<td>A managed collection of data products and related portfolio objects, such as use cases, objectives, KPIs, signals, and references.</td>
+<td>data catalog, Catalog, ODPC Catalog, product catalog, data product portfolio, portfolio catalog</td>
+<td><code>DataProduct</code>, <code>DataProductGraph</code>, <code>Reference</code></td>
+<td>ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>DataProductGraph</code></td>
+<td>object</td>
+<td>A graph representation that connects data products, catalogs, use cases, objectives, KPIs, signals, and governance objects through defined relationships.</td>
+<td>data product graph, portfolio graph, knowledge graph, product relationship graph</td>
+<td><code>DataProductCatalog</code>, <code>Reference</code>, <code>Relationship</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>Dataset</code></td>
+<td>object</td>
+<td>A structured collection of data that may be part of, or exposed through, a data product. Aligns with DCAT where applicable.</td>
+<td>data set, data collection, source dataset, data resource</td>
+<td><code>DataProduct</code>, <code>Distribution</code>, <code>DataService</code></td>
+<td>ODPS, ODPC</td>
+</tr>
+<tr>
+<td><code>Distribution</code></td>
+<td>object</td>
+<td>A specific accessible form of a dataset, such as a file, API response, export, or downloadable representation. Aligns with DCAT where applicable.</td>
+<td>data file, data download, export, data representation</td>
+<td><code>Dataset</code>, <code>DataService</code>, <code>DataAccess</code></td>
+<td>ODPS</td>
+</tr>
+<tr>
+<td><code>DataService</code></td>
+<td>object</td>
+<td>A service that provides access to data or data operations, such as an API, query endpoint, or data delivery service. Aligns with DCAT where applicable.</td>
+<td>data API, API, data endpoint, query service, delivery service</td>
+<td><code>Dataset</code>, <code>Distribution</code>, <code>DataAccess</code>, <code>API</code></td>
+<td>ODPS, ODPG</td>
+</tr>
+<tr>
+<td><code>Agent</code></td>
+<td>role</td>
+<td>An AI agent, automation actor, or software system that can use data products, services, workflows, or graph context to perform a task.</td>
+<td>AI agent, automation actor, autonomous agent, software agent</td>
+<td><code>Consumer</code>, <code>Workflow</code>, <code>DataService</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>Workflow</code></td>
+<td>object</td>
+<td>A business, operational, analytical, or technical process that coordinates activities, systems, agents, data products, or services.</td>
+<td>process, business workflow, technical workflow, orchestration flow</td>
+<td><code>UseCase</code>, <code>Agent</code>, <code>Capability</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>Capability</code></td>
+<td>object</td>
+<td>A reusable business, organizational, analytical, operational, or technical ability that can be supported by data products, workflows, agents, or services.</td>
+<td>business capability, technical capability, organizational capability, reusable capability</td>
+<td><code>Domain</code>, <code>Workflow</code>, <code>StrategicOpportunity</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>Provider</code></td>
+<td>role</td>
+<td>A person, team, organization, or system that provides or publishes a data product, dataset, distribution, or data service.</td>
+<td>publisher, supplier, source provider, data provider</td>
+<td><code>Owner</code>, <code>Steward</code>, <code>Consumer</code></td>
+<td>ODPS, ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>DataHolder</code></td>
+<td>role</td>
+<td>A legal entity or accountable organization that holds, controls, or is responsible for a data product or the data it contains.</td>
+<td>dataHolder, data holder, holding organization, accountable legal entity</td>
+<td><code>Provider</code>, <code>Owner</code>, <code>Steward</code>, <code>DataAgreement</code></td>
+<td>ODPS</td>
+</tr>
+<tr>
+<td><code>Consumer</code></td>
+<td>role</td>
+<td>A person, team, organization, system, or agent that uses or consumes a data product, dataset, distribution, or data service.</td>
+<td>user, data user, customer, recipient, consuming agent</td>
+<td><code>Provider</code>, <code>DataProduct</code>, <code>DataAccess</code></td>
+<td>ODPS, ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>Owner</code></td>
+<td>role</td>
+<td>A person, team, or organization accountable for a data product, catalog, dataset, service, or related object.</td>
+<td>accountable owner, product owner, business owner, asset owner</td>
+<td><code>Provider</code>, <code>Steward</code>, <code>Governance</code></td>
+<td>ODPS, ODPC</td>
+</tr>
+<tr>
+<td><code>Steward</code></td>
+<td>role</td>
+<td>A person, team, or organization responsible for the operational management, quality, metadata, and lifecycle of a data product or related object.</td>
+<td>data steward, product steward, metadata steward, quality steward</td>
+<td><code>Owner</code>, <code>Provider</code>, <code>DataQuality</code></td>
+<td>ODPS, ODPC</td>
+</tr>
+<tr>
+<td><code>Domain</code></td>
+<td>classification</td>
+<td>A business, organizational, subject, or functional area used to group data products and related objects.</td>
+<td>business domain, data domain, subject area, functional area</td>
+<td><code>DataProductCatalog</code>, <code>Category</code>, <code>Theme</code></td>
+<td>ODPS, ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>Identifier</code></td>
+<td>reference</td>
+<td>A stable value used to uniquely identify a vocabulary term, specification object, product, catalog item, or graph node.</td>
+<td>id, unique id, persistent id, node id</td>
+<td><code>Reference</code>, <code>URI</code>, <code>DataProduct</code></td>
+<td>ODPS, ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>Reference</code></td>
+<td>reference</td>
+<td>A link or pointer to another object, specification file, external vocabulary term, system record, or graph node.</td>
+<td>link, pointer, external reference, object reference, GraphReference, ProductReference, ProductModel, graph reference, product reference, product model reference</td>
+<td><code>Identifier</code>, <code>$ref</code>, <code>URI</code>, <code>DataProduct</code>, <code>DataProductGraph</code></td>
+<td>ODPS, ODPC, ODPG</td>
+</tr>
+</tbody></table>
+
+<p><a href="https://github.com/Open-Data-Product-Initiative/odpv-v1.1/issues">Suggest addition to the vocabulary</a></p>
+<h1 id='odpv-value'>ODPV Value</h1>
+<p>ODPV Value defines the terms used to describe why data products matter, where they create value, and how that value connects to business outcomes.</p>
+
+<p>These terms help connect data products to use cases, objectives, KPIs, signals, gaps, opportunities, risks, and benefits. They make the vocabulary useful beyond technical metadata by linking data products to planning, prioritization, investment, and measurable impact.</p>
+
+<p>The value vocabulary supports portfolio-level thinking. It helps teams describe which data products are needed, which use cases they support, what outcomes they contribute to, and where new opportunities or gaps exist.</p>
+
+<p>Each term has one canonical ODPV name. Also known as terms help users map familiar business language to the official vocabulary. Related terms show nearby concepts that are connected but should not be treated as identical.</p>
+
+<blockquote>
+<p>Snippet of YAML version:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight yaml"><code><span class="na">id</span><span class="pi">:</span> <span class="s">BusinessObjective</span>
+<span class="na">uri</span><span class="pi">:</span> <span class="s">https://opendataproducts.org/odpv-v1.1/terms/BusinessObjective</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
+<span class="na">status</span><span class="pi">:</span> <span class="s">stable</span>
+<span class="na">introducedIn</span><span class="pi">:</span> <span class="s">1.0.0</span>
+<span class="na">preferredLabel</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span> <span class="s">Business Objective</span>
+<span class="na">definition</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span> <span class="s">A business goal or intended outcome that data products,</span>
+      <span class="s">use cases, or portfolio actions support.</span>
+<span class="na">alsoKnownAs</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">objective</span>
+    <span class="pi">-</span> <span class="s">business goal</span>
+    <span class="pi">-</span> <span class="s">strategic goal</span>
+    <span class="pi">-</span> <span class="s">target outcome</span>
+<span class="na">relatedTerms</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">Outcome</span>
+  <span class="pi">-</span> <span class="s">KPI</span>
+  <span class="pi">-</span> <span class="s">Impact</span>
+  <span class="pi">-</span> <span class="s">UseCase</span>
+<span class="na">usedIn</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">ODPC</span>
+  <span class="pi">-</span> <span class="s">ODPG</span>
+</code></pre></div>
+<table><thead>
+<tr>
+<th>Term</th>
+<th>Type</th>
+<th>Description</th>
+<th>Also known as</th>
+<th>Related terms</th>
+<th>Used in</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>UseCase</code></td>
+<td>object</td>
+<td>A practical business, operational, analytical, or technical scenario where one or more data products are used to create value.</td>
+<td>use case, scenario, business scenario, application case</td>
+<td><code>DataProduct</code>, <code>BusinessObjective</code>, <code>DataNeed</code>, <code>Outcome</code></td>
+<td>ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>BusinessObjective</code></td>
+<td>object</td>
+<td>A business goal or intended outcome that data products, use cases, or portfolio actions support.</td>
+<td>objective, business goal, strategic goal, target outcome</td>
+<td><code>Outcome</code>, <code>KPI</code>, <code>Impact</code>, <code>UseCase</code></td>
+<td>ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>KPI</code></td>
+<td>object</td>
+<td>A measurable indicator used to track progress toward a business objective, outcome, or portfolio goal.</td>
+<td>key performance indicator, metric, performance measure, success measure</td>
+<td><code>BusinessObjective</code>, <code>Outcome</code>, <code>Impact</code></td>
+<td>ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>Impact</code></td>
+<td>object</td>
+<td>The expected or observed effect created by a data product, use case, signal, or portfolio decision.</td>
+<td>effect, value impact, business impact, observed effect</td>
+<td><code>Outcome</code>, <code>Benefit</code>, <code>KPI</code>, <code>ValueProposition</code></td>
+<td>ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>Signal</code></td>
+<td>object</td>
+<td>An observed demand, trend, risk, gap, usage pattern, policy change, market change, or operational event that may require action.</td>
+<td>market signal, demand signal, trigger, observation</td>
+<td><code>Demand</code>, <code>Risk</code>, <code>Gap</code>, <code>Opportunity</code></td>
+<td>ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>Gap</code></td>
+<td>object</td>
+<td>A missing data product, dataset, capability, quality level, access method, relationship, or portfolio coverage area.</td>
+<td>missing capability, coverage gap, data gap, portfolio gap</td>
+<td><code>DataNeed</code>, <code>Opportunity</code>, <code>Signal</code>, <code>Priority</code></td>
+<td>ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>Priority</code></td>
+<td>classification</td>
+<td>A ranking or importance level used to guide portfolio planning, product development, investment, or remediation.</td>
+<td>importance level, ranking, urgency, priority level</td>
+<td><code>PortfolioPriority</code>, <code>Signal</code>, <code>Gap</code>, <code>Risk</code></td>
+<td>ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>Outcome</code></td>
+<td>object</td>
+<td>A desired or achieved result connected to a business objective, use case, KPI, or impact statement.</td>
+<td>result, target result, achieved result, intended outcome</td>
+<td><code>BusinessObjective</code>, <code>KPI</code>, <code>Impact</code>, <code>Benefit</code></td>
+<td>ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>DataNeed</code></td>
+<td>object</td>
+<td>A required data input, data product, dataset, attribute, capability, or access pattern needed to support a use case or objective.</td>
+<td>data requirement, data demand, required data, information need</td>
+<td><code>UseCase</code>, <code>Gap</code>, <code>Demand</code>, <code>DataProduct</code></td>
+<td>ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>Benefit</code></td>
+<td>object</td>
+<td>A positive business, operational, financial, social, or technical value expected from a data product, use case, or portfolio action.</td>
+<td>value, expected benefit, positive impact, business benefit</td>
+<td><code>Impact</code>, <code>Outcome</code>, <code>ValueProposition</code></td>
+<td>ODPC</td>
+</tr>
+<tr>
+<td><code>Demand</code></td>
+<td>object</td>
+<td>Evidence of need or interest from consumers, stakeholders, systems, markets, policies, or operational processes.</td>
+<td>need, interest, request, demand signal</td>
+<td><code>Signal</code>, <code>DataNeed</code>, <code>Opportunity</code>, <code>UseCase</code></td>
+<td>ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>Opportunity</code></td>
+<td>object</td>
+<td>A possible area for value creation, reuse, innovation, service improvement, monetization, or better decision-making.</td>
+<td>value opportunity, improvement area, innovation opportunity, reuse opportunity</td>
+<td><code>Signal</code>, <code>Gap</code>, <code>Benefit</code>, <code>Impact</code></td>
+<td>ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>StrategicOpportunity</code></td>
+<td>object</td>
+<td>An inferred or declared opportunity with strategic relevance, such as a portfolio improvement, optimization, unmet need, or emerging value area.</td>
+<td>strategic opportunity, portfolio opportunity, strategic value opportunity, emerging opportunity</td>
+<td><code>Opportunity</code>, <code>BusinessObjective</code>, <code>Capability</code>, <code>Gap</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>ProductStrategy</code></td>
+<td>object</td>
+<td>The strategic plan or context for a data product, including objectives, alignment, dates, status, and KPIs used to describe intended value.</td>
+<td>productStrategy, product strategy, product strategic plan, strategic product context</td>
+<td><code>BusinessObjective</code>, <code>KPI</code>, <code>StrategicOpportunity</code>, <code>PortfolioPriority</code></td>
+<td>ODPS</td>
+</tr>
+<tr>
+<td><code>Risk</code></td>
+<td>object</td>
+<td>A possible negative event, weakness, exposure, or uncertainty that may affect data product value, trust, access, compliance, or operation.</td>
+<td>issue, exposure, threat, concern</td>
+<td><code>Signal</code>, <code>Priority</code>, <code>Gap</code>, <code>Governance</code></td>
+<td>ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>ValueProposition</code></td>
+<td>object</td>
+<td>A short explanation of why a data product, use case, or portfolio item matters and what value it is expected to create.</td>
+<td>value statement, value case, product value, business value statement</td>
+<td><code>Benefit</code>, <code>Impact</code>, <code>Outcome</code>, <code>UseCase</code></td>
+<td>ODPS, ODPC</td>
+</tr>
+<tr>
+<td><code>PortfolioPriority</code></td>
+<td>classification</td>
+<td>A portfolio-level priority assigned to a data product, use case, signal, gap, or objective.</td>
+<td>portfolio ranking, portfolio importance, investment priority, planning priority</td>
+<td><code>Priority</code>, <code>Gap</code>, <code>Signal</code>, <code>BusinessObjective</code></td>
+<td>ODPC, ODPG</td>
+</tr>
+</tbody></table>
+
+<p><a href="https://github.com/Open-Data-Product-Initiative/odpv-v1.1/issues">Suggest addition to the vocabulary</a></p>
+<h1 id='odpv-governance'>ODPV Governance</h1>
+<p>ODPV Governance defines the terms used to describe how data products are controlled, protected, accessed, licensed, and operated.</p>
+
+<p>These terms help connect data products to quality expectations, service commitments, access rules, usage rights, policies, compliance requirements, and responsibility models. They make governance visible as part of the product vocabulary instead of treating it as separate documentation.</p>
+
+<p>The governance vocabulary supports trusted reuse. It helps teams describe who is accountable, what rules apply, how access works, what consumers are allowed to do, and what obligations must be followed.</p>
+
+<p>Each term has one canonical ODPV name. Also known as terms help users map familiar governance, legal, operational, and technical language to the official vocabulary. Related terms show nearby concepts that are connected but should not be treated as identical.</p>
+
+<blockquote>
+<p>Snippet of YAML version:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight yaml"><code><span class="na">id</span><span class="pi">:</span> <span class="s">DataQuality</span>
+<span class="na">uri</span><span class="pi">:</span> <span class="s">https://opendataproducts.org/odpv-v1.1/terms/DataQuality</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
+<span class="na">status</span><span class="pi">:</span> <span class="s">stable</span>
+<span class="na">introducedIn</span><span class="pi">:</span> <span class="s">1.0.0</span>
+<span class="na">preferredLabel</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span> <span class="s">Data Quality</span>
+<span class="na">definition</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span> <span class="s">The expected, measured, or reported quality of a data product,</span>
+      <span class="s">dataset, distribution, or data service.</span>
+<span class="na">alsoKnownAs</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">quality</span>
+    <span class="pi">-</span> <span class="s">data quality score</span>
+    <span class="pi">-</span> <span class="s">quality assessment</span>
+    <span class="pi">-</span> <span class="s">quality metrics</span>
+<span class="na">relatedTerms</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">SLA</span>
+  <span class="pi">-</span> <span class="s">DataContract</span>
+  <span class="pi">-</span> <span class="s">Stewardship</span>
+  <span class="pi">-</span> <span class="s">ComplianceRule</span>
+<span class="na">usedIn</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">ODPS</span>
+  <span class="pi">-</span> <span class="s">ODPC</span>
+  <span class="pi">-</span> <span class="s">ODPG</span>
+</code></pre></div>
+<table><thead>
+<tr>
+<th>Term</th>
+<th>Type</th>
+<th>Description</th>
+<th>Also known as</th>
+<th>Related terms</th>
+<th>Used in</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>DataQuality</code></td>
+<td>object</td>
+<td>The expected, measured, or reported quality of a data product, dataset, distribution, or data service.</td>
+<td>quality, data quality score, quality assessment, quality metrics</td>
+<td><code>SLA</code>, <code>DataContract</code>, <code>Stewardship</code>, <code>ComplianceRule</code></td>
+<td>ODPS, ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>SLA</code></td>
+<td>object</td>
+<td>A service-level agreement or expectation that defines operational commitments for a data product, distribution, or data service.</td>
+<td>service level agreement, service commitment, operational commitment, service expectation</td>
+<td><code>DataQuality</code>, <code>Agreement</code>, <code>AccessMethod</code>, <code>DataContract</code></td>
+<td>ODPS, ODPG</td>
+</tr>
+<tr>
+<td><code>License</code></td>
+<td>object</td>
+<td>The legal terms that define how a data product, dataset, distribution, or data service may be used, shared, or redistributed.</td>
+<td>license, data license, usage license, legal license, redistribution terms</td>
+<td><code>UsageRights</code>, <code>Agreement</code>, <code>DataAgreement</code>, <code>Policy</code></td>
+<td>ODPS, ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>DataAccess</code></td>
+<td>object</td>
+<td>The access configuration or access description for a data product, dataset, distribution, or data service.</td>
+<td>dataAccess, data access, access configuration, access description</td>
+<td><code>AccessMethod</code>, <code>AccessCondition</code>, <code>DataService</code>, <code>Distribution</code></td>
+<td>ODPS, ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>AccessMethod</code></td>
+<td>object</td>
+<td>The method used to access a data product, dataset, distribution, or data service, such as API, file download, query endpoint, or platform access.</td>
+<td>access channel, delivery method, access interface, data access method</td>
+<td><code>AccessCondition</code>, <code>DataService</code>, <code>Distribution</code>, <code>SLA</code></td>
+<td>ODPS, ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>PricingPlan</code></td>
+<td>object</td>
+<td>A pricing, cost, subscription, or commercial plan that describes how a data product or data service may be paid for, charged, or monetized.</td>
+<td>pricingPlans, pricing plan, commercial plan, subscription plan</td>
+<td><code>Agreement</code>, <code>License</code>, <code>UsageRights</code>, <code>PaymentGateway</code></td>
+<td>ODPS</td>
+</tr>
+<tr>
+<td><code>PaymentGateway</code></td>
+<td>object</td>
+<td>A payment integration, payment service, or gateway used to process commercial access to a data product or data service.</td>
+<td>paymentGateways, payment gateway, payment integration, payment service</td>
+<td><code>PricingPlan</code>, <code>Agreement</code>, <code>DataAccess</code>, <code>DataService</code></td>
+<td>ODPS</td>
+</tr>
+<tr>
+<td><code>Support</code></td>
+<td>object</td>
+<td>The support model or contact channel for help, issue handling, or operational assistance related to a data product or data service.</td>
+<td>support, product support, support contact, help channel</td>
+<td><code>SLA</code>, <code>Stewardship</code>, <code>Owner</code>, <code>DataService</code></td>
+<td>ODPS</td>
+</tr>
+<tr>
+<td><code>Agreement</code></td>
+<td>object</td>
+<td>A formal or informal agreement that defines usage, commercial, legal, operational, or governance terms for a data product or data exchange.</td>
+<td>data agreement, usage agreement, service agreement, commercial agreement</td>
+<td><code>DataAgreement</code>, <code>License</code>, <code>UsageRights</code>, <code>SLA</code></td>
+<td>ODPS, ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>Policy</code></td>
+<td>object</td>
+<td>A rule, guideline, or governance statement that applies to a data product, catalog, graph, use case, access method, or related object.</td>
+<td>governance policy, rule, guideline, control policy</td>
+<td><code>ComplianceRule</code>, <code>GovernanceProfile</code>, <code>AccessCondition</code>, <code>Sensitivity</code></td>
+<td>ODPS, ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>ComplianceRule</code></td>
+<td>object</td>
+<td>A specific rule or requirement used to assess, enforce, or document compliance.</td>
+<td>compliance requirement, control rule, regulatory rule, validation rule</td>
+<td><code>Policy</code>, <code>GovernanceProfile</code>, <code>DataQuality</code>, <code>Risk</code></td>
+<td>ODPS, ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>Sensitivity</code></td>
+<td>classification</td>
+<td>A classification that indicates how sensitive a data product, dataset, attribute, distribution, or service is from a privacy, security, commercial, or operational perspective.</td>
+<td>sensitivity level, data sensitivity, security classification, privacy classification</td>
+<td><code>Policy</code>, <code>AccessCondition</code>, <code>UsageRights</code>, <code>GovernanceProfile</code></td>
+<td>ODPS, ODPC</td>
+</tr>
+<tr>
+<td><code>UsageRights</code></td>
+<td>object</td>
+<td>The rights granted to consumers for using, sharing, modifying, deriving, or redistributing a data product or dataset.</td>
+<td>use rights, permitted use, usage permissions, allowed use</td>
+<td><code>License</code>, <code>Agreement</code>, <code>DataAgreement</code>, <code>AccessCondition</code></td>
+<td>ODPS, ODPC</td>
+</tr>
+<tr>
+<td><code>Retention</code></td>
+<td>object</td>
+<td>The rules or expectations for how long data, metadata, logs, agreements, or related records should be retained.</td>
+<td>retention rule, retention period, record retention, data retention</td>
+<td><code>Policy</code>, <code>ComplianceRule</code>, <code>DataAgreement</code>, <code>Stewardship</code></td>
+<td>ODPS, ODPC</td>
+</tr>
+<tr>
+<td><code>AccessCondition</code></td>
+<td>object</td>
+<td>A condition that must be met before a consumer can access a data product, dataset, distribution, or data service.</td>
+<td>access rule, access requirement, eligibility condition, access constraint</td>
+<td><code>AccessMethod</code>, <code>UsageRights</code>, <code>Policy</code>, <code>Sensitivity</code></td>
+<td>ODPS, ODPC, ODPG</td>
+</tr>
+<tr>
+<td><code>GovernanceProfile</code></td>
+<td>classification</td>
+<td>A reusable governance classification that describes the expected level of control, assurance, review, or operational maturity for a data product or catalog item.</td>
+<td>governance level, assurance profile, control profile, maturity profile</td>
+<td><code>Policy</code>, <code>ComplianceRule</code>, <code>Sensitivity</code>, <code>Stewardship</code></td>
+<td>ODPS, ODPC</td>
+</tr>
+<tr>
+<td><code>DataAgreement</code></td>
+<td>object</td>
+<td>A structured agreement that defines the allowed use, responsibilities, obligations, and constraints for a data product or data exchange.</td>
+<td>data sharing agreement, data usage agreement, data exchange agreement, product agreement</td>
+<td><code>Agreement</code>, <code>License</code>, <code>UsageRights</code>, <code>AccessCondition</code></td>
+<td>ODPS, ODPC</td>
+</tr>
+<tr>
+<td><code>DataContract</code></td>
+<td>object</td>
+<td>A technical or operational contract that defines expectations for schema, quality, delivery, compatibility, and change management.</td>
+<td>schema contract, delivery contract, operational contract, technical contract</td>
+<td><code>DataQuality</code>, <code>SLA</code>, <code>AccessMethod</code>, <code>Stewardship</code></td>
+<td>ODPS</td>
+</tr>
+<tr>
+<td><code>Stewardship</code></td>
+<td>object</td>
+<td>The assigned responsibility model for managing data product metadata, quality, lifecycle, and operational health.</td>
+<td>data stewardship, product stewardship, metadata stewardship, lifecycle responsibility</td>
+<td><code>Steward</code>, <code>Owner</code>, <code>DataQuality</code>, <code>GovernanceProfile</code></td>
+<td>ODPS, ODPC</td>
+</tr>
+</tbody></table>
+
+<p><a href="https://github.com/Open-Data-Product-Initiative/odpv-v1.1/issues">Suggest addition to the vocabulary</a></p>
+<h1 id='odpv-relationships'>ODPV Relationships</h1>
+<!-- AI_SECTION_GUIDANCE:
+This section defines ODPV relationship term names and meanings.
+Use these relationship ids as controlled vocabulary terms for graph edges.
+ODPG defines how these relationship types are used in graph structures; ODPV only defines the shared names, labels, and definitions.
+ODPG documentation: https://opendataproducts.org/odpg-v1.0/
+-->
+
+<p>ODPV defines the names and meanings of relationship types. <a href="https://opendataproducts.org/odpg-v1.0/">ODPG</a> defines how those relationship types are used in graph structures. In other words, ODPV defines the vocabulary. <a href="https://opendataproducts.org/odpg-v1.0/">ODPG</a> defines the graph model.</p>
+
+<p>ODPV Relationships defines the terms used to connect data products, catalogs, use cases, objectives, KPIs, signals, governance objects, and related portfolio items.</p>
+
+<p>These terms describe how objects support, require, measure, govern, depend on, replace, or relate to each other. They turn separate vocabulary terms into a connected model that AI tools, catalogs, graph systems, and portfolio applications can understand.</p>
+
+<p>The relationship vocabulary is especially important for <a href="https://opendataproducts.org/odpg-v1.0/">ODPG</a>. It provides the shared relationship types needed to build data product graphs, trace value paths, identify gaps, and connect data products to business outcomes.</p>
+
+<p>Each relationship term has one canonical ODPV name. Also known as terms help users map familiar relationship language to the official vocabulary. Related terms show nearby relationship types that are connected but should not be treated as identical.</p>
+
+<blockquote>
+<p>Snippet of YAML version:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight yaml"><code><span class="na">id</span><span class="pi">:</span> <span class="s">supports</span>
+<span class="na">uri</span><span class="pi">:</span> <span class="s">https://opendataproducts.org/odpv-v1.1/terms/supports</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">relationship</span>
+<span class="na">status</span><span class="pi">:</span> <span class="s">stable</span>
+<span class="na">introducedIn</span><span class="pi">:</span> <span class="s">1.0.0</span>
+<span class="na">preferredLabel</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span> <span class="s">supports</span>
+<span class="na">definition</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span> <span class="s">Indicates that one object helps enable, serve, or</span>
+      <span class="s">make another object possible, such as a data product</span>
+      <span class="s">supporting a use case.</span>
+<span class="na">alsoKnownAs</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">enables</span>
+    <span class="pi">-</span> <span class="s">serves</span>
+    <span class="pi">-</span> <span class="s">helps</span>
+    <span class="pi">-</span> <span class="s">provides support for</span>
+<span class="na">relatedTerms</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">contributesTo</span>
+  <span class="pi">-</span> <span class="s">requires</span>
+  <span class="pi">-</span> <span class="s">relatedTo</span>
+<span class="na">usedIn</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">ODPG</span>
+</code></pre></div>
+<table><thead>
+<tr>
+<th>Term</th>
+<th>Type</th>
+<th>Description</th>
+<th>Also known as</th>
+<th>Related terms</th>
+<th>Used in</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>supports</code></td>
+<td>relationship</td>
+<td>Indicates that one object helps enable, serve, or make another object possible, such as a data product supporting a use case.</td>
+<td>enables, serves, helps, provides support for</td>
+<td><code>contributesTo</code>, <code>requires</code>, <code>relatedTo</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>requires</code></td>
+<td>relationship</td>
+<td>Indicates that one object needs another object to be complete, useful, or executable, such as a use case requiring a data product.</td>
+<td>needs, depends on, must have, requires input from</td>
+<td><code>dependsOn</code>, <code>supports</code>, <code>DataNeed</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>uses</code></td>
+<td>relationship</td>
+<td>Indicates that one object uses another object as part of execution, operation, analysis, automation, or decision-making.</td>
+<td>uses, uses as input, makes use of, operates with</td>
+<td><code>requires</code>, <code>dependsOn</code>, <code>consumes</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>contributesTo</code></td>
+<td>relationship</td>
+<td>Indicates that one object helps advance another object, such as a use case contributing to a business objective.</td>
+<td>advances, helps achieve, adds value to, supports progress toward</td>
+<td><code>supports</code>, <code>measures</code>, <code>BusinessObjective</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>measures</code></td>
+<td>relationship</td>
+<td>Indicates that one object measures another object, such as a KPI measuring a business objective or outcome.</td>
+<td>tracks, monitors, evaluates, assesses</td>
+<td><code>KPI</code>, <code>Outcome</code>, <code>BusinessObjective</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>belongsTo</code></td>
+<td>relationship</td>
+<td>Indicates that one object is assigned to, grouped under, or included in another object, such as a data product belonging to a catalog.</td>
+<td>assigned to, grouped under, included in, cataloged under</td>
+<td><code>partOf</code>, <code>hasPart</code>, <code>DataProductCatalog</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>dependsOn</code></td>
+<td>relationship</td>
+<td>Indicates that one object has a dependency on another object, such as a data product depending on another product, service, or dataset.</td>
+<td>relies on, has dependency on, uses dependency, is dependent on</td>
+<td><code>requires</code>, <code>relatedTo</code>, <code>derivedFrom</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>governedBy</code></td>
+<td>relationship</td>
+<td>Indicates that one object is governed by another object, such as a data product governed by a license, policy, agreement, or compliance rule.</td>
+<td>controlled by, regulated by, subject to, under governance of</td>
+<td><code>Policy</code>, <code>License</code>, <code>Agreement</code>, <code>ComplianceRule</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>providedBy</code></td>
+<td>relationship</td>
+<td>Indicates that one object is provided, published, or made available by a provider.</td>
+<td>published by, supplied by, made available by, offered by</td>
+<td><code>Provider</code>, <code>Owner</code>, <code>Steward</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>consumedBy</code></td>
+<td>relationship</td>
+<td>Indicates that one object is used, accessed, or consumed by a consumer.</td>
+<td>used by, accessed by, received by, consumed by</td>
+<td><code>Consumer</code>, <code>AccessMethod</code>, <code>UsageRights</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>produces</code></td>
+<td>relationship</td>
+<td>Indicates that one object creates, generates, outputs, or makes available another object, such as a workflow producing a dataset or data service.</td>
+<td>creates, generates, outputs, produces output</td>
+<td><code>derivedFrom</code>, <code>exposes</code>, <code>DataProduct</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>consumes</code></td>
+<td>relationship</td>
+<td>Indicates that one object consumes data, services, outputs, or interfaces from another object.</td>
+<td>consumes, reads from, receives input from, takes as input</td>
+<td><code>consumedBy</code>, <code>uses</code>, <code>Consumer</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>indicates</code></td>
+<td>relationship</td>
+<td>Indicates that one object points to, reveals, or suggests another object, such as a signal indicating a gap, demand, risk, or opportunity.</td>
+<td>points to, suggests, reveals, signals</td>
+<td><code>Signal</code>, <code>Gap</code>, <code>Demand</code>, <code>Risk</code>, <code>Opportunity</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>identifies</code></td>
+<td>relationship</td>
+<td>Indicates that one object identifies, detects, discovers, or names another object, such as an agent identifying a strategic opportunity.</td>
+<td>detects, discovers, finds, recognizes</td>
+<td><code>indicates</code>, <code>StrategicOpportunity</code>, <code>Signal</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>relatedTo</code></td>
+<td>relationship</td>
+<td>Indicates a general relationship between two objects when a more specific relationship type is not available.</td>
+<td>associated with, connected to, linked to, relevant to</td>
+<td><code>supports</code>, <code>dependsOn</code>, <code>partOf</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>ownedBy</code></td>
+<td>relationship</td>
+<td>Indicates that one object is owned or accountable to a person, team, organization, domain, or capability.</td>
+<td>accountable to, has owner, owned by, ownership assigned to</td>
+<td><code>Owner</code>, <code>Stewardship</code>, <code>providedBy</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>alignsWith</code></td>
+<td>relationship</td>
+<td>Indicates that one object has strategic, semantic, organizational, or capability alignment with another object.</td>
+<td>aligned with, maps to, corresponds to, strategically aligns with</td>
+<td><code>contributesTo</code>, <code>supports</code>, <code>relatedTo</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>partOf</code></td>
+<td>relationship</td>
+<td>Indicates that one object is part of a larger object, such as a catalog item being part of a catalog.</td>
+<td>component of, included in, member of, belongs within</td>
+<td><code>hasPart</code>, <code>belongsTo</code>, <code>DataProductCatalog</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>hasPart</code></td>
+<td>relationship</td>
+<td>Indicates that one object contains or includes another object.</td>
+<td>contains, includes, has component, consists of</td>
+<td><code>partOf</code>, <code>belongsTo</code>, <code>Dataset</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>derivedFrom</code></td>
+<td>relationship</td>
+<td>Indicates that one object is derived from another object, such as an insight, product, dataset, or signal derived from a source.</td>
+<td>based on, sourced from, generated from, created from</td>
+<td><code>dependsOn</code>, <code>Reference</code>, <code>Dataset</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>impacts</code></td>
+<td>relationship</td>
+<td>Indicates that one object affects, changes, influences, or has an impact on another object.</td>
+<td>affects, influences, changes, has impact on</td>
+<td><code>Impact</code>, <code>contributesTo</code>, <code>supports</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>exposes</code></td>
+<td>relationship</td>
+<td>Indicates that one object exposes a data service, interface, endpoint, distribution, or access method.</td>
+<td>exposes interface, makes available through, provides endpoint, publishes interface</td>
+<td><code>DataService</code>, <code>AccessMethod</code>, <code>Distribution</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>replaces</code></td>
+<td>relationship</td>
+<td>Indicates that one object replaces another object, such as a newer data product replacing an older version.</td>
+<td>supersedes, succeeds, takes over from, replaces version</td>
+<td><code>versionOf</code>, <code>derivedFrom</code>, <code>relatedTo</code></td>
+<td>ODPG</td>
+</tr>
+<tr>
+<td><code>versionOf</code></td>
+<td>relationship</td>
+<td>Indicates that one object is a version of another object.</td>
+<td>variant of, release of, revision of, versioned form of</td>
+<td><code>replaces</code>, <code>derivedFrom</code>, <code>Identifier</code></td>
+<td>ODPG</td>
+</tr>
+</tbody></table>
+
+<p><a href="https://github.com/Open-Data-Product-Initiative/odpv-v1.1/issues">Suggest addition to the vocabulary</a></p>
+<h1 id='extensions'>Extensions</h1>
+<p>ODPV defines a shared controlled vocabulary for the OpenDataProducts.org standards family. It provides stable terms, labels, definitions, concept groups, mappings, and relationship names used across ODPS, ODPC, and <a href="https://opendataproducts.org/odpg-v1.0/">ODPG</a>. Organizations may need additional terms for domain-specific, platform-specific, or organization-specific use cases. These terms can be added through vocabulary extensions.</p>
+
+<p>Extensions should add new terms, labels, mappings, concept groups, related terms, or usage notes. They should not change the meaning of official ODPV terms. Extension terms should use a separate namespace or prefix to avoid conflict with official ODPV terms.</p>
+
+<p>Examples:</p>
+
+<ul>
+<li><code>x-mobility:CongestionIndex</code></li>
+<li><code>x-healthcare:PatientCohort</code></li>
+<li><code>x-finance:RiskExposure</code></li>
+<li><code>x-platform:InternalDataOwner</code></li>
+</ul>
+
+<p>Extension terms may define:</p>
+
+<ul>
+<li><code>id</code></li>
+<li><code>preferredLabel</code></li>
+<li><code>alternativeLabels</code></li>
+<li><code>definition</code></li>
+<li><code>conceptGroup</code></li>
+<li><code>relatedTerms</code></li>
+<li><code>externalMappings</code></li>
+<li><code>notes</code></li>
+</ul>
+
+<blockquote>
+<p>Snippet of YAML version:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight yaml"><code><span class="na">id</span><span class="pi">:</span> <span class="s">x-mobility:CongestionIndex</span>
+<span class="na">preferredLabel</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span> <span class="s">Congestion Index</span>
+<span class="na">definition</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span> <span class="s">A domain-specific indicator describing the level</span> 
+      <span class="s">of traffic congestion for a mobility data product.</span>
+<span class="na">conceptGroup</span><span class="pi">:</span> <span class="s">x-mobility</span>
+<span class="na">relatedTerms</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">KPI</span>
+  <span class="pi">-</span> <span class="s">Signal</span>
+<span class="na">externalMappings</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">scheme</span><span class="pi">:</span> <span class="s">example-mobility-taxonomy</span>
+    <span class="na">value</span><span class="pi">:</span> <span class="s">congestion-index</span>
+<span class="na">notes</span><span class="pi">:</span>
+  <span class="na">en</span><span class="pi">:</span> <span class="s">Extension terms use a separate namespace so they</span> 
+      <span class="s">do not conflict with official ODPV terms.</span>
+</code></pre></div>
+<p>Extensions are not part of the official ODPV vocabulary unless they are later adopted into the specification. Tooling may ignore extension terms unless explicit support has been added. Extensions should not be used to redefine official ODPV terms such as <code>DataProduct</code>, <code>UseCase</code>, <code>BusinessObjective</code>, <code>KPI</code>, <code>Signal</code>, <code>DataQuality</code>, <code>License</code>, or <code>supports</code>.</p>
+
+<p>Useful and widely adopted extensions may become candidates for future versions of ODPV. To propose useful extensions, raise an issue in GitHub:</p>
+
+<p><a href="https://github.com/Open-Data-Product-Initiative/odpv-v1.1/issues">Open Data Products Vocabulary GitHub issues</a></p>
+<h1 id='editors-and-contributors'>Editors and contributors</h1>
+<p>This specification is openly developed and a lot of the work comes from community. We list all community contributors as a sign of appreciation. Maintainers process the feedback and draft new candidate releases, which may become the versions of the specification. </p>
+
+<p><strong>Maintainers:</strong></p>
+
+<ul>
+<li><a href="https://www.linkedin.com/in/jarkkomoilanen/">Jarkko Moilanen</a></li>
+</ul>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="yaml">yaml</a>
+          </div>
+      </div>
+    </div>
+    <!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','nztzi');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+  </body>
+</html>
