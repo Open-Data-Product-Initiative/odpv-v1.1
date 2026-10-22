@@ -2,7 +2,7 @@ profileFormat: ODPV-Profile-1.0
 id: ODPV-OPENLINEAGE-1
 title: ODPV to OpenLineage 1 profile
 version: 0.1.0
-status: draft
+status: stable
 vocabulary:
   id: ODPV
   version: 1.1.0

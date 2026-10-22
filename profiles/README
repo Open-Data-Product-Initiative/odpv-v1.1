@@ -1,7 +1,7 @@
 <h1 id='odpv-interoperability-profiles'>ODPV interoperability profiles</h1>
 <p>An ODPV interoperability profile is a versioned, machine-readable declaration of how ODPV terms can be used with one external standard. A profile is a companion artifact: it does not replace ODPV, the external standard, a catalog, a data contract, a lineage system, or a policy engine.</p>
 <h2 id='release-status'>Release status</h2>
-<p><strong>ODPV 1.1 is DRAFT.</strong> The vocabulary and every profile in this release remain under maintainer review and may change before a stable designation. These files are suitable for evaluation and implementation feedback, not as a claim of stable conformance.</p>
+<p><strong>ODPV 1.1 is a stable release.</strong> The vocabulary and every profile in this release are published stable artifacts. These files can be used as a stable basis for implementation and conformance.</p>
 
 <p>The files in this directory are the semantic authority. The <a href="https://github.com/Open-Data-Product-Initiative/odp-agent-sdk">Open Data Product Agent SDK</a> is the implementation authority for loading, validating, transforming, and reporting against them.</p>
 <h2 id='profile-contract'>Profile contract</h2>
@@ -42,6 +42,6 @@
 
 <p>Only use <code>exactMatch</code> after a review establishes that concepts are interchangeable in the intended scope. Prefer <code>closeMatch</code> or a field binding when in doubt. A profile must never promote an external field name into an ODPV term.</p>
 <h2 id='status-and-lifecycle'>Status and lifecycle</h2>
-<p>These first profiles are <code>draft</code> because their mappings need maintainer review and implementation feedback. A profile can become <code>stable</code> only after the mapping assertions, fixture examples, and SDK conformance support have been reviewed together. A semantic change to a stable mapping is breaking and requires a new profile version.</p>
+<p>These first profiles are <code>stable</code>: their mapping assertions, fixture examples, and SDK conformance support have been reviewed together. A semantic change to a stable mapping is breaking and requires a new profile version.</p>
 <h2 id='sdk-integration'>SDK integration</h2>
 <p>The SDK should use the profile id and version as an explicit input. It may validate fields, transform documents, or emit reports, but it must preserve the profile&#39;s mapping kind and direction. In particular, it must not present observed lineage as proof of an ODPV value or contract claim.</p>
