@@ -2,7 +2,7 @@
 
 ODPV interoperability profiles connect the shared vocabulary to established external standards without redefining either side. A profile is a versioned mapping contract: it identifies the ODPV and external-standard versions, its scope, reviewed mapping assertions, and the direction required for any transformation.
 
-The initial profiles are **draft** semantic artifacts. They are ready for implementation feedback, but a mapping becomes stable only after maintainers review its meaning, examples, and SDK conformance support together.
+The initial profiles are **stable** semantic artifacts. Their mapping assertions, examples, and SDK conformance support have been reviewed together for this release.
 
 | Profile | External standard | Intended role and example |
 | --- | --- | --- |

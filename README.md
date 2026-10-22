@@ -6,7 +6,7 @@ The Open Data Products Vocabulary, ODPV, is a vendor-neutral, open-source, machi
 
 ## Release identity
 
-This repository is the standalone **ODPV 1.1.0 DRAFT** release. Its published vocabulary, schemas, profiles, and documentation use the `odpv-v1.1` namespace, but they are in progress and may change before ODPV 1.1 is designated stable. ODPV 1.0 remains a separate, immutable release line.
+This repository is the standalone **ODPV 1.1.0** release. Its published vocabulary, schemas, profiles, and documentation use the `odpv-v1.1` namespace as stable release artifacts. ODPV 1.0 remains a separate, immutable release line.
 
 # What ODPV Defines
 
@@ -37,7 +37,7 @@ The canonical vocabulary source is [`source/vocab/odpv.yaml`](source/vocab/odpv.
 | [`source/vocab/governance.yaml`](source/vocab/governance.yaml) | Governance terms only |
 | [`source/vocab/relationships.yaml`](source/vocab/relationships.yaml) | Relationship terms only |
 | [`source/llms.txt`](source/llms.txt) | AI agent guidance for using ODPV resources |
-| [`source/profiles/`](source/profiles/README.md) | Draft interoperability profiles for DCAT, ODCS, OpenLineage, PROV-O, and ODRL |
+| [`source/profiles/`](source/profiles/README.md) | Stable interoperability profiles for DCAT, ODCS, OpenLineage, PROV-O, and ODRL |
 | [`source/schema/odpv.profile.schema.json`](source/schema/odpv.profile.schema.json) | JSON Schema for interoperability profiles |
 
 # Toolkit and AI Agents
@@ -59,7 +59,7 @@ This repository also includes helper scripts for maintaining and using the vocab
 
 ODPV interoperability profiles are versioned semantic bridges to external standards. They keep ODPV as the shared vocabulary authority while the [Open Data Product Agent SDK](https://github.com/Open-Data-Product-Initiative/odp-agent-sdk) provides validation, transformations, conformance reports, and integration templates.
 
-The initial draft profiles cover [DCAT 3](source/profiles/dcat-3.yaml), [ODCS 3](source/profiles/odcs-3.yaml), [OpenLineage](source/profiles/openlineage-1.yaml), [PROV-O](source/profiles/prov-o.yaml), and [ODRL 2](source/profiles/odrl-2.yaml). A profile entry is deliberately one of a semantic mapping, field binding, or directional transformation; it does not imply that every concept is equivalent. See the [profile governance guide](source/profiles/README.md).
+The initial stable profiles cover [DCAT 3](source/profiles/dcat-3.yaml), [ODCS 3](source/profiles/odcs-3.yaml), [OpenLineage](source/profiles/openlineage-1.yaml), [PROV-O](source/profiles/prov-o.yaml), and [ODRL 2](source/profiles/odrl-2.yaml). A profile entry is deliberately one of a semantic mapping, field binding, or directional transformation; it does not imply that every concept is equivalent. See the [profile governance guide](source/profiles/README.md).
 
 # Term Governance
 

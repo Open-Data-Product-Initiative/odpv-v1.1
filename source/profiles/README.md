@@ -4,7 +4,7 @@ An ODPV interoperability profile is a versioned, machine-readable declaration of
 
 ## Release status
 
-**ODPV 1.1 is DRAFT.** The vocabulary and every profile in this release remain under maintainer review and may change before a stable designation. These files are suitable for evaluation and implementation feedback, not as a claim of stable conformance.
+**ODPV 1.1 is a stable release.** The vocabulary and every profile in this release are published stable artifacts. These files can be used as a stable basis for implementation and conformance.
 
 The files in this directory are the semantic authority. The [Open Data Product Agent SDK](https://github.com/Open-Data-Product-Initiative/odp-agent-sdk) is the implementation authority for loading, validating, transforming, and reporting against them.
 
@@ -29,7 +29,7 @@ Only use `exactMatch` after a review establishes that concepts are interchangeab
 
 ## Status and lifecycle
 
-These first profiles are `draft` because their mappings need maintainer review and implementation feedback. A profile can become `stable` only after the mapping assertions, fixture examples, and SDK conformance support have been reviewed together. A semantic change to a stable mapping is breaking and requires a new profile version.
+These first profiles are `stable`: their mapping assertions, fixture examples, and SDK conformance support have been reviewed together. A semantic change to a stable mapping is breaking and requires a new profile version.
 
 ## SDK integration
 

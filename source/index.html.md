@@ -1,5 +1,5 @@
 ---
-title: Open Data Product Vocab (ODPV) version 1.1 DRAFT | Linux Foundation
+title: Open Data Product Vocab (ODPV) version 1.1 | Linux Foundation
 
 language_tabs: # must be one of https://git.io/vQNgJ
 - yaml
@@ -28,7 +28,7 @@ code_clipboard: true
 
 meta:
   - name: description
-    content: Open Data Product Vocabulary (ODPV) version 1.1 DRAFT is an in-progress, vendor-neutral, open-source, machine-readable controlled vocabulary for data product management.
+    content: Open Data Product Vocabulary (ODPV) version 1.1 is a stable, vendor-neutral, open-source, machine-readable controlled vocabulary for data product management.
   - name: llms
     content: /llms.txt
   - name: ai-agent-guidance
@@ -37,9 +37,9 @@ meta:
 
 # OPEN DATA PRODUCT VOCABULARY - The Linux Foundation
 
-## Version 1.1 — DRAFT
+## Version 1.1
 
-> **DRAFT — NOT A STABLE RELEASE.** ODPV 1.1 is under maintainer review. Its vocabulary, schemas, and interoperability profiles may change before a stable designation. Use ODPV 1.0 where a stable release is required.
+> **STABLE RELEASE.** ODPV 1.1 is a published release. Its vocabulary, schemas, and interoperability profiles are stable release artifacts. ODPV 1.0 remains a separate, immutable release line.
 
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “NOT RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in BCP 14 ([RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) and [RFC 8174](https://datatracker.ietf.org/doc/html/rfc8174)) when, and only when, they appear in all capitals, as shown here.
 
